@@ -1,0 +1,421 @@
+{
+  "schema": "independent_ai_review",
+  "review_type": "independent_ai_not_human",
+  "status": "pass_with_context_review_required",
+  "status_detail": "离线独立重算未发现句子偏移、组合枚举、整数匹配、首选映射或待人审模板的结构性不一致。逐句语境判断以共同完整证据块仍呈现为前提，不因摘录未重复上一句而机械判为unsupported。待人审不是本报告失败，也不是语义批准或正式实验资格。",
+  "input_sha256": {
+    "feasibility.json": "5ff1b33d1115f5b9cfccfe0c89da2eac91dc1477421c11d553c8b15a5cfd5d55",
+    "human_review_checklist.json": "fd2d9adde69f478544a41061f83137f78fc925618046b0791478715398040706"
+  },
+  "source_integrity": {
+    "hash_basis": "文件实际字节的SHA-256；不是重新序列化JSON的哈希。六轮包的实际路径与字节哈希逐项列于per_case。",
+    "verified_bound_file_count": 139,
+    "expected_hashes_all_match": true,
+    "binding_set": "feasibility.input_hashes.files、六轮case.input_hashes.files与human_review_checklist.source_inputs的规范化路径并集；仅读取已绑定本地材料，不扩来源。",
+    "actual_hash_map_sha256": "0ac14216097bf12328654a8ceb5ba0ee8c5377193a32fa949036e7c138adf6c4",
+    "hash_map_serialization": "路径反斜杠替换为正斜杠；实际文件哈希映射按json.dumps(ensure_ascii=False,sort_keys=True,separators=(',',':'))生成UTF-8字节后取SHA-256。此集合摘要不替代各文件字节哈希。"
+  },
+  "supporting_source_sha256": {
+    "D:/信息茧房/configs/extractive_control_v1.json": "b96e2a12d9b85189e6765c0aa23b04a6f2ad2bec6d57a8d73194d34c2fe5413a",
+    "D:/信息茧房/configs/delivery_prompts_v3.json": "b2cecda52c4fa2725400063094dcee9466a16037e02bfa05f64fcf883d744684",
+    "D:/信息茧房/experiment/review/delivery_v3_20261108/extractive_alternative.json": "de5251f6b4cf852f06c4d28109ba2b9fb3fc766982fdc697e3ce41e02d8dfb00",
+    "D:/信息茧房/experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1/summary.json": "df16d0fe52a77b4d2c0140c9fc8772dd887eb684b2433d952fbf3ae82ad05bb2",
+    "D:/信息茧房/experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1/events/events.jsonl": "5f96a22dacd633c104e9dd1214a72ea7843e6a1e9a878e44f142bfcd39bdb6dc",
+    "D:/信息茧房/experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1/raw/blobs/72f5adeac016d227bb157995cf5bbd32178ecd8149d2f7ab44f9809d74777ac5.json": "72f5adeac016d227bb157995cf5bbd32178ecd8149d2f7ab44f9809d74777ac5",
+    "D:/信息茧房/experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1/raw/blobs/60453727cf37aeba2a31d2106ce71c7f15dd8c40490bc67cf69661ae3118a846.json": "60453727cf37aeba2a31d2106ce71c7f15dd8c40490bc67cf69661ae3118a846",
+    "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/review/sources.json": "f9f4d0b1b9befa2067fe16a4237828ac80c3ef8c558fb9ae296f5df454b6ac2f",
+    "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/manifest.json": "6708991c2b18b32a4a43b9d303ffc458cda4934a7998c9cb58e67e6ef648b0c7"
+  },
+  "checked_counts": {
+    "cases": 6,
+    "evidence_items": 18,
+    "sentences": 41,
+    "exact_sentence_offsets": 41,
+    "local_original_quote_offsets": 18,
+    "candidate_combinations": 72,
+    "dose_eligible_combinations": 70,
+    "integer_lengths": 1206,
+    "combination_integer_length_tests": 14472,
+    "feasible_integer_lengths": 539,
+    "unmatched_integer_lengths": 667,
+    "distinct_first_choice_combinations": 39,
+    "sentences_possible_in_first_selection": 38,
+    "sentences_never_in_first_selection_but_reviewed": 3,
+    "actual_organized_output_cases": 1,
+    "conditional_only_cases": 5,
+    "human_checklist_items": 55,
+    "pending_human_slots": 110,
+    "null_reviewer_check_cells": 508,
+    "pending_adjudications": 55,
+    "human_priorities": 6
+  },
+  "review_conventions": {
+    "sentence_index_base": 0,
+    "offset_unit": "python_unicode_code_points",
+    "offset_interval": "[start,end)",
+    "range_interval": "闭区间，端点均包含",
+    "first_choice_combo_count": "至少在一个允许组织侧附加长度上成为首选的不同组合数，不是全部候选数，也不是实际模型输出数。",
+    "flag": "与risk_level一致，便于按用户指定context_flags结构读取。",
+    "judgment_note": "risk_category仅说明语境依赖类型；requires_context_review不等于已证实新增事实，no_obvious_new_claim也不等于approve。所有判断均为独立AI意见，不能自动批准、填人审槽或代替第三人裁决。",
+    "context_assumption": "首轮已核对记录中的完整可见文本，两侧完整证据、来源标签和回应提示一致；另外五轮只有冻结包与条件长度映射，未来真实界面是否同屏可读仍须核验。"
+  },
+  "structural_checks": [
+    {
+      "name": "输入与已绑定源文件实际字节哈希",
+      "passed": true,
+      "detail": "两个输入文件均按实际字节取SHA-256；合并后的139个已绑定本地源文件逐一读取并比对，未发现缺失、冲突或哈希不一致。源文件未修改。"
+    },
+    {
+      "name": "六轮包与清单交叉对应",
+      "passed": true,
+      "detail": "6个case各绑定唯一对应轮次packet；18条证据的顺序、全文、content_sha256及清单round_reviews一致。source_map逐项与冻结来源索引一致。范围是6个轮次包，不把包含full包的上游9包计数误报为6轮矛盾。"
+    },
+    {
+      "name": "全部原句及精确偏移",
+      "passed": true,
+      "detail": "从六包中文证据正文独立按。！？切句并保留字符，重建41句，逐一核对sentence_index、start、end、text、来源及selector_eligible；连续拼接回18条正文，无遗漏或改字。41句均无问号、均可入候选池。这里的原句指冻结中文释义或改编正文，不冒充外文来源的原句。"
+    },
+    {
+      "name": "本地连续引文偏移",
+      "passed": true,
+      "detail": "另对清单18条original_quote，核对已绑定本地提取文本的SHA-256以及quote_start:quote_end切片，18/18逐字一致。此结果不证明翻译语义已获批准，也不构成外网真实性或版权核验。"
+    },
+    {
+      "name": "全部组合与引用字数",
+      "passed": true,
+      "detail": "依证据顺序及句子起始偏移作完整字典序笛卡尔积，组合数为8、12、8、8、18、18，共72而非估计值；逐一核对ID、索引、句号保留、句子索引、偏移及附加段字数。附加段为每句原文后接全角括号证据ID，无额外分隔；每轮均低于10000组合上限。总长600至800内的候选共70个。"
+    },
+    {
+      "name": "整数长度与双重10%边界",
+      "passed": true,
+      "detail": "以各轮冻结fixed_chars为F，组织附加长为O、摘录附加长为P，逐整数检查600<=F+O<=800、600<=F+P<=800、10*abs(O-P)<=min(O,P)以及10*abs((F+O)-(F+P))<=min(F+O,F+P)。覆盖全部1206个允许整数长度、14472个组合与长度配对；逐组合matching_organized_ranges及各轮可行区间全部一致。无浮点阈值替代整数不等式。"
+    },
+    {
+      "name": "首个合格字典序映射",
+      "passed": true,
+      "detail": "每个允许O从独立枚举的组合0开始取第一个合格项，1206个映射值含null逐一相同。JSON对象键的字符排序不影响按整数O重算。共39种不同组合可能成为首选，涉及38句；其余CL_E05[1]、CL_E05[2]、WE_E01[1]仍完成偏移与语境审阅，但冻结算法下从不成为首选。"
+    },
+    {
+      "name": "覆盖率含义与总计",
+      "passed": true,
+      "detail": "可行长度数92+74+113+98+74+88=539，允许长度6*201=1206，539/1206=0.4469320066334992，约44.69%。这是允许组织附加整数长度的覆盖比例，不是模型成功率、实际输出分布、语义通过率或实验效果。"
+    },
+    {
+      "name": "唯一真实组织输出与首轮共同呈现",
+      "passed": true,
+      "detail": "TOPIC_01_R1的组织输出与记录raw_text解析结果及事件62f0380e6d5b4747bd10af12767a2094相符，重拼附加段175字符、全文632字符；旧探索性摘录备选为combo_00001=[0,0,1]，附加180、全文637，正是O=175时的首选。完整共同证据块418字符，公共文本39字符，F=457；两侧来源标签、完整证据和回应提示逐字相同。两项10%约束通过，不代表已真实送达受试者。"
+    },
+    {
+      "name": "另外五轮仅条件可行",
+      "passed": true,
+      "detail": "TOPIC_01_R2至TOPIC_03_R2五轮均为conditional_only；actual输出、配对、事件和run字段按约定为空或false。其长度重算使用冻结fixed_chars，不制造组织侧文本、不宣称已检查这些轮次的真实界面或送达。缺实际输出不把条件可行报告判为失败。"
+    },
+    {
+      "name": "全部句子语境审阅覆盖",
+      "passed": true,
+      "detail": "per_case.context_flags覆盖41句，含全部38句潜在首选句。区分指代、条件、历史时点、强调改变与未见明显新增主张；考虑同屏完整证据可补足指代和限定，不用孤立摘录缺上一句自动推出unsupported。六项人审优先项只列真实语境关注，不扩来源、不补事实、不改证据。"
+    },
+    {
+      "name": "人审模板计数与空槽",
+      "passed": true,
+      "detail": "实测evidence_reviews/source_reviews/model_issue_reviews/round_reviews/release_gates=18/13/11/6/7，共55个唯一条目、110个reviewer槽。110槽decision全pending，身份、时间、备注全null，508个reviewer检查值全null；55个adjudication均pending/not_started且身份及理由null。轮次context_checks全null，dose仍pending，selected_sentences与natural_T1_available仍null；完成数均0。"
+    },
+    {
+      "name": "真实独立双人与分歧裁决规则",
+      "passed": true,
+      "detail": "review_policy明确需要两名独立真人、禁止同人双签、禁止AI充任真人、禁止机器检查自动approve；分歧须第三名独立真人裁决。当前仅验证初始未填写模板，不能把规则存在说成真人身份已验证或审核已完成。"
+    },
+    {
+      "name": "原11条AI问题意见非裁决",
+      "passed": true,
+      "detail": "清单11条均标记ai_opinion_only_human_decision_pending，原标签为3条unsupported_fact、8条overstated；这些是既有AI意见而非人审裁决，也不是本次对摘录句子新判出的11个问题。本次不改其原标签、不自动确认或撤销这些意见。"
+    },
+    {
+      "name": "来源权利及正式资格仍未清除",
+      "passed": true,
+      "detail": "13来源的redistribution_cleared均false，rights_status均pending_human_review_no_legal_conclusion；公开可访问不等于许可。7个release gate均未完成。full_108_card_review、approved_for_experiment及formal_eligible仍false；来源族计数不被当作独立性证明。"
+    },
+    {
+      "name": "原v3失败状态保留",
+      "passed": true,
+      "detail": "原run仍delivery_failed，原plain_restatement仍failed，原pair为null；记录错误为附加长155低于160下界。当前首轮配对来自另存的探索性extractive_control_v1备选，不修补原v3记录，也不把其失败重标成功。"
+    }
+  ],
+  "per_case": [
+    {
+      "case_id": "TOPIC_01_R1",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_01_round_1.json",
+      "packet_sha256": "88584f1e109b4364bfec0ed2bd18549b645b7ed1df9a91ae8d15424b7f90fc94",
+      "checked_sentences": 6,
+      "sentence_pool_sizes": [2, 2, 2],
+      "combination_count": 8,
+      "dose_eligible_combinations": 7,
+      "first_choice_combo_count": 5,
+      "first_possible_sentence_count": 6,
+      "fixed_chars": 457,
+      "allowed_org_range": [143, 343],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[143, 234]],
+      "feasible_length_count": 92,
+      "output_basis": "existing_recorded_exploratory_alternative_not_generated_this_review",
+      "actual_lengths": {"organized_additional": 175, "organized_total": 632, "extractive_additional": 180, "extractive_total": 637, "combination_index": 1},
+      "first_choice_combinations": [
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[164, 198]]},
+        {"combination_index": 2, "sentence_indices": [0, 1, 0], "organized_ranges": [[148, 163]]},
+        {"combination_index": 3, "sentence_indices": [0, 1, 1], "organized_ranges": [[199, 221]]},
+        {"combination_index": 4, "sentence_indices": [1, 0, 0], "organized_ranges": [[143, 147]]},
+        {"combination_index": 7, "sentence_indices": [1, 1, 1], "organized_ranges": [[222, 234]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "CL_E01", "sentence_index": 0, "start": 0, "end": 41, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "保留自然作用与额外排放的区别及升温方向，没有添加量化结果或行动优先级。"},
+        {"evidence_id": "CL_E01", "sentence_index": 1, "start": 41, "end": 94, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "因此承接前句机制，但句内已重述所区分的两个命题，同屏完整CL_E01仍可读；不因未重复前句判为无支持。"},
+        {"evidence_id": "CL_E02", "sentence_index": 0, "start": 0, "end": 42, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "time_scope", "risk_level": "no_obvious_new_claim", "reason": "保留工业化以来和主要原因，未把长期浓度变化改成某年、某地的唯一归因。"},
+        {"evidence_id": "CL_E02", "sentence_index": 1, "start": 42, "end": 105, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "这里的主要须回指前句化石燃料与长期浓度上升。共同全文能补足，关注呈现能否让读者接回对象；本句自身保留非唯一及地域季节边界，并非已证实新增事实。"},
+        {"evidence_id": "CL_E03", "sentence_index": 0, "start": 0, "end": 34, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "condition", "risk_level": "no_obvious_new_claim", "reason": "保留可能和有条件的模态；具体水分或氮限制仍在同屏后句，未宣称必然或无限增益。"},
+        {"evidence_id": "CL_E03", "sentence_index": 1, "start": 34, "end": 107, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "emphasis_change", "risk_level": "requires_context_review", "reason": "水分或氮不足、不能仅据此推断均在本句保留，且这些资源的先行词在句内。实际首轮选此句，附加段较突出限制；同屏前句仍保留可能促进。应审强调差异，不把不能推出写成结果不能发生，也不机械判unsupported。"}
+      ]
+    },
+    {
+      "case_id": "TOPIC_01_R2",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_01_round_2.json",
+      "packet_sha256": "e79680bb778f7c3873e8679319034d915126d76728fc660a0eee850c41915b30",
+      "checked_sentences": 7,
+      "sentence_pool_sizes": [2, 3, 2],
+      "combination_count": 12,
+      "dose_eligible_combinations": 11,
+      "first_choice_combo_count": 4,
+      "first_possible_sentence_count": 5,
+      "fixed_chars": 459,
+      "allowed_org_range": [141, 341],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[141, 214]],
+      "feasible_length_count": 74,
+      "output_basis": "conditional_only",
+      "actual_lengths": null,
+      "first_choice_combinations": [
+        {"combination_index": 0, "sentence_indices": [0, 0, 0], "organized_ranges": [[146, 176]]},
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[141, 145]]},
+        {"combination_index": 6, "sentence_indices": [1, 0, 0], "organized_ranges": [[178, 214]]},
+        {"combination_index": 7, "sentence_indices": [1, 0, 1], "organized_ranges": [[177, 177]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "CL_E04", "sentence_index": 0, "start": 0, "end": 32, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "定性联系的起因和对象保留；未增加吸收比例、速度、上限或完全抵消排放的结论。"},
+        {"evidence_id": "CL_E04", "sentence_index": 1, "start": 32, "end": 99, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "这条证据和它回指前句吸收机制，需与同屏CL_E04接读。句内明确禁止持续完全抵消的外推，并不是新报一个吸收上限。"},
+        {"evidence_id": "CL_E05", "sentence_index": 0, "start": 0, "end": 40, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "区分变化方向与是否成为酸性溶液，无新增平均pH数值或普遍地域断言。该证据只有本句会成为首选。"},
+        {"evidence_id": "CL_E05", "sentence_index": 1, "start": 40, "end": 70, "first_selection_possible": false, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "同页由来源标签及完整证据定位，平均碱性与继续酸化的兼容关系未被改写；冻结首选算法不会选到本句。"},
+        {"evidence_id": "CL_E05", "sentence_index": 2, "start": 70, "end": 104, "first_selection_possible": false, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "这一过程在共同全文中明确指酸化；不能仅凭碱性否认变化的限定仍完整。冻结首选算法不会选到本句。"},
+        {"evidence_id": "CL_E06", "sentence_index": 0, "start": 0, "end": 64, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "time_scope", "risk_level": "no_obvious_new_claim", "reason": "保留2016年研究介绍及观测与模型归因的区别；2016年不是本次获取年份，也未被写成研究资料全部覆盖年份。"},
+        {"evidence_id": "CL_E06", "sentence_index": 1, "start": 64, "end": 115, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "time_scope", "risk_level": "requires_context_review", "reason": "摘录省略2016年研究介绍的归属，需接回同屏前句及日期；本句是推断边界，不是否定模型价值，也不支持由变绿推出长期净储碳或总体净收益。"}
+      ]
+    },
+    {
+      "case_id": "TOPIC_02_R1",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_02_round_1.json",
+      "packet_sha256": "2173495d7b0362d4a03385cb4dc291b36b36abc9eaa7c62ebd77492c8f4c68dd",
+      "checked_sentences": 6,
+      "sentence_pool_sizes": [2, 2, 2],
+      "combination_count": 8,
+      "dose_eligible_combinations": 8,
+      "first_choice_combo_count": 5,
+      "first_possible_sentence_count": 6,
+      "fixed_chars": 492,
+      "allowed_org_range": [108, 308],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[145, 257]],
+      "feasible_length_count": 113,
+      "output_basis": "conditional_only",
+      "actual_lengths": null,
+      "first_choice_combinations": [
+        {"combination_index": 0, "sentence_indices": [0, 0, 0], "organized_ranges": [[168, 202]]},
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[213, 257]]},
+        {"combination_index": 2, "sentence_indices": [0, 1, 0], "organized_ranges": [[151, 167]]},
+        {"combination_index": 3, "sentence_indices": [0, 1, 1], "organized_ranges": [[203, 212]]},
+        {"combination_index": 6, "sentence_indices": [1, 1, 0], "organized_ranges": [[145, 150]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "EN_E01", "sentence_index": 0, "start": 0, "end": 59, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "保留2024年报道转引2023年成本及公用事业规模、全球加权平均LCOE口径，未把二手材料冒充本次取得的一手方法文本。"},
+        {"evidence_id": "EN_E01", "sentence_index": 1, "start": 59, "end": 111, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "该指标与前一年依赖前句的技术、统计口径及2023年基期；共同全文和转引标签能补足。不得读成终端电价或全天候供电成本；本地材料未核清系统成本计入边界，不能自行补断言。"},
+        {"evidence_id": "EN_E02", "sentence_index": 0, "start": 0, "end": 72, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "转引性质、发布年与成本年及技术间差异均保留。与EN_E01来自同一成本报告，来源ID不同不构成独立验证。"},
+        {"evidence_id": "EN_E02", "sentence_index": 1, "start": 72, "end": 126, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "time_scope", "risk_level": "requires_context_review", "reason": "同一年度的具体年份及二手归属留在前句和来源标签。比较的是降幅而非绝对成本高低或未来承诺；同屏有语境支持，不据省略年份直接判无支持。"},
+        {"evidence_id": "EN_E03", "sentence_index": 0, "start": 0, "end": 29, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "condition", "risk_level": "no_obvious_new_claim", "reason": "早期并网阶段与相对较低影响均在句内；没有宣称任何系统都无需改造或天然可靠。"},
+        {"evidence_id": "EN_E03", "sentence_index": 1, "start": 29, "end": 108, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "condition", "risk_level": "requires_context_review", "reason": "多数相关挑战的早期整合适用条件在前句，摘录不重复；共同全文可补足，须确保紧邻可读。句内仍要求设备、运行或灵活性改进，不能读成所有高比例风光系统均可轻易应对。"}
+      ]
+    },
+    {
+      "case_id": "TOPIC_02_R2",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_02_round_2.json",
+      "packet_sha256": "7b190732ffa5b8712ea2d1c5c07ec6da2c3db6c2398787777b88796b6e802864",
+      "checked_sentences": 6,
+      "sentence_pool_sizes": [2, 2, 2],
+      "combination_count": 8,
+      "dose_eligible_combinations": 8,
+      "first_choice_combo_count": 7,
+      "first_possible_sentence_count": 6,
+      "fixed_chars": 475,
+      "allowed_org_range": [125, 325],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[141, 238]],
+      "feasible_length_count": 98,
+      "output_basis": "conditional_only",
+      "actual_lengths": null,
+      "first_choice_combinations": [
+        {"combination_index": 0, "sentence_indices": [0, 0, 0], "organized_ranges": [[179, 215]]},
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[141, 170]]},
+        {"combination_index": 2, "sentence_indices": [0, 1, 0], "organized_ranges": [[216, 216]]},
+        {"combination_index": 3, "sentence_indices": [0, 1, 1], "organized_ranges": [[171, 171]]},
+        {"combination_index": 4, "sentence_indices": [1, 0, 0], "organized_ranges": [[217, 237]]},
+        {"combination_index": 5, "sentence_indices": [1, 0, 1], "organized_ranges": [[172, 178]]},
+        {"combination_index": 6, "sentence_indices": [1, 1, 0], "organized_ranges": [[238, 238]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "EN_E04", "sentence_index": 0, "start": 0, "end": 44, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "供给天气依赖、需求与供给波动的因果说明保留，未增加具体地区的失负荷或安全断言。"},
+        {"evidence_id": "EN_E04", "sentence_index": 1, "start": 44, "end": 108, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "condition", "risk_level": "requires_context_review", "reason": "有效整合是技术条件，而非措施已部署或充分保证供电的事实。句内列举多种手段，同屏前句保留供给波动原因；关注读者是否误读为仅装储能即可解决全部问题。"},
+        {"evidence_id": "EN_E05", "sentence_index": 0, "start": 0, "end": 53, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "emphasis_change", "risk_level": "requires_context_review", "reason": "2024发布、2023就业规模及前一年数值均保留；突出两个规模数字时，存量而非新创岗位的说明在同屏后句。需防止误读成全经济净新增或个人转岗完成，不能把这种误读风险当作原句已经造假。"},
+        {"evidence_id": "EN_E05", "sentence_index": 1, "start": 53, "end": 107, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "前一数字需要前句1620万及2023年语境；本句明确存量和非一年新创，同屏全文足以恢复。两个年度该领域规模之差也不能自动等同全经济净就业效应。"},
+        {"evidence_id": "EN_E06", "sentence_index": 0, "start": 0, "end": 75, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "time_scope", "risk_level": "no_obvious_new_claim", "reason": "保留2023年发表、美国研究、化石燃料开采工人及已有生产地点范围；未把发表年当普查年，也未推断每个人都无法转岗。"},
+        {"evidence_id": "EN_E06", "sentence_index": 1, "start": 75, "end": 109, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "前者与后者可由本句技能相近和空间匹配直接解析，完整证据仍保留美国研究范围。本句只是不能直接推定的限制，不新增全球或个体就业结果。"}
+      ]
+    },
+    {
+      "case_id": "TOPIC_03_R1",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_03_round_1.json",
+      "packet_sha256": "475a543ba368268044d10d5983c60c830c4222b19678d302c957054a22fbd601",
+      "checked_sentences": 8,
+      "sentence_pool_sizes": [3, 3, 2],
+      "combination_count": 18,
+      "dose_eligible_combinations": 18,
+      "first_choice_combo_count": 9,
+      "first_possible_sentence_count": 7,
+      "fixed_chars": 513,
+      "allowed_org_range": [87, 287],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[132, 205]],
+      "feasible_length_count": 74,
+      "output_basis": "conditional_only",
+      "actual_lengths": null,
+      "first_choice_combinations": [
+        {"combination_index": 0, "sentence_indices": [0, 0, 0], "organized_ranges": [[140, 169]]},
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[170, 174]]},
+        {"combination_index": 2, "sentence_indices": [0, 1, 0], "organized_ranges": [[175, 176]]},
+        {"combination_index": 3, "sentence_indices": [0, 1, 1], "organized_ranges": [[177, 181]]},
+        {"combination_index": 4, "sentence_indices": [0, 2, 0], "organized_ranges": [[132, 139]]},
+        {"combination_index": 12, "sentence_indices": [2, 0, 0], "organized_ranges": [[182, 193]]},
+        {"combination_index": 13, "sentence_indices": [2, 0, 1], "organized_ranges": [[194, 199]]},
+        {"combination_index": 14, "sentence_indices": [2, 1, 0], "organized_ranges": [[200, 200]]},
+        {"combination_index": 15, "sentence_indices": [2, 1, 1], "organized_ranges": [[201, 205]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "WE_E01", "sentence_index": 0, "start": 0, "end": 34, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "condition", "risk_level": "requires_context_review", "reason": "这则答复及图标百分比的产品范围需连同后句字段核对提示阅读；不是对所有软件任意百分比的定义。共同来源标签与全文可保留此边界。"},
+        {"evidence_id": "WE_E01", "sentence_index": 1, "start": 34, "end": 68, "first_selection_possible": false, "flag": "no_obvious_new_claim", "risk_category": "condition", "risk_level": "no_obvious_new_claim", "reason": "保留可能性而非确定承诺，在共同全文的降水概率字段语境内未见新增主张；冻结算法从不把此句选为首选。"},
+        {"evidence_id": "WE_E01", "sentence_index": 2, "start": 68, "end": 124, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "它及这则答复需结合来源，但句内已明确先核对降水概率字段、不能套用任意百分比；属于适用边界提示，不是补报事实。"},
+        {"evidence_id": "WE_E02", "sentence_index": 0, "start": 0, "end": 41, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "condition", "risk_level": "no_obvious_new_claim", "reason": "某地区、一定时段与不能保证发生均保留；不推定具体地区网格或产品时段定义。"},
+        {"evidence_id": "WE_E02", "sentence_index": 1, "start": 41, "end": 88, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "明示保留地区和适用时段，是核查步骤建议，不是在描述一次已发生的错误转发。"},
+        {"evidence_id": "WE_E02", "sentence_index": 2, "start": 88, "end": 120, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "这些条件依赖同屏前文地区与时段，特别是O=132至139时首选本句。限定可从完整证据恢复，不应仅因摘录没有列条件而判无支持。"},
+        {"evidence_id": "WE_E03", "sentence_index": 0, "start": 0, "end": 55, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "time_scope", "risk_level": "requires_context_review", "reason": "将达或已达且可能持续的逻辑和阈值均保留；该科普页及同屏来源日期须可见，不能扩成今天所有地方的通用标准或当前实况。"},
+        {"evidence_id": "WE_E03", "sentence_index": 1, "start": 55, "end": 115, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "antecedent", "risk_level": "requires_context_review", "reason": "这种信号和该雨量需接回前句信号类别与阈值；句内仍区分未来条件和已发生且可能持续，完整同屏证据保留时并未把预警改成当前实况。"}
+      ]
+    },
+    {
+      "case_id": "TOPIC_03_R2",
+      "packet_path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_03_round_2.json",
+      "packet_sha256": "5b0d5fe8e2e871f15929e02e0b1c85b5eb64cc82abaf1b05a7fc8ed4b50e9f13",
+      "checked_sentences": 8,
+      "sentence_pool_sizes": [3, 3, 2],
+      "combination_count": 18,
+      "dose_eligible_combinations": 18,
+      "first_choice_combo_count": 9,
+      "first_possible_sentence_count": 8,
+      "fixed_chars": 557,
+      "allowed_org_range": [43, 243],
+      "integer_lengths_checked": 201,
+      "feasible_organized_ranges": [[140, 227]],
+      "feasible_length_count": 88,
+      "output_basis": "conditional_only",
+      "actual_lengths": null,
+      "first_choice_combinations": [
+        {"combination_index": 0, "sentence_indices": [0, 0, 0], "organized_ranges": [[162, 195]]},
+        {"combination_index": 1, "sentence_indices": [0, 0, 1], "organized_ranges": [[196, 227]]},
+        {"combination_index": 2, "sentence_indices": [0, 1, 0], "organized_ranges": [[158, 161]]},
+        {"combination_index": 4, "sentence_indices": [0, 2, 0], "organized_ranges": [[155, 157]]},
+        {"combination_index": 6, "sentence_indices": [1, 0, 0], "organized_ranges": [[151, 154]]},
+        {"combination_index": 8, "sentence_indices": [1, 1, 0], "organized_ranges": [[147, 150]]},
+        {"combination_index": 10, "sentence_indices": [1, 2, 0], "organized_ranges": [[144, 146]]},
+        {"combination_index": 14, "sentence_indices": [2, 1, 0], "organized_ranges": [[143, 143]]},
+        {"combination_index": 16, "sentence_indices": [2, 2, 0], "organized_ranges": [[140, 142]]}
+      ],
+      "context_flags": [
+        {"evidence_id": "WE_E04", "sentence_index": 0, "start": 0, "end": 54, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "time_scope", "risk_level": "no_obvious_new_claim", "reason": "明确2020-05-12历史答复与所述网站，未把当时处理过期信息的做法说成当前所有平台规则；日期不可被URL中的2022年或本次获取日期替代。"},
+        {"evidence_id": "WE_E04", "sentence_index": 1, "start": 54, "end": 96, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "核对原发布时间、适用时段及有效性是使用提示，不是在断言当前网站保留策略，也不凭旧截图推定天气何时结束。"},
+        {"evidence_id": "WE_E04", "sentence_index": 2, "start": 96, "end": 134, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "time_scope", "risk_level": "requires_context_review", "reason": "答复当时需要同屏前句和来源标签中的2020-05-12。句内已经否定所有平台一直相同，风险是历史锚点在呈现中不可见，而不是现有正文已经无条件外推。"},
+        {"evidence_id": "WE_E05", "sentence_index": 0, "start": 0, "end": 50, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "time_scope", "risk_level": "no_obvious_new_claim", "reason": "明确2020-05-12这则答复且仅称主要渠道，没有保证当前渠道不变或穷尽所有地方发布方式；需继续保留同屏历史标签。"},
+        {"evidence_id": "WE_E05", "sentence_index": 1, "start": 50, "end": 95, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "仅建议回溯原页面并核对发布者、日期、正文，不从来源身份直接判定正确；没有新增当前渠道事实。"},
+        {"evidence_id": "WE_E05", "sentence_index": 2, "start": 95, "end": 137, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "none", "risk_level": "no_obvious_new_claim", "reason": "保留不能仅凭截图或口头归属定真假的双向限制；不把未核实直接等同虚假。与WE_E04同页同族，不作独立印证。"},
+        {"evidence_id": "WE_E06", "sentence_index": 0, "start": 0, "end": 50, "first_selection_possible": true, "flag": "requires_context_review", "risk_category": "emphasis_change", "risk_level": "requires_context_review", "reason": "即使良好观测仍有初值误差的条件未改；孤立强调误差可能遮蔽后句未核验具体预报、长期准确率或校准的边界。共同全文可补足，不据此诊断某次落空或替某条消息证明真实性。"},
+        {"evidence_id": "WE_E06", "sentence_index": 1, "start": 50, "end": 129, "first_selection_possible": true, "flag": "no_obvious_new_claim", "risk_category": "antecedent", "risk_level": "no_obvious_new_claim", "reason": "这条材料可由同屏WE_E06定位；句内已明确仅解释一个不确定性来源，且否定对某次预报、长期准确率及校准的验证，未增添验证结论。"}
+      ]
+    }
+  ],
+  "human_priorities": [
+    {
+      "priority": 1,
+      "item_ids": ["EV_WE_E04", "EV_WE_E05", "SRC_WE_S06", "ROUND_TOPIC_03_2"],
+      "risk_category": "time_scope",
+      "risk_level": "requires_context_review",
+      "question": "真实呈现时，2020-05-12历史答复日期与完整证据是否和摘录同屏可读，且不会被理解成当前所有网站或发布渠道的规则？",
+      "reason": "O=140至150时，首选组合16、14、10、8中的WE_E04与WE_E05摘录都不含数值日期，但共同原文及来源标签保留日期；这是应核验的呈现依赖，不是仅凭摘录缺日期就判unsupported。URL年份和获取日期不能替代正文历史时点。"
+    },
+    {
+      "priority": 2,
+      "item_ids": ["EV_EN_E01", "EV_EN_E02", "SRC_EN_S07", "SRC_EN_S08", "ROUND_TOPIC_02_1"],
+      "risk_category": "antecedent",
+      "risk_level": "requires_context_review",
+      "question": "摘录中的该指标、前一年及同一年度，能否清楚接回2023年成本、2024年二手转引和相应技术口径，并保留两来源同出一份报告的事实？",
+      "reason": "O=145至150首选combo_00006同时采用两条成本证据的后句，关键口径依赖同屏前句及转引标签。不要把降幅当绝对成本排序，把LCOE当终端或全天候供电总成本，或补断未经本地方法文本核清的系统成本计入范围。"
+    },
+    {
+      "priority": 3,
+      "item_ids": ["EV_EN_E03", "EV_EN_E04", "SRC_EN_S02", "ROUND_TOPIC_02_1", "ROUND_TOPIC_02_2"],
+      "risk_category": "condition",
+      "risk_level": "requires_context_review",
+      "question": "早期并网阶段、能够实施设备或运行调整以及有效整合的条件是否仍清楚，是否避免把技术手段列举读成无条件可靠供电或已全面部署？",
+      "reason": "TOPIC_02_R1在O=203至257时首选EN_E03后句，早期阶段限定在共同前句而非摘录内。EN_E04也只列技术条件。应检查条件的同屏可达性，不把全部系统、高比例风光或具体安全结果补成新事实。"
+    },
+    {
+      "priority": 4,
+      "item_ids": ["EV_EN_E05", "EV_EN_E06", "SRC_EN_S05", "SRC_EN_S06", "ROUND_TOPIC_02_2"],
+      "risk_category": "emphasis_change",
+      "risk_level": "requires_context_review",
+      "question": "1620万是否明确被理解为2023年该领域就业存量，前一数字能否回指正确，且不与全经济净新增或个体转岗成功混同？",
+      "reason": "数值句与存量解释交替成为首选；O=171、216、238的EN_E05后句依赖完整前句。共同全文已给出存量边界；EN_E06保留美国研究范围，技能相近不等于地点匹配、无需培训或个人已转岗。"
+    },
+    {
+      "priority": 5,
+      "item_ids": ["EV_WE_E01", "EV_WE_E02", "EV_WE_E03", "EV_WE_E06", "ROUND_TOPIC_03_1", "ROUND_TOPIC_03_2"],
+      "risk_category": "condition",
+      "risk_level": "requires_context_review",
+      "question": "概率字段的产品范围、地区时段，以及将达或已达且可能持续的预警逻辑，是否能连同历史来源读清，而没有被用来证明当前实况或某次预报真伪？",
+      "reason": "这些条件、这种信号和该雨量有同屏先行词，不能机械判无支持；同样不能忽略历史科普的适用范围。WE_E06的初值误差说明不等于核验某次预报或长期准确率、校准，本地材料未完成这些验证。"
+    },
+    {
+      "priority": 6,
+      "item_ids": ["EV_CL_E02", "EV_CL_E03", "EV_CL_E06", "ROUND_TOPIC_01_1", "ROUND_TOPIC_01_2"],
+      "risk_category": "emphasis_change",
+      "risk_level": "requires_context_review",
+      "question": "首轮真实175/632组织段与180/637摘录段，是否在共同全文下仍保留主要而非唯一、可能且受资源限制，以及不能推出不等于结果不能发生的区别？",
+      "reason": "实际combo_00001选CL_E03限制句，可能促进的前句仍在共同证据块；需审附加重复及提问带来的强调差异，不是宣称发现严重事实错误。另一轮CL_E06还应保留2016年研究介绍与模型归因的范围，不由机制事实直接推出行动立场。"
+    }
+  ],
+  "limitations": ["notmodelrate", "notfullI4", "nothuman", "originalv3fail"],
+  "limitation_details": {
+    "notmodelrate": "539/1206约44.69%仅是允许组织附加整数长度覆盖；没有把条件长度数、39种首选组合或6轮条件可行计作模型成功率。首轮真实组织输出来自既有记录，另五轮没有真实组织输出；本次未新增模型调用。",
+    "notfullI4": "未完成自然T1、个性化镜像、完整I4送达、独立gold、最终测验隔离或108卡全审，也未验证五轮未来真实呈现。长度重算不证明干预有效性或正式资格。",
+    "nothuman": "这是独立AI而非人审；全部110真人槽仍pending，所有语境判断都不能自动approve。需要两名不同真人独立判断，有分歧时由独立第三人裁决；来源版权和再分发许可仍未clear。未访问外网或调用插件，不扩来源、不补事实、不改证据。",
+    "originalv3fail": "原v3的delivery_failed/plain failed保持不变。首轮另存的extractive_control_v1探索性备选不是修复后的v3成功，也未真实送达受试者。"
+  },
+  "automatic_approval": false,
+  "new_model_calls": 0,
+  "external_calls": 0,
+  "human_reviews_completed": 0,
+  "full_I4_eligible": false,
+  "formal_eligible": false
+}

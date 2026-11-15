@@ -1,0 +1,1 @@
+{"attempt":2,"feedback":{"diagnostics":{"allowed_card_id_count":37,"cited_unseen_card_ids":["T2EXP_N_A_07"]},"instruction":"上一次输出未通过本地严格校验，请仅修正下列问题后重新完整输出；不要附加解释，不要改变已正确的部分。","rejected_error_code":"measurement:cited_unseen_card"},"node_id":"measure_S01_P_T1"}

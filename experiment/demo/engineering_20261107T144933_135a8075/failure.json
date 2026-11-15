@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "mode": "engineering_dry_run",
+  "is_demo": true,
+  "notice": "合成夹具工程验证，非实验结果；未调用模型，未测量认知变化。",
+  "error_type": "AssertionError",
+  "error": "工程证据包长度不满足契约",
+  "evidence": {
+    "command": "python -m cocoon dry-run",
+    "background_task_id": "wYXMRc",
+    "observed_tool_status": "failed",
+    "measured_chars_before_fix": 593,
+    "required_min_chars": 600,
+    "corrected_fixture_chars": 677
+  },
+  "recording_method": "post_failure_audit_from_observed_process_output",
+  "recorded_at_utc": null,
+  "recorded_at_note": "未伪造失败当时的事件时间；此文件为事后审计补录，原始事件日志未改动。",
+  "actual_model_calls": 0,
+  "formal_observations": 0,
+  "followup": "修正夹具长度，在新的独立运行目录重验；保留首次失败目录。"
+}

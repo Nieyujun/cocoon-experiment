@@ -1,0 +1,19 @@
+{
+  "source_id": "EN_S02",
+  "requested_url": "https://www.iea.org/reports/integrating-solar-and-wind/executive-summary?utm_campaign=buffer&utm_content=buffer008aa",
+  "effective_url": "https://www.iea.org/reports/integrating-solar-and-wind/executive-summary?utm_campaign=buffer&utm_content=buffer008aa",
+  "content_type": "text/html; charset=utf-8",
+  "started_at_utc": "2026-11-08T07:18:50.819540Z",
+  "completed_at_utc": "2026-11-08T07:18:52.941128Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 287212,
+  "raw_sha256": "3ab24908b05b42552f8bacafc27ab39fa32b27ee1e94b1a082e5fb7ac700d017",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S02.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S02.text.json",
+  "text_sha256": "c301c620ffc6495fdbe7f7633e26bda293b387e8e864daa14c2860dc06b87999",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 17400
+}

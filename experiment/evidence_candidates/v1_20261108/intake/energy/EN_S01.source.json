@@ -1,0 +1,18 @@
+{
+  "source_id": "EN_S01",
+  "requested_url": "https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023",
+  "effective_url": "https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:18:46.110329Z",
+  "completed_at_utc": "2026-11-08T07:18:49.870334Z",
+  "http_status": 403,
+  "process_returncode": 0,
+  "bytes": 9341,
+  "raw_sha256": "c132e5b8f97a75b71f1415928d1761b33b4f55d8f7ead7fa104f6c9982dba313",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S01.html",
+  "text_path": null,
+  "text_sha256": null,
+  "outcome": "failed",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry"
+}

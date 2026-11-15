@@ -1,0 +1,19 @@
+{
+  "source_id": "EN_S06",
+  "requested_url": "https://www.nature.com/articles/s41467-023-41133-9",
+  "effective_url": "https://www.nature.com/articles/s41467-023-41133-9?error=cookies_not_supported&code=46f4f420-af3b-4ba4-9fe6-8a184b87c842",
+  "content_type": "text/html; charset=utf-8",
+  "started_at_utc": "2026-11-08T07:20:50.254778Z",
+  "completed_at_utc": "2026-11-08T07:20:55.061729Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 399609,
+  "raw_sha256": "410746693986e9d0d9d6a4a6db5feac4b57e90bfd7c8154d9806a248ecdfbf98",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S06.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S06.text.json",
+  "text_sha256": "1ddc23bdf12f1640d77d228e4abb67a4f9fe68475ee95ce1956a8532f41b3e05",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 55046
+}

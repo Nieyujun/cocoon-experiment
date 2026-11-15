@@ -1,0 +1,172 @@
+{
+  "topic_id": "TOPIC_02",
+  "candidate_title": "能源转型：发电成本、供电条件与就业口径",
+  "stance_axis": {
+    "name": "可再生能源扩展节奏",
+    "negative_label": "优先补齐系统条件与转型保障",
+    "positive_label": "加快具备条件的可再生能源部署"
+  },
+  "scope_note": "仅供原方案4.3能源转型方向的候选证据审核，限于发电成本指标、风光并网技术条件和就业统计；不构成投资、股票或宏观建议，不纳入政策、机构倡议或人员发言。正文共六条，采用五个成功取证的HTML页面，其中IEA、ILO及同行评议期刊Nature Communications提供三个一手技术或研究来源；成本部分因IRENA一手页面单次取证返回403，暂用pv magazine与北京大学能源研究院的转引，两者同属IRENA_COSTS_2023_RELEASE_2024，不算两项独立研究。五页按研究出处归为四个来源家族；IRENA与ILO的就业发布也只能归为同一合作报告家族。本包是2026-11-08抓取的当前网页快照，不是2024年原始网页存档；只采纳注明历史时点的正文，排除实时导航、相关推荐和广告。EN_S07原HTML标注2024-09-27发布、2025-10-04修改，未核验修改前版本；EN_S02摘要页仅能本地确认所引报告年份为2024，独立发布日期留空。技能地域证据来自2023年发表的美国研究，使用跨年历史资料，不能视为全球2023年就业普查。全部英文直接引文按来源累计不超过180词，中文直接引文按来源累计不超过300汉字；每条均为本地规范化文本中的单一连续片段。HTML、text.json和source.json为审计底稿，不等于其中所有内容均被采纳，也不代表已获再分发许可。未下载或解析PDF，未重试失败来源，未调用bocha，未执行实验模型或预算。仅机器核验，不自动批准，尚需双人独立人工审核。",
+  "time_scope": "以2023年数据及2024年发布文本为主，其他来源时点明确",
+  "sources": [
+    {
+      "source_id": "EN_S02",
+      "title": "Executive summary – Integrating Solar and Wind: Global experience and emerging challenges",
+      "publisher": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/integrating-solar-and-wind/executive-summary?utm_campaign=buffer&utm_content=buffer008aa",
+      "publication_date": null,
+      "language": "en",
+      "source_family_id": "IEA_INTEGRATING_SOLAR_WIND_2024",
+      "meta_file": "EN_S02.source.json",
+      "license_note": "本地正文的报告引文标注Licence: CC BY 4.0；本包保留出处并标明翻译改写。图像及第三方材料的具体权利未另行核验；仅供本地审核。摘要页未显示独立发布日期，报告引用年份为2024。"
+    },
+    {
+      "source_id": "EN_S05",
+      "title": "Jobs in renewable energy record highest annual growth rate, reaching 16.2 million",
+      "publisher": "International Labour Organization (ILO)，IRENA/ILO联合发布",
+      "url": "https://www.ilo.org/resource/news/jobs-renewable-energy-record-highest-annual-growth-rate-reaching-162",
+      "publication_date": "2024-10-01",
+      "language": "en",
+      "source_family_id": "IRENA_ILO_JOBS_2023_REVIEW_2024",
+      "meta_file": "EN_S05.source.json",
+      "license_note": "公开HTML新闻页；本轮未单独核验其转载与翻译授权。仅保存少量连续引文及必要改写供本地审核，不假定其他出版物的许可自动覆盖本页。与IRENA同报告发布不构成独立重复验证。"
+    },
+    {
+      "source_id": "EN_S06",
+      "title": "Location is a major barrier for transferring US fossil fuel employment to green jobs",
+      "publisher": "Nature Communications（Springer Nature）；作者Junghyun Lim、Michaël Aklin、Morgan R. Frank",
+      "url": "https://www.nature.com/articles/s41467-023-41133-9",
+      "publication_date": "2023-09-26",
+      "language": "en",
+      "source_family_id": "LIM_AKLIN_FRANK_US_SKILL_LOCATION_2023",
+      "meta_file": "EN_S06.source.json",
+      "license_note": "本地HTML的Rights and permissions注明CC BY 4.0；须署名、注明来源与改动并遵守第三方素材例外。本包不使用图像。抓取最终URL带cookies_not_supported参数，但HTTP为200且实际包含论文正文；未设置Cookie或重试。"
+    },
+    {
+      "source_id": "EN_S07",
+      "title": "Global average solar LCOE stood at $0.044/kWh in 2023, says IRENA",
+      "publisher": "pv magazine；作者Patrick Jowett",
+      "url": "https://www.pv-magazine.com/2024/09/27/global-average-solar-lcoe-stood-at-0-044-kwh-in-2023-says-irena/",
+      "publication_date": "2024-09-27",
+      "language": "en",
+      "source_family_id": "IRENA_COSTS_2023_RELEASE_2024",
+      "meta_file": "EN_S07.source.json",
+      "license_note": "本地HTML明确提示内容受版权保护且再利用需联系出版方；本包只作本地审核的短引文和改写，不声称已获翻译、全文转载或公开再分发许可。系2024年对IRENA成本报告的二手报道；原HTML另标注2025-10-04修改。"
+    },
+    {
+      "source_id": "EN_S08",
+      "title": "双周要闻2024年第21期（仅采用可再生能源发电成本条目）",
+      "publisher": "北京大学能源研究院",
+      "url": "https://energy.pku.edu.cn/xsdt/sznyyw/24b5cd4439bc44c0a5376ea4a3d33777.htm",
+      "publication_date": "2024-10-08",
+      "language": "zh",
+      "source_family_id": "IRENA_COSTS_2023_RELEASE_2024",
+      "meta_file": "EN_S08.source.json",
+      "license_note": "网页页脚标明版权所有；未见可直接确认的开放转载许可，限本地短引审核。成本条目注明转引IRENA于9月24日发布的新闻页，不作为北京大学另行实施的成本研究；不采纳同页其他新闻或观点。"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EN_E01",
+      "source_id": "EN_S07",
+      "original_quote": "The globalized weighted average levelized cost of electricity (LCOE) of utility-scale solar plants stood at $0.044/kWh in 2023, according to a report from the International Renewable Energy Agency (IRENA). The report says the result represents a 12% year-on-year (YoY) decrease, compared to a 3% YoY decrease between 2021 and 2022. In 2010, the figure stood at $0.460/kWh, meaning the weighted average LCOE has fallen by 90% since the start of the last decade.",
+      "text": "二〇二四年对二〇二三年成本的报道转引国际可再生能源署报告，采用公用事业规模太阳能电站的全球加权平均平准化度电成本指标。报道描述该指标较前一年下降，且较二〇一〇年明显降低，所述结果属于太阳能电站发电成本的特定技术与统计口径。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "分析限制：一手报告HTML取证失败，本条为可追溯的二手转引，仅定性描述LCOE方向，不把美元单价转化为本地供电报价。未取得明确说明系统成本计入边界的一手方法文本，因此不将“必然包含或排除储能、电网、备用成本”写成事实；也不能由发电成本指标推导终端电价、全天候供电总成本或任一项目收益。仅保留公用事业规模太阳能、全球加权平均和对应年份范围；原文中的数值仅留作引文核对。",
+      "review_dimension": "成本指标LCOE及边界"
+    },
+    {
+      "evidence_id": "EN_E02",
+      "source_id": "EN_S08",
+      "original_quote": "陆上和海上风电的成本分别下降了3%和7%；聚太阳能热发电成本下降了4%；水力发电成本下降了7%。",
+      "text": "据二〇二四年转引国际可再生能源署报告的摘编，二〇二三年成本变化有技术差异：陆上风电、海上风电、聚光太阳能热发电和水电均有所下降，但降幅并不相同。海上风电与水电的降幅相同，陆上风电降幅较小，聚光太阳能热发电介于其间；这些是同一年度不同技术的成本变化记录。",
+      "transformation_type": "adapted",
+      "boundary_note": "分析限制：年份来自本条引文紧邻的前文“例如：2023年”，网页为2024-10-08发布的转引。正文仅定性比较同一年度降幅；降幅大小不表示绝对发电成本高低，更不是未来下降承诺。原文“聚太阳能热发电”按技术语义改写为聚光太阳能热发电。与EN_E01同出IRENA成本报告，不作独立交叉验证。未采用该网页的光伏与核能比较，也未采用473GW、81%或382GW统计；如后续引入，81%必须按新增容量解释，不能按项目数量解释。",
+      "review_dimension": "年度技术差异"
+    },
+    {
+      "evidence_id": "EN_E03",
+      "source_id": "EN_S02",
+      "original_quote": "Measures based on progressive and targeted adjustments can integrate most new capacity in lower-phase systems. Systems in early integration phases experience relatively low impacts as solar PV and wind generation increase, with most challenges addressable through straightforward modifications to existing assets or operational improvements that increase flexibility.",
+      "text": "风光并网处于早期阶段时，新增发电对整个系统的影响相对较低。报告梳理认为，多数相关挑战可通过针对既有设备的改动，或通过改善运行方式、提高灵活性来应对；相应措施可以有针对性地逐步实施，而非预设所有电力系统需要同样的改造。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "适用条件是风光整合早期、能够实施相应设备和运行调整的系统。“多数挑战可应对”不等于无需改造，也不等于波动出力天然保证可靠供电；不可直接外推到任意高比例风光、孤网或极端天气情形。本条不提供统一的失负荷概率或可靠性阈值，不作具体系统安全评估。",
+      "review_dimension": "波动出力条件"
+    },
+    {
+      "evidence_id": "EN_E04",
+      "source_id": "EN_S02",
+      "original_quote": "While power systems have always managed demand variability, variable renewable energy (VRE) such as wind and solar PV introduces supply variability depending on the weather. This variability will require increasing the flexibility of the entire power system, by leveraging dispatchable generation, grid enhancements, increased storage and demand response. Successful integration maximises the amount of energy that can be sourced securely and affordably, minimises costly system stability measures, and reduces dependency on fossil fuels.",
+      "text": "风能与太阳能光伏的供给会随天气变化，电力系统因此不仅要应对需求波动，还要处理供给侧波动。报告列出的灵活性手段包括可调度发电、电网增强、增加储能和需求响应；将这些资源用于有效整合，是支持安全且成本可承受供电的技术条件。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "这里列举的是系统层面的多种灵活性手段，不是“装电池即可解决所有问题”。该连续引文不提供储能时长、容量配置、电网投资规模或季节性缺口的定量答案，也未证明所有措施在所有地点均已充分部署；需要结合当地资源、负荷与网络条件另行核验。与EN_E03来自同一报告，不能计作两项独立研究。",
+      "review_dimension": "储能电网"
+    },
+    {
+      "evidence_id": "EN_E05",
+      "source_id": "EN_S05",
+      "original_quote": "2023 saw the largest ever increase in renewable energy jobs, from 13.7 million in 2022 to 16.2 million, according to the newly released Renewable Energy and Jobs – Annual Review 2024 from the International Renewable Energy Agency (IRENA) and the International Labour Organization (ILO). The 18 per cent year-on-year leap reflects the strong growth of renewables generating capacity, together with a continued expansion of equipment manufacturing.",
+      "text": "二〇二四年发布的联合年度回顾记录，二〇二三年全球可再生能源就业达到一千六百二十万，前一年为一千三百七十万。前一数字表示该领域当年的就业存量，并不是一年新创造的岗位数；同比增长描述的是这一领域两个年度就业规模的变化。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "口径限制：1620万不是净新增。即使计算两年存量之差，也不能当作扣除化石能源等其他行业岗位损失后的全经济净就业效应，更不能证明个体已完成转岗。未读取PDF方法章，因此不自行添加“全部均为直接岗位”“全部为全年全职当量”或各国口径完全一致等断言。ILO与IRENA发布的是同一合作报告，不是两次独立调查。",
+      "review_dimension": "就业存量vs净增加"
+    },
+    {
+      "evidence_id": "EN_E06",
+      "source_id": "EN_S06",
+      "original_quote": "Here, using 14 years of power plant data from the US Energy Information Administration, job transition data from the Census Bureau, as well as employment and skills data from the Bureau of Labor Statistics, we assess whether people employed in fossil fuel resource extraction today are co-located and have the transferable skills to switch to expected green jobs. We find that these workers could leverage their mobility to other industries and have similar skills to green occupations. However, today’s fossil fuel extraction workers are not co-located with current sources of green energy production.",
+      "text": "二〇二三年发表的一项美国研究把电厂、岗位流动及职业技能资料结合，发现化石燃料开采工人的技能与绿色职业相近，但工人所在地与已有绿色能源生产地点并不重合。技能相近和岗位在空间上的匹配是两个不同问题，不能由前者直接推定后者。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "研究针对美国化石燃料开采职业，使用跨年历史资料，并非全球或中国二〇二三年就业普查；不覆盖全部能源从业者。正文仅采用技能相似和现有地点匹配结果，不采用未来岗位迁移比例或情景模拟。技能相似不等于无需培训，地域错配也不等于每名工人均无法转岗；不能据此声称全球统一的技能短缺率或确定的个体就业结果。",
+      "review_dimension": "技能地域不均"
+    }
+  ],
+  "dimensions": [
+    "成本指标LCOE及边界",
+    "年度技术差异",
+    "波动出力条件",
+    "储能电网",
+    "就业存量vs净增加",
+    "技能地域不均"
+  ],
+  "exclusions": [
+    {
+      "url": "https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023",
+      "reason": "EN_S01单次脚本取证HTTP 403，outcome=failed；保留EN_S01.html与EN_S01.source.json。虽然先前搜索和WebFetch可见正文，但没有成功落盘的text.json，不作为可引用来源；不重试、不改域名或路径大小写绕过。"
+    },
+    {
+      "url": "https://www.irena.org/News/pressreleases/2024/Oct/Highest-Annual-Growth-of-Renewables-Jobs-in-2023-Reaching-16-point-2-Million",
+      "reason": "EN_S03单次脚本取证HTTP 403，保留失败原始响应与元数据，不重试。就业证据改用ILO自行发布的同报告HTML；明确保持同一来源家族而非另计独立研究。"
+    },
+    {
+      "url": "https://www.irena.org/News/pressreleases/2024/Sep/Record-Growth-Drives-Cost-Advantage-of-Renewable-Power",
+      "reason": "EN_S04单次脚本取证HTTP 403，保留失败原始响应与元数据，不重试。该新闻页与成本报告页是不同发布页面但属于同一研究家族；未把先前WebFetch可见内容充作已成功取证文本。"
+    },
+    {
+      "url": "https://www.irena.org/News/pressreleases/2024/Sep/Record-Growth-Drives-Cost-Advantage-of-Renewable-Power-ZH",
+      "reason": "用户提供的中文候选页含把容量单位TW写成发电量的表述；未取证、未采用，也未作为英文页403后的语言版本重试。容量、能量与项目个数不能混用。"
+    },
+    {
+      "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2024/Sep/IRENA_Renewable_power_generation_costs_in_2023.pdf",
+      "reason": "搜索或HTML链接中出现的PDF，不符合本轮纯网页收集范围；未下载、未解析，不作为LCOE边界方法依据。"
+    },
+    {
+      "url": "https://www.ilo.org/sites/default/files/2024-10/IRENA-ILO%20Renewable%20energy%20and%20jobs_2024.pdf",
+      "reason": "搜索中出现的合作报告PDF，不符合本轮纯网页收集范围；未下载、未解析，不以搜索摘要代替方法章核验。"
+    },
+    {
+      "url": "https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024",
+      "reason": "这是2024数据、2025发布的另一版本，不并入2023历史截面，避免基年与指标变化混淆；未取证。"
+    },
+    {
+      "url": "https://www.irena.org/News/articles/2026/Jan/It-Takes-a-Village-to-Meet-the-Skills-Demands-of-the-Energy-Transition",
+      "reason": "搜索返回的2026年文章涉及较后年度就业数字及倡议，本轮不追最新、不纳入；未取证。"
+    },
+    {
+      "url": "https://www.pv-magazine.com/tag/lcoe",
+      "reason": "仅作链接发现，WebFetch返回内容与目标历史文章不符，不作为来源。最终EN_S07为另行定位并单次脚本取证的2024年文章，不使用标签页的2026内容。"
+    }
+  ],
+  "review_status": "pending_dual_human_review",
+  "human_reviews_completed": 0
+}

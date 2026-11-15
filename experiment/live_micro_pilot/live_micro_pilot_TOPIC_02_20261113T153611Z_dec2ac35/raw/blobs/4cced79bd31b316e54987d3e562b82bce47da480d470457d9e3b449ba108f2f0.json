@@ -1,0 +1,1 @@
+{"attempt":3,"feedback":{"diagnostics":{},"instruction":"上一次输出未通过本地严格校验，请仅修正下列问题后重新完整输出；不要附加解释，不要改变已正确的部分。","rejected_error_code":"contracts:user_quote 必须是 user_view 原文的精确非空子串"},"node_id":"mirror_S01_T1"}

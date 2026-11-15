@@ -1,0 +1,1 @@
+{"actual_model_calls":19,"attempt_is_not_billing_confirmation":true,"response_bytes":3658,"response_sha256":"135e8344ee5c0aa7c16e2a52fce604530b104388d073695702c3c1ff2413fe86","status":200,"usage":{"completion_tokens":791,"prompt_tokens":4973,"total_tokens":5764},"usage_settled":true}

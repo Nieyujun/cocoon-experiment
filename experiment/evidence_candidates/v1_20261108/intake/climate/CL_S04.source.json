@@ -1,0 +1,19 @@
+{
+  "source_id": "CL_S04",
+  "requested_url": "https://www.nasa.gov/centers-and-facilities/goddard/carbon-dioxide-fertilization-greening-earth-study-finds/?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text",
+  "effective_url": "https://www.nasa.gov/centers-and-facilities/goddard/carbon-dioxide-fertilization-greening-earth-study-finds/?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text",
+  "content_type": "text/html; charset=UTF-8",
+  "started_at_utc": "2026-11-08T07:19:41.729643Z",
+  "completed_at_utc": "2026-11-08T07:19:44.748599Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 285937,
+  "raw_sha256": "76aceb4de4aa670607c5b4a458b09d045b61a90d3830a5a3dd94f1d22acd4dec",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S04.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S04.text.json",
+  "text_sha256": "5b9b243e0aba461fb6019e695114f5b2676a506373918aa3c182d262ab73cf8e",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 11942
+}

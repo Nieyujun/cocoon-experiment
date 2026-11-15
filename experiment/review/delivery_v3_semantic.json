@@ -1,0 +1,112 @@
+{
+  "review_type": "independent_ai_not_human",
+  "run_id": "delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1",
+  "summary_sha256": "df16d0fe52a77b4d2c0140c9fc8772dd887eb684b2433d952fbf3ae82ad05bb2",
+  "packet_sha256": "88584f1e109b4364bfec0ed2bd18549b645b7ed1df9a91ae8d15424b7f90fc94",
+  "raw_response_sha256_by_mode": {
+    "organized_reflection": "72f5adeac016d227bb157995cf5bbd32178ecd8149d2f7ab44f9809d74777ac5",
+    "plain_restatement": "c81cbe24859d46e15d491831e6df69fc56a7e4a2bccf21574ebea6dd7d8f4b34"
+  },
+  "human_reviews_completed": 0,
+  "accepted_pair": false,
+  "status": "pass_content_with_structure_blocker",
+  "items": [
+    {
+      "mode": "organized_reflection",
+      "index": 0,
+      "original_text": "温室效应是地球原有过程，人的额外排放会增强它并推动气温上升。",
+      "citations": ["CL_E01"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "CL_E01把地球原有的温室效应与人的额外排放增强该过程、推动全球升温并列说明。本句没有把自然作用说成不存在，也没有以自然作用否定额外排放的影响。‘它’回指温室效应；排放所涉二氧化碳及气温的全球尺度由同屏CL_E01明确，句中没有改为所有气体或每个地点均升温。‘会增强’沿用证据强度，因此这些省略未引入新的因果主张。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 1,
+      "original_text": "化石燃料燃烧是浓度长期上升的主要原因，但不排除自然碳循环与各地各季变化。",
+      "citations": ["CL_E02"],
+      "kind": "limitation",
+      "verdict": "supported",
+      "reason": "CL_E02将主要来源限定为工业化开始以来的大气二氧化碳浓度长期上升，并说明自然碳循环未停止、各地点季节年份的变化并非只由化石燃料决定。本句省去了‘大气二氧化碳’和工业化起点，单独阅读不够自足，但在规定的同屏证据中‘浓度’及时间范围有明确所指；‘长期’和‘主要’仍在。后半句只保留不排除其他变化的边界，没有宣称地方季节变化完全独立于化石燃料，也未给出新机制或幅度；省略年份不等于否认年份差异，不判为实质强化。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 2,
+      "original_text": "二氧化碳可能通过施肥效应促进植物生长，但受可用水分或氮限制，不能等比例推断增产。",
+      "citations": ["CL_E03"],
+      "kind": "limitation",
+      "verdict": "supported",
+      "reason": "CL_E03确实包含可能的施肥促进、水分或氮限制，以及资源不足时不能仅由二氧化碳更多外推持续、等比例增产的判断。本句的‘可能’与资源限制未被删去，‘等比例’也不是新增关系。末尾省略了‘资源不足时’和‘仅依据’，降低了单句条件的完整性；不过同屏原证据及本段下一问明确恢复这些前提，且本句否定的是‘推断’，不是结果能否兑现。因此在该语境下可接受为受限推断的压缩表达，不能读成等比例增产绝不可能或任何条件下都不能判断。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 3,
+      "original_text": "在水分或氮不足的条件下，仅凭二氧化碳增多能否推断植物持续增产或增加碳吸收？",
+      "citations": ["CL_E03"],
+      "kind": "question",
+      "verdict": "acceptable_question",
+      "reason": "问句把CL_E03已有的资源不足条件、仅凭二氧化碳增加这一依据，以及持续增产或增加碳吸收这两个推断对象直接转为疑问。它没有预设这些结果必然实现，也没有把资源不足说成必然减产；证据已给出不能仅据此推断的边界。问题不另加阈值、因果机制或个体态度判断，故作为围绕原证据的反思问题可接受，而不计为新增事实。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 0,
+      "original_text": "二氧化碳本就参与自然温室效应，人为额外排放会增强它并推动升温。",
+      "citations": ["CL_E01"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "这句同时点明二氧化碳的原有参与和人为额外排放的增强作用，分别对应CL_E01首句的两个部分。‘本就’只是对原有过程的复述，‘会’没有把证据的模态加重。‘升温’未重复‘全球气温’，但同屏证据保留了这个尺度，且本句没有提出处处、时时均升温的全称命题；不需要引入外部机制解释即可得到支持。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 1,
+      "original_text": "工业化以来燃烧化石燃料是大气二氧化碳浓度上升的主要原因。",
+      "citations": ["CL_E02"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "CL_E02首句直接给出工业化开始以来、燃烧化石燃料、大气二氧化碳浓度上升及主要原因这组关系，本句均有对应。它没有写出‘长期’，但同屏原文紧接着明确‘主要’所指为长期趋势，不能将本句扩读为解释每一地点或季节的所有变化。没有把主要改成唯一，也未新增具体年代、排放比例或自然碳循环消失的主张。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 2,
+      "original_text": "二氧化碳可能通过施肥效应促进植物生长，但并非没有条件。",
+      "citations": ["CL_E03"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "CL_E03以‘二氧化碳增加可能通过施肥效应促进植物生长’开头，并立即指出促进不是无条件的。本句保留可能性与条件性，省略‘增加’并未改称固定浓度必然有效；同屏材料仍限定所谈的是二氧化碳增加的影响。具体水分或氮条件由本组第四句展开，不要求在此重复；句中没有增添其他资源条件、效果强度或普遍有效的结论。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 3,
+      "original_text": "植物生长受可用水分或氮限制，资源不足时不能仅凭二氧化碳更多就推断持续增产。",
+      "citations": ["CL_E03"],
+      "kind": "limitation",
+      "verdict": "supported",
+      "reason": "本句把第三句笼统的条件具体化为CL_E03列出的可用水分或氮，并保留资源不足这个触发条件。‘不能仅凭……就推断’准确限制判断依据，而非断言植物不能继续生长或不可能增产。只复述原文推断对象中的持续增产，未重述等比例和碳吸收，不构成对其余对象的否定；作为补充限制的普通陈述，不含问题、作答要求或个体化评价。"
+    }
+  ],
+  "counts": {
+    "reviewed_items": 8,
+    "supported": 7,
+    "acceptable_question": 1,
+    "overstated": 0,
+    "unsupported": 0,
+    "needs_review": 0,
+    "content_issue_items": 0
+  },
+  "additional_model_calls": 0,
+  "limits": [
+    "独立AI内容复核，不是人审。覆盖本run两侧各4项原始sentences，共7句陈述和1句问题，index从0起算。v2文件仅参照输出字段，以上理由依据本run原始响应与冻结证据逐项重新判断，不沿用v2结论作为证据；结构通过也不自动代表语义合格。",
+    "取材绑定：summary为experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1/summary.json。summary_sha256由实际文件字节计算；分别沿summary.additions[mode].response.ref读取两侧原始响应，并确认raw_response引用相同。raw_response_sha256_by_mode为完整响应blob实际字节的SHA-256，均与记录吻合，不是raw_text子字段或重序列化输出的哈希。",
+    "packet_path取自summary.packet_input.source_path，即D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_01_round_1.json。packet_sha256按cocoon/runtime.py:36-45规则计算：JSON键排序、紧凑分隔、非ASCII不转义、禁止NaN、UTF-8编码后求SHA-256。当前文件字节哈希及canonical哈希均与summary一致；run内packet副本、两份实际请求的frozen_evidence_packet及三条证据正文哈希亦核对一致。哈希与来源元数据只负责绑定取材和一致性，不替代句义分析或证明外部来源真实、权威。",
+    "schema类型问题在本run已经解决：两侧原始raw_text的schema_version均为JSON字符串\"1.0\"，不是数值1.0。v3冻结提示明确要求字符串；当前configs/delivery_prompts_v3.json的实际文件SHA-256为b2cecda52c4fa2725400063094dcee9466a16037e02bfa05f64fcf883d744684，与summary记录相符，内容与run冻结policy及实际system提示一致。不沿用v2或旧模板的numeric/invalid_schema诊断，也未做类型转换。",
+    "组织侧status=validated，4项正文长度为30、36、40、37，均在28–64范围内；正文143加引用32等于实际附加段175，满足143–343。固定同屏部分457加175得完整可见长度632，落在600–800范围内。632是基于已记录组成的长度核算，不代表已经生成或投递配对payload；本run只有1个validated阶段。",
+    "plain侧原文正文长度为31、28、27、37，正文123加引用32得155，低于冻结附加段160–192下限5字符；这是本run记录的首个报错length_out_of_range，failed_stage=delivery_plain，rendered=null。前三项同时分别低于32–40槽位下限1、4、5字符，第四项合格。cocoon/delivery.py:230-251先记下逐句长度错误，再优先抛附加段总长错误，故不能把本次首错换报为schema错误或单句错误。固定部分457加155得到的612虽在600–800内，也不能抵消附加段及槽位失败；155和612只用于失败原文的只读诊断，不是被接纳或已投递长度。",
+    "同屏语境是本次支持判定的必要范围：只用对应CL_E01、CL_E02、CL_E03的完整冻结正文恢复省略的指代、时间范围和条件，不把每句必须重复全部条件作为门槛；新增机制、因果、数量或更强结论仍须单独有证据。组织E02省略二氧化碳及工业化起点、组织E03省略部分推断前提降低了独立成句的自足性，但当前同屏材料可明确恢复，不等于主要变唯一、可能变必然，或不能仅据此推断变成结果不能兑现。结论不自动适用于脱离同屏证据单独展示这些句子的情形。",
+    "plain的4项均为普通复述或限制，question数量与问号数量均为0；组织侧有1项question、1个问号。两侧均未新增个体诊断、采信倾向评定、阵营归类、机构背书或行为指令。组织的条件性提问不被计为事实错误，也不因此宣称已经产生干预效果。",
+    "cutoff_scope：本复核的信息范围止于该run已冻结的本地证据和原始响应；summary记录完成于2026-11-08T10:56:03.501155Z，该时间是运行元数据，不是科学结论的发布日期或现实证据完备性的截止认证。本地source_index记载相关CL_S01日期2025-05-21、CL_S02日期2011-06-16，本次未联网核实其准确性或更新状态。8项没有新增具体年月日或最新研究主张；工业化以来的时间范围只从CL_E02恢复，不以模型外部知识或知识截止日期补证。",
+    "not_T1：summary.received_actual_subject、natural_view_used、mirror_executed均为false。未接收实际受试者T1观点，未实施或声称个性化镜像，人审完成数保持0。",
+    "not_full_I4：本审核只覆盖短附加段的8项，不是完整I4审计，不将短投递等同完整I4。summary中原内部报告rendered_chars=1594，未被本次压缩、覆盖或逐条扩审；其内容不是这8项的额外事实依据。摘要及哈希等元数据不属于受试短附加段，也不计入175或155。full_I4_eligible与formal_eligible保持false。",
+    "pair_not_accepted：summary.status仍为delivery_failed，pair=null，payloads为空，accepted_pair=false。组织单侧长度和结构通过、8项内容可接受均不能解除plain的结构阻断；未组装配对、未生成有效I5、未发布或投递。",
+    "仅新增experiment/review/delivery_v3_semantic.json。未修改summary、原始响应、证据packet、配置、代码、v2报告、原内部报告或其他文件；未补字、截断、cast、重试或重跑实验。未联网，未调用额外模型、插件或tasks，未生成Markdown文件。本run原有2次模型调用只属于历史记录，本次additional_model_calls=0。"
+  ]
+}

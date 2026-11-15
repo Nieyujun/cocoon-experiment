@@ -1,0 +1,1 @@
+{"attempt":1,"diagnostics":{"non_json_or_extra_text":true,"starts_with_brace":true},"error":"contracts:raw_text 必须是无重复键和非有限数值的严格 JSON","node_id":"mirror_S02_T1"}

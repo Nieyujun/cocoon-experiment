@@ -1,0 +1,193 @@
+{
+  "contract": "experiment_dashboard_verification_v1",
+  "passed": true,
+  "dataset_sha256": "fc2ffd9b0ade942fb51353d73ad8fc124f2b36599672a51220cf569cd6049cd3",
+  "views": 11,
+  "trace_paths_verified": 25,
+  "trace_nodes_verified": 130,
+  "network_records_recomputed": 156,
+  "panel_samples": 1248,
+  "checks": {
+    "views_present": 11,
+    "banner_present": true,
+    "no_external_resources": true,
+    "no_credentials": true,
+    "embedded_data_matches": true,
+    "network_recomputed": 156,
+    "exposure_contrasts_recomputed": 6,
+    "holm_recomputed": 2,
+    "trace_paths_verified": 25,
+    "trace_nodes_verified": 130,
+    "scheme_a_reverified": true,
+    "view_data_complete": 11,
+    "live_delivery_verified": 6,
+    "live_delivery_charged_cny": "0.01765808",
+    "live_micro_matrix_topics": 3,
+    "live_micro_matrix_calls": 162,
+    "live_micro_pilot_verified": 24,
+    "live_micro_pilot_charged_cny": "0.18835572",
+    "closed_world_verified": 24,
+    "closed_world_calls": 55,
+    "spotlight_tour_steps": 7,
+    "dual_track_available": true,
+    "ui_chip_display": "inline-flex",
+    "ui_timeline_rows": 7,
+    "ui_network_cards": 6,
+    "ui_table_wrap_scroll": true,
+    "ui_single_sticky_topbar": true,
+    "ui_inline_block_conflicts": 0,
+    "ui_timeline_renderer_chips": true
+  },
+  "live_micro_matrix": {
+    "available": true,
+    "matrix_sha256": "6a1353221a5370631e1a39972518f2a8a80a154d472340b391cd93b7ed9ccba1",
+    "totals": {
+      "accepted_calls": 156,
+      "all_live_micro_pilot_charged_cny": "1.08231860",
+      "blind_evaluations": 48,
+      "branches": 18,
+      "comparison_rows": 72,
+      "extra_calls_rejected_or_redone": 6,
+      "final_run_model_calls": 162,
+      "final_runs_charged_cny": "0.76946588",
+      "four_stage_failed_tasks": 1,
+      "intervention_responses": 36,
+      "mirrors": 6,
+      "panel_records": 48,
+      "rejected_attempts": 2,
+      "routine_speeches": 6,
+      "subject_measurements": 48,
+      "subjects": 6,
+      "superseded_charged_cny": "0.31285272",
+      "topics": 3,
+      "usage": {
+        "completion_tokens": 92185,
+        "prompt_tokens": 995661,
+        "total_tokens": 1087846
+      }
+    }
+  },
+  "closed_world_pilot": {
+    "available": true,
+    "is_synthetic_closed_world": true,
+    "protocol_basis": "§5.4_closed_fictional_scenario",
+    "manifest_sha256": "f2a3786dc01cb6e89730e99ac4e65baab85a5e6767b89e38b35fadbf0f4620c2",
+    "run_id": "closed_world_synth01_20261114T052738Z_8ac5d3e9",
+    "charged_cny": "0.16829176",
+    "actual_model_calls": 55
+  },
+  "dual_track": {
+    "available": true,
+    "headline": {
+      "real_T0_Acc_mean": 100.0,
+      "real_T0_BS_mean": 0.01203125,
+      "synth_T0_Acc_mean": 50.0,
+      "synth_T0_BS_mean": 0.25,
+      "synth_T1_Acc_mean": 50.0,
+      "synth_T1_BS_mean": 0.25,
+      "synth_T1_S_mean": 0.0,
+      "synth_T1_misled_correct_mean": 1.0,
+      "synth_T0_misled_correct_mean": 1.0,
+      "synth_T2_BS_by_arm": {
+        "I0": 0.25,
+        "I5": 0.0025000000000000022,
+        "I4": 0.0025000000000000022
+      },
+      "synth_T3_BS_by_arm": {
+        "I0": 0.25,
+        "I5": 0.0025000000000000022,
+        "I4": 0.0025000000000000022
+      },
+      "synth_T3_Acc_by_arm": {
+        "I0": 50.0,
+        "I5": 100.0,
+        "I4": 100.0
+      },
+      "synth_T3_misled_correct_by_arm": {
+        "I0": 1.0,
+        "I5": 5.0,
+        "I4": 5.0
+      },
+      "misled_item_count": 5,
+      "synth_T3_O_by_arm": {
+        "I0": 41.66666666666667,
+        "I5": 33.333333333333336,
+        "I4": 58.333333333333336
+      },
+      "synth_T3_U_by_arm": {
+        "I0": 83.33333333333333,
+        "I5": 91.66666666666666,
+        "I4": 100.0
+      },
+      "synth_T3_transfer_correct_by_arm": {
+        "I0": 2.0,
+        "I5": 3.0,
+        "I4": 4.0
+      },
+      "real_prior_ceiling": true,
+      "synth_t1_blinded": false,
+      "synth_best_arm_T2": "I5",
+      "synth_best_arm_T3": "I5",
+      "synth_min_arms_T3": [
+        "I5",
+        "I4"
+      ],
+      "synth_I4_best_T3": false,
+      "synth_I4_tied_best_T3": true,
+      "synth_evidence_arms_beat_I0_T3": true
+    }
+  },
+  "spotlight_tour": {
+    "steps": 7,
+    "targets": [
+      "view-01",
+      "view-04",
+      "view-06",
+      "spot-matrix",
+      "spot-dualtrack",
+      "view-07",
+      "view-11"
+    ]
+  },
+  "live_micro_pilot": {
+    "available": true,
+    "manifest_sha256": "408f88f03c44f1d1583c06558d7cb0593c611e4fb6b5695f1a515350f1ac8687",
+    "run_id": "live_micro_pilot_TOPIC_01_20261113T071307Z_fce65143",
+    "charged_cny": "0.18835572",
+    "step_charged_cny": "0.42873736"
+  },
+  "live_delivery": {
+    "available": true,
+    "case_count": 6,
+    "manifest_sha256": "7ce6fd835642a1fdcc4864f112b5f78fff744bacb5a045c73bbf97d90a5e882c",
+    "charged_cny": "0.01765808",
+    "new_live_calls": 11
+  },
+  "ui_layout": {
+    "chip_display": "inline-flex",
+    "timeline_rows": 7,
+    "network_cards": 6,
+    "topbar_single_sticky": true,
+    "inline_block_conflicts": 0
+  },
+  "banner": "三议题全链路离线系统预演与方案A核验看板（示例/演练数据，非真实模型认知实验结果；is_demo=True, actual_model_calls=0, formal_eligible=False）",
+  "honest_gates": {
+    "rehearsal_mode": "offline_system_stress_rehearsal",
+    "is_demo": true,
+    "actual_model_calls": 0,
+    "actual_api_calls": 0,
+    "new_cost_cny": "0",
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "formal_launch_enabled": false,
+    "statistical_outputs_are_synthetic": true,
+    "review_origin": "ai_assisted_dual_perspective_scheme_a",
+    "real_human_ca_signature_verified": false
+  },
+  "is_demo": true,
+  "actual_model_calls": 0,
+  "formal_eligible": false,
+  "new_cost_cny": "0",
+  "verification_scope": "本地只读派生数据与单文件HTML的结构、数值重算、15+全链追溯与方案A重跑比对；不是真实模型实验结果，也不认证真人身份。"
+}

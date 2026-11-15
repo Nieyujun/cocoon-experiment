@@ -1,0 +1,192 @@
+{
+  "review_type": "independent_ai_review_not_human",
+  "reviewer_id": "evidence-auditor",
+  "review_stage": "targeted_followup",
+  "human_review": false,
+  "status": "pass_with_limitations",
+  "checked_evidence_count": 4,
+  "inherited_evidence_count": 14,
+  "prior_review": {
+    "path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/review/independent_ai_audit.json",
+    "byte_sha256": "b45a16b034206e2b4bc93657f2179aab1689616b97d9a74c130968369fbbe17b",
+    "preserved_unmodified": true,
+    "original_status": "needs_revision",
+    "resolution": "旧记录保留其当时结论。本次仅就修订后的四条及未修改内容的哈希比对形成新记录，CL_E05的原引文覆盖缺口已解决。"
+  },
+  "topic_file_bindings": [
+    {
+      "topic": "climate",
+      "path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/intake/climate/topic_material.json",
+      "byte_sha256": "30d3d8a581b2d3a4f851817d126b32a238d35f0f5ce3010b99f40589a741405d",
+      "previous_byte_sha256": "c224855f3b3b8c8e1a9150a92b2e051d8ff39e1ac5a08704b63761bc336be003",
+      "reconstructed_previous_bytehash_verified": true,
+      "changed_paths": ["scope_note", "evidence[CL_E05].original_quote", "evidence[CL_E05].boundary_note"]
+    },
+    {
+      "topic": "energy",
+      "path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/intake/energy/topic_material.json",
+      "byte_sha256": "36c579f52bf9c604965a9e53b7257f89af3340807b1e5ed384c19226bee7abe2",
+      "previous_byte_sha256": "d5dc324bd06172379e06ca87aa285eb5b39fec0a99ba2d8acbc85a2b5df9d37a",
+      "reconstructed_previous_bytehash_verified": true,
+      "changed_paths": ["evidence[EN_E02].text"]
+    },
+    {
+      "topic": "weather",
+      "path": "D:/信息茧房/experiment/evidence_candidates/v1_20261108/intake/weather/topic_material.json",
+      "byte_sha256": "0419dee706387f67da114d10bc07f1f95a10c073356a9c91c477165ab554a53c",
+      "previous_byte_sha256": "63c861e8a08d2f49e029a737af19ac9aef6e2fadf43c9dc0dc1392ef318c1ed0",
+      "reconstructed_previous_bytehash_verified": true,
+      "changed_paths": ["evidence[WE_E04].text", "evidence[WE_E05].text"]
+    }
+  ],
+  "delta_verification": {
+    "baseline_method": "上次审计文件保存了三份topic原始字节SHA-256，但未保存逐条证据内容哈希。本次依据同一会话上次Read返回的旧字段值，仅在内存反向还原已知的5处证据字段和1处climate.scope_note；以ensure_ascii=false、indent=2、UTF-8无BOM、LF且末尾换行重建旧文件。三份重建字节SHA-256均与上次审计记录完全匹配，确认没有额外内容变更，再从该已验证旧快照计算逐条旧内容哈希。未回写任何topic文件。",
+    "content_hash_method": "对每个完整evidence对象执行json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'), allow_nan=False)，编码UTF-8后计算SHA-256。忽略JSON文件排版、键顺序及等价转义表现，不替换字符串内字符、不做Unicode正规化，也不以字元表现差异推定新语义问题。",
+    "total_evidence_count": 18,
+    "changed_evidence_count": 4,
+    "unchanged_evidence_count": 14,
+    "previous_other_17": {
+      "count": 17,
+      "announced_changed_ids": ["EN_E02", "WE_E04", "WE_E05"],
+      "unchanged_count": 14,
+      "note": "上次除CL_E05外的17条中，本次另有3条按建议修改。因此真实结果是4条定向复核、14条内容未变继承原结论，不虚报17条全部未改。"
+    },
+    "unexpected_evidence_changes": [],
+    "unexpected_topic_content_changes": [],
+    "semantic_rereview_of_unchanged_evidence": false,
+    "unchanged_evidence": [
+      {"evidence_id": "CL_E01", "previous_and_current_content_sha256": "441e805aa7f7e769a6a04cd4db48b7101461b7bf4d674d8ccddad3faf3b4f98a", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "CL_E02", "previous_and_current_content_sha256": "260b3f110218c2a91535a3834d6030a74a554e0b94ba60e404d1a2978d3d014b", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "CL_E03", "previous_and_current_content_sha256": "5351464e6460780dcd6d56d530c6ca6ee89bcc4e9b41254728e41ab389b62b2f", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "CL_E04", "previous_and_current_content_sha256": "177937fc51b745fb79975e999c0a191faf06eade06a2f14a31bc274459266429", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "CL_E06", "previous_and_current_content_sha256": "cfdbbaa94593f2dd8a8271fd51dc21bc4fe53318a10355c84379570518b2dacf", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "EN_E01", "previous_and_current_content_sha256": "bd266ebb52ed47fa5ee4bf40407e6ac405c0acec4c616f08354593410822788a", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "EN_E03", "previous_and_current_content_sha256": "d1396004e3cd8c50438f72dbbcb948f0435e6ba76a8ddafa7a08a73ba2b9bb9a", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "EN_E04", "previous_and_current_content_sha256": "45ab17b827c3194a33011c7a9437762503b8fc8316678f3148c464b3b7faca59", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "EN_E05", "previous_and_current_content_sha256": "facd746c56dc868196d639ecb97bb36b49ee758c12a022f4bef2f36e43c9c2c8", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "EN_E06", "previous_and_current_content_sha256": "fd62f1aea3b66d907788be35b5ce183d08fdb6a6ed36580207fba59f2fe2ad61", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "WE_E01", "previous_and_current_content_sha256": "69911eada16e144ff34434945b9535e9623f41244870a49ce13e072c20911435", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "WE_E02", "previous_and_current_content_sha256": "08103b0e76afaa5decf1dcf43fa1ec9dd33d14a6b102b9997be28b65415f0d19", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "WE_E03", "previous_and_current_content_sha256": "7b51051397b44bfbdc23cbdebeb1b41f111ca3e6d517ef210c5a387013983638", "hash_equal": true, "inherited_supported": "yes"},
+      {"evidence_id": "WE_E06", "previous_and_current_content_sha256": "b602b243c176a5fce5c86b76ae41763bbf963a2aa57d7ecf1189bad62b932108", "hash_equal": true, "inherited_supported": "yes"}
+    ]
+  },
+  "checks": [
+    {
+      "evidence_id": "CL_E05",
+      "source_id": "CL_S03",
+      "supported": "yes",
+      "quote_match": true,
+      "original_quote_exact_verified": true,
+      "original_quote": "which is basic (or alkaline), but as the ocean continues to absorb more CO2, the pH decreases and the ocean becomes more acidic.",
+      "original_quote_sha256": "5670f23eb9977c307f8bc5a23d14c0e027e5768ce454f286fd6719b8a6f7d236",
+      "start_offset_0_based": 9119,
+      "end_offset_exclusive": 9247,
+      "occurrences_in_saved_text": 1,
+      "quote_chars": 128,
+      "quote_words": 23,
+      "matches_prior_suggested_quote": true,
+      "previous_content_sha256": "0d93c1a368ff85a120508a379cd7ef789106839b828e3d2fd55fd0becb9b5cfa",
+      "current_content_sha256": "09f2a083fe101e38236c456232661694c08c6bb234fa52f9401bb62dfc3e6d6e",
+      "changed_fields": ["boundary_note", "original_quote"],
+      "issue": null,
+      "finding": "旧缺口已解决。当前引文与上次建议完全相同，直接包含碱性状态与继续吸收二氧化碳、pH下降及酸化的关系；scope_note和boundary_note均明确这是同一原句内的连续从句，并解释which的海洋平均pH指代，不冒充完整独立句。氢离子定义仍由同页The pH scale段支持，未拼接为引文，也未引入无观测年份的平均pH数字。",
+      "recommendation": "保留当前引文及指代、上下文说明，无新增修订要求。"
+    },
+    {
+      "evidence_id": "EN_E02",
+      "source_id": "EN_S08",
+      "supported": "yes",
+      "quote_match": true,
+      "original_quote_exact_verified": true,
+      "original_quote_sha256": "21271d5b421255ebc6afb483a00bb92e96899148259abd456471a059d788023a",
+      "start_offset_0_based": 5360,
+      "end_offset_exclusive": 5408,
+      "occurrences_in_saved_text": 1,
+      "previous_content_sha256": "e5f1808ac200154be61e11feedf60574b7ba47ba543fba49428657381eff703f",
+      "current_content_sha256": "5ffefd8dc47050d55119eca5c8ad955b95650b8750a8b18e0c401f06b623013e",
+      "changed_fields": ["text"],
+      "issue": null,
+      "finding": "正文现已明确据二〇二四年转引报告的摘编，并保留二〇二三年成本变化的技术口径。本地页面日期2024-10-08、成本条目尾部IRENA来源及邻接2023年语境均支持该限定。原引文未改，降幅比较未被改成绝对成本比较，仍是与EN_E01同家族的二手条目。",
+      "recommendation": "保留二手、发布年与数据年及同比降幅不等于绝对成本排名的边界，无新增修订要求。"
+    },
+    {
+      "evidence_id": "WE_E04",
+      "source_id": "WE_S06",
+      "supported": "yes",
+      "quote_match": true,
+      "original_quote_exact_verified": true,
+      "original_quote_sha256": "bd318116bc3ce37329e1ffe1f9ae533304283e9f0b9ac8c36e35d02fb2963c4b",
+      "start_offset_0_based": 549,
+      "end_offset_exclusive": 579,
+      "occurrences_in_saved_text": 1,
+      "previous_content_sha256": "f10f296a053226eafd753eee40b78f1fd24a5aa7072a48f61fa8977f62a6601d",
+      "current_content_sha256": "1dfdd206d3fd85f33279eb64ee670a9e09d1d2d1cc9e9b08d787e51dc63cb0ed",
+      "changed_fields": ["text"],
+      "issue": null,
+      "finding": "正文现已明确二〇二〇年五月十二日的历史答复，与保存来源的2020年05月12日一致，并继续明确答复当时的网站做法。没有把过期信息处理规则当前化，也没有断言今天不能查询历史预警。原引文及边界未改。",
+      "recommendation": "保留日期和历史网站限定，无新增修订要求。"
+    },
+    {
+      "evidence_id": "WE_E05",
+      "source_id": "WE_S06",
+      "supported": "yes",
+      "quote_match": true,
+      "original_quote_exact_verified": true,
+      "original_quote_sha256": "e1a4243c0355cf7245cf41abf99315d12fe15825d816e586e091952e61a7288d",
+      "start_offset_0_based": 511,
+      "end_offset_exclusive": 549,
+      "occurrences_in_saved_text": 1,
+      "previous_content_sha256": "f867dfa117cbb5589bab9d24301caf47f86bd58354e80232d9b09907f1e4f297",
+      "current_content_sha256": "9187e8c41e74766b7c59c77bb4e3ba1d0c736d71f5d13d7e2829c91a891cb251",
+      "changed_fields": ["text"],
+      "issue": null,
+      "finding": "正文现已明确二〇二〇年五月十二日，并将所列渠道限定为主要预警发布渠道，保留原句目前的历史指向及主要而非穷尽的含义。没有宣称已核验当前渠道配置；原引文及边界未改。",
+      "recommendation": "保留日期、主要及来源核查不等于自动判真的限制，无新增修订要求。"
+    }
+  ],
+  "source_bindings_for_rechecked_evidence": [
+    {
+      "source_id": "CL_S03",
+      "raw_sha256": "95b707bee8a6e22d779a043d58db07e02013d848e27333c86c76b39ca6ca7d36",
+      "text_content_sha256": "9fe3b5e1bc619752d79d3e36372ac2c4da6ef01cacdb6b739d784b268e941def",
+      "raw_and_text_hashes_match_previous_capture": true,
+      "raw_bytes": 143145,
+      "text_chars": 17323,
+      "source_quote_total_words": 42,
+      "source_quote_total_chars": 250,
+      "quote_budget_pass": true
+    },
+    {
+      "source_id": "EN_S08",
+      "raw_sha256": "03cb99ca7141780eb0657d32c7ab63da3a64211e1eeb2782570b93e440ac9ce5",
+      "text_content_sha256": "f0c6cf200a94cd6d371af3ab707357fb21fbb6dac12e3469dc1deaaa2d1b3f6e",
+      "raw_and_text_hashes_match_previous_capture": true,
+      "raw_bytes": 40866,
+      "text_chars": 5819,
+      "source_quote_total_han_chars": 37,
+      "source_quote_total_chars": 48,
+      "quote_budget_pass": true
+    },
+    {
+      "source_id": "WE_S06",
+      "raw_sha256": "67a804472428ecf832265048da125b3c78c4cd5535aefa5bea2e9e8d9f5a3285",
+      "text_content_sha256": "4ac8c1d9adbc7728694d496ec6e15ae1efeca9f6a39394d06db4d0bf40c3cb1e",
+      "raw_and_text_hashes_match_previous_capture": true,
+      "raw_bytes": 22008,
+      "text_chars": 885,
+      "source_quote_total_han_chars": 63,
+      "source_quote_total_chars": 68,
+      "quote_budget_pass": true
+    }
+  ],
+  "global_limits": [
+    "本次仅作四条定向AI语义复核及18条证据对象的变更检测；14条内容哈希相同者继承上次支持结论，没有重新开展全量语义审核。涉及四条的三份来源HTML及text字段摘要已与上次取证摘要复核一致；其他来源不在本次重新取证或逐页复审范围。",
+    "三个候选U轴的两端仍可兼容，不是互斥决策或已验证的双极量表；不得为凑观点硬分正反，也不能据此直接确认U或立场极化。该候选阶段限制不阻止本次修订检查通过。",
+    "再分发权利、翻译授权和双人独立人工审核仍待完成。本次human_review=false；三个topic仍为pending_dual_human_review且human_reviews_completed=0，AI通过不等于人工批准或正式使用许可。",
+    "每source直接引文预算仍为英文不超过180词、中文不超过300字。CL_S03修订后两条累计42词，EN_S08累计37汉字、48字符，WE_S06累计63汉字、68字符；其他来源的直接引文内容未变，沿用上次预算结论。",
+    "publicpacket不得包含金标准、正确答案或立场标签、评分键及本审计支持度结论；本文件是本地审核记录，不是公共受试包，也没有核验公共包导出链路。",
+    "full108、完整曝光材料、历史错误卡、冻结与送达链路尚未完成的候选状态继续仅列为范围限制，不作为新实现问题。未联网核验当前网页、初发日存档或外链方法。",
+    "仅新增review/independent_ai_followup.json。旧audit和所有topic、source、HTML保持本次开始时的原样；未联网、未调用额外模型、未创建新任务或插件操作。"
+  ]
+}

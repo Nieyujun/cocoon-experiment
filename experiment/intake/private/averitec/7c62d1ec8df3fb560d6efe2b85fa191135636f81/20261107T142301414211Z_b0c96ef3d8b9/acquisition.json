@@ -1,0 +1,69 @@
+{
+  "producer": "intake_averitec.py",
+  "schema_version": 1,
+  "run_id": "20261107T142301414211Z_b0c96ef3d8b9",
+  "dataset": "AVeriTeC",
+  "split": "dev",
+  "repository": "https://github.com/MichSchli/AVeriTeC",
+  "branch": "main",
+  "commit": "7c62d1ec8df3fb560d6efe2b85fa191135636f81",
+  "version_freeze_pending": false,
+  "commit_verification": {
+    "method": "GitHub 官方 API 经 WebFetch 核对；不是本机数据下载记录",
+    "url": "https://api.github.com/repos/MichSchli/AVeriTeC/branches/main",
+    "readme_url": "https://raw.githubusercontent.com/MichSchli/AVeriTeC/7c62d1ec8df3fb560d6efe2b85fa191135636f81/README.md"
+  },
+  "url": "https://raw.githubusercontent.com/MichSchli/AVeriTeC/7c62d1ec8df3fb560d6efe2b85fa191135636f81/data/dev.json",
+  "requested_at_utc": "2026-11-07T14:23:01.415518Z",
+  "retrieved_at_utc": null,
+  "completed_at_utc": "2026-11-07T14:23:01.625419Z",
+  "http_status": null,
+  "sha256": null,
+  "bytes": 0,
+  "row_count": null,
+  "row_count_method": "扫描顶层对象边界；不解码其他记录；不验证其他记录的字段语义",
+  "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_declared": "CC BY-NC 4.0",
+  "license_declaration_source": "https://fever.ai/dataset/averitec.html",
+  "redistributable": false,
+  "rights_status": "pending_underlying_rights_and_human_review",
+  "upstream_declaration_not_local_download": {
+    "total_records": 4568,
+    "label_class_count": 4
+  },
+  "selected_indices": [
+    0
+  ],
+  "other_records_decoded": 0,
+  "political_material_screening_performed": false,
+  "review_status": "pending_dual_human_review",
+  "approved_for_experiment": false,
+  "human_reviews_completed": 0,
+  "evidence_pages_fetched": 0,
+  "paid_model_calls": 0,
+  "formal_material_count": 0,
+  "candidate_count": 0,
+  "raw_path": null,
+  "candidate_path": null,
+  "raw_download_complete": false,
+  "access_control": {
+    "storage_class": "private_intake",
+    "subject_access_policy": "deny",
+    "assistant_access_policy": "deny",
+    "export_to_experiment": false,
+    "runtime_access_boundary_verified": false,
+    "note": "私有路径及用途约束不等于 Windows ACL 或运行时沙箱已验证；禁止接入实验直到边界验证通过"
+  },
+  "missing_conditions": [
+    "两名人工独立复核及裁决记录",
+    "底层主张、证据和网页权利与用途核验",
+    "subject/assistant 对 private intake 的运行时访问隔离验证",
+    "实验材料正式审核批准；当前未生成正式材料",
+    "获取或校验未完成；查看错误类型，禁止切换通道或绕过权限拒绝"
+  ],
+  "outcome": "acquisition_failed",
+  "error": {
+    "type": "URLError",
+    "http_status": null
+  }
+}

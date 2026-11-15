@@ -1,0 +1,1 @@
+{"attempt":1,"diagnostics":{"round_1":{"citations_invalid":{"allowed":["XL_E01","XL_E02","XL_E03"],"given":["XL_E06"]}},"round_2":{"missing_reflection_question":true}},"error":"closed_world_pilot:organizer_rejected","node_id":"organize_S01_I4"}

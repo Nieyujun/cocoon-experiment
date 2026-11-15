@@ -1,0 +1,19 @@
+{
+  "source_id": "EN_S08",
+  "requested_url": "https://energy.pku.edu.cn/xsdt/sznyyw/24b5cd4439bc44c0a5376ea4a3d33777.htm",
+  "effective_url": "https://energy.pku.edu.cn/xsdt/sznyyw/24b5cd4439bc44c0a5376ea4a3d33777.htm",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:21:51.228791Z",
+  "completed_at_utc": "2026-11-08T07:21:52.012871Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 40866,
+  "raw_sha256": "03cb99ca7141780eb0657d32c7ab63da3a64211e1eeb2782570b93e440ac9ce5",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S08.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S08.text.json",
+  "text_sha256": "f0c6cf200a94cd6d371af3ab707357fb21fbb6dac12e3469dc1deaaa2d1b3f6e",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 5819
+}

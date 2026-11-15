@@ -1,0 +1,1311 @@
+{
+  "protocol_version": "1.0",
+  "protocol_source_path": "D:/信息茧房/破茧助手全量实验方案_v1.md",
+  "protocol_source_sha256": "3d3ba6f0e21237cb288fe4a9558ab015a09b56f1a9538af81e5c9075637f6253",
+  "experiment_id": "cocoon_core_v1",
+  "mode": "research",
+  "demo_fallback_allowed": false,
+  "topics": [
+    "TOPIC_01",
+    "TOPIC_02",
+    "TOPIC_03"
+  ],
+  "blocks_per_topic": 6,
+  "agents_per_world": 16,
+  "master_seed": 20261107,
+  "environments": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "intervention_environments": [
+    "D"
+  ],
+  "arms": [
+    "I0",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5"
+  ],
+  "exposure_rounds": 8,
+  "intervention_rounds": 2,
+  "retention_rounds": 4,
+  "cards_per_exposure_round": 6,
+  "discussion_slots_per_round": 1,
+  "generated_replies_reenter_primary_feed": false,
+  "max_exposure_repeats_per_card": 2,
+  "homogeneous_quota": {
+    "same": 4,
+    "opposite": 1,
+    "neutral": 1
+  },
+  "balanced_quota": {
+    "same": 2,
+    "opposite": 2,
+    "neutral": 2
+  },
+  "misinformation_quota": {
+    "accurate": 0,
+    "mixed": 2
+  },
+  "measurement_writes_to_memory": false,
+  "primary_endpoint": "BS_T3",
+  "confirmatory_comparisons": [
+    "D:I4-I0",
+    "D:I4-I5"
+  ],
+  "multiple_testing": "Holm",
+  "max_retries": 2,
+  "snapshot_scope": "entire_world",
+  "network_frozen": true,
+  "measurement_expected_items": 8,
+  "probability_tie_rule": "p_true_ge_0.5_is_true",
+  "intervention_min_chars": 600,
+  "intervention_max_chars": 800,
+  "intervention_length_tolerance": 0.1,
+  "storage": "local_append_only_jsonl",
+  "platform": {
+    "name": "OASIS",
+    "version": null,
+    "integration_verified": false
+  },
+  "assistant": {
+    "source_path": "D:/信息茧房/vendor/cocoon-breaker-original/cocoon-breaker-demo.zip",
+    "source_sha256": "cdd042dba34f8f1e9e01e9e0c7a43540825e7f0de477029952c4aa798f0ce6f8",
+    "entry_path": "D:/信息茧房/vendor/cocoon-breaker-original/source_cdd042dba34f/index.html",
+    "provenance_path": "D:/信息茧房/vendor/cocoon-breaker-original/provenance.json",
+    "prompt_bundle_path": "D:/信息茧房/configs/assistant_prompts_v1.json",
+    "prompt_bundle_sha256": "c16363a126daa1d36c83cfdb247003f9191420c64be80a0e0308d9c3edb7af26",
+    "adapter_version": "frozen-evidence-json-v1",
+    "offline_check_directory": "D:/信息茧房/experiment/adapter_checks/adapter_20261108T063210_0b9b487a",
+    "adapter_verified": false
+  },
+  "models": {
+    "subject": {
+      "provider": null,
+      "model": null,
+      "endpoint": null,
+      "credential_env": "COCOON_SUBJECT_API_KEY",
+      "temperature": null,
+      "max_tokens": null
+    },
+    "assistant": {
+      "provider": "xiaomi_mimo",
+      "model": "mimo-v2.6-flash",
+      "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+      "credential_env": "MIMO_API_KEY",
+      "temperature": 0,
+      "max_tokens": 4096,
+      "thinking": "disabled",
+      "timeout_seconds": 60,
+      "live_enabled": true
+    },
+    "evaluator": {
+      "provider": null,
+      "model": null,
+      "endpoint": null,
+      "credential_env": "COCOON_EVALUATOR_API_KEY",
+      "temperature": null,
+      "max_tokens": null
+    }
+  },
+  "budget": {
+    "currency": "CNY",
+    "pilot_limit": null,
+    "formal_limit": null,
+    "initial_probe_limit_cny": "5.00",
+    "initial_probe_authorized": true,
+    "initial_probe_ledger": "experiment/billing/mimo_initial_probe_v1.jsonl",
+    "initial_probe_scope": "首次按量付费连通性与少量助手任务测试；跨运行累计，不含正式或受试实验",
+    "rates_as_of": "2026-11-08",
+    "cost_basis": "provider_usage_official_rate_not_invoice",
+    "ledger_charged_cny": "1.13819560",
+    "ledger_remaining_cny": "48.86180440",
+    "ledger_held_reserved_cny": "1.050624",
+    "ledger_available_cny": "47.81118040",
+    "ledger_limit_cny": "50.00",
+    "ledger_initial_limit_cny": "5.00",
+    "ledger_limit_raises": [
+      {
+        "seq": 258,
+        "previous_limit_cny": "5.00",
+        "new_limit_cny": "50.00",
+        "reason": "step41_group_showcase_three_topic_live_expansion"
+      }
+    ]
+  },
+  "mimo_integration": {
+    "model_display_name": "MiMo-V2.6-Flash",
+    "scope": "assistant_chain_and_connection_probe_only",
+    "billing_mode": "pay_as_you_go",
+    "api_docs": "https://mimo.mi.com/docs/zh-CN/api/chat/openai-api",
+    "quick_start": "https://mimo.mi.com/docs/zh-CN/quick-start/summary/first-api-call",
+    "price_docs": "https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go",
+    "price_page_updated": "2026-10-21",
+    "verified_on": "2026-11-08",
+    "rates_cny_per_million": {
+      "input_uncached": "1.00",
+      "input_cached": "0.02",
+      "output": "2.00"
+    },
+    "parameter_note": "首次接口测试暂用thinking disabled、temperature 0、最多4096输出tokens；该选择不是正式实验参数冻结。连通性测试单独限制128tokens。",
+    "auth_header": "api-key",
+    "wire_output_limit_field": "max_completion_tokens",
+    "automatic_retries": 0,
+    "web_search_enabled": false,
+    "live_connection_verified": true,
+    "connection_probe_directory": "experiment/mimo_probes/connection_smoke_20261108T065524_5ca1d2cb",
+    "connection_verified_at_utc": "2026-11-08T06:55:25.582363Z",
+    "verification_scope": "仅单次真实连通性测试；五阶段助手真实任务及正式实验未验收",
+    "credential_persistence": "process_only_not_saved"
+  },
+  "evidence_candidates": {
+    "build_directory": "experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5",
+    "status": "candidate_pending_human_review",
+    "topic_count": 3,
+    "evidence_count": 18,
+    "selected_source_count": 13,
+    "packet_count_including_round_splits": 9,
+    "approved_for_experiment": false,
+    "human_reviews_completed": 0,
+    "not_equivalent_to_complete_exposure_materials": true
+  },
+  "dose_candidates": {
+    "build_directory": "experiment/dose_candidates/dose_20261108T081317_cf1bb3",
+    "display_version": "source_id_inline_v1",
+    "drafts_path": "configs/dose_additions_v1.json",
+    "content_origin": "editorial_design_draft",
+    "pair_count": 6,
+    "payload_count": 12,
+    "source_text_changed": false,
+    "natural_view_used": false,
+    "personalized_mirror_completed": false,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "full_source_links_in_subject_context": false,
+    "subject_extra_browsing_actions": false,
+    "change_note": "新输入显示规则，以来源编号、机构和日期替代内联完整URL/家族ID；保留完整审核映射。不得当作未改变旧版输入的纯UI优化。"
+  },
+  "assistant_live_probe": {
+    "run_directory": "experiment/mimo_probes/assistant_probe_20261108T082120_9ad78cf8",
+    "packet_id": "CAND_TOPIC_01_R1_V1",
+    "actual_model_calls": 4,
+    "completed_stages": [
+      "search",
+      "label",
+      "blindspot",
+      "integrate"
+    ],
+    "structure_passed": true,
+    "semantic_review_path": "experiment/review/live_semantic_20261108.json",
+    "semantic_status": "ai_review_flagged_deviations",
+    "ai_flagged_items": 11,
+    "items_reviewed": 39,
+    "candidate_visible_chars": 2051,
+    "dose_within_range": false,
+    "mirror_executed": false,
+    "human_reviews_completed": 0,
+    "formal_eligible": false,
+    "notice": "仅四阶段结构通过；语义与投递剂量未通过，不代表完整I4或正式干预。"
+  },
+  "short_delivery_probe": {
+    "policy_path": "configs/delivery_prompts_v3.json",
+    "policy_version": "report_to_delivery_v3",
+    "policy_sha256": "b2cecda52c4fa2725400063094dcee9466a16037e02bfa05f64fcf883d744684",
+    "run_directory": "experiment/delivery_probes/delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1",
+    "previous_run_directory": "experiment/delivery_probes/delivery_20261108T101439Z_99cfd0db64294c3a8c51b1248b03eb98",
+    "status": "delivery_failed",
+    "failed_stage": "delivery_plain",
+    "first_error": "length_out_of_range",
+    "schema_type_correct_both_modes": true,
+    "actual_http_attempts": 2,
+    "validated_stages": 1,
+    "organized_additional_chars": 175,
+    "organized_visible_chars": 632,
+    "plain_additional_chars_diagnostic_only": 155,
+    "plain_visible_chars_diagnostic_only": 612,
+    "pair_accepted": false,
+    "semantic_review_path": "experiment/review/delivery_v3_semantic.json",
+    "inputs_unchanged": true,
+    "original_internal_report_unchanged": true,
+    "human_reviews_completed": 0,
+    "formal_eligible": false
+  },
+  "extractive_control_alternative": {
+    "policy_path": "configs/extractive_control_v1.json",
+    "policy_sha256": "b96e2a12d9b85189e6765c0aa23b04a6f2ad2bec6d57a8d73194d34c2fe5413a",
+    "result_path": "experiment/review/delivery_v3_20261108/extractive_alternative.json",
+    "review_path": "experiment/review/delivery_v3_20261108/extractive_review.json",
+    "status": "structurally_matched_candidate",
+    "scope": "post_hoc_exploratory_alternative_not_repaired_v3",
+    "content_origins": {
+      "organized": "recorded_assistant_output",
+      "plain": "deterministic_exact_source_sentences"
+    },
+    "organized_visible_chars": 632,
+    "plain_visible_chars": 637,
+    "new_model_calls": 0,
+    "natural_view_used": false,
+    "human_reviews_completed": 0,
+    "formal_eligible": false,
+    "subject_delivered": false
+  },
+  "cross_topic_review": {
+    "directory": "experiment/review/cross_topic_20261108",
+    "feasibility_path": "experiment/review/cross_topic_20261108/feasibility.json",
+    "human_review_checklist_path": "experiment/review/cross_topic_20261108/human_review_checklist.json",
+    "independent_review_path": "experiment/review/cross_topic_20261108/independent_review.json",
+    "review_page_path": "experiment/review/cross_topic_20261108/review.html",
+    "delivery_manifest_path": "experiment/review/cross_topic_20261108/delivery.json",
+    "round_report_path": "experiment/review/cross_topic_20261108/REPORT_step28_20261108.md",
+    "status": "offline_review_ready_pending_human",
+    "validation_report_path": "experiment/review/validation_20261109T130342_7a6f52.json",
+    "validation_tests_run": 808,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "scope": "conditional_length_feasibility_and_review_preparation_only",
+    "source_file_sha256": {
+      "feasibility.json": "5ff1b33d1115f5b9cfccfe0c89da2eac91dc1477421c11d553c8b15a5cfd5d55",
+      "human_review_checklist.json": "fd2d9adde69f478544a41061f83137f78fc925618046b0791478715398040706",
+      "independent_review.json": "61dbdb91b676b6da7f27459f6a5f993785e8dd829aa84cf9daee5230ddcb8831"
+    },
+    "independent_review_type": "independent_ai_not_human",
+    "independent_review_status": "pass_with_context_review_required",
+    "case_count": 6,
+    "conditional_length_feasible_cases": 6,
+    "existing_exploratory_pair_cases": 1,
+    "cases_without_actual_organized_output": 5,
+    "human_review_item_count": 55,
+    "pending_human_slots": 110,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "subject_delivered": false,
+    "new_model_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "human_review_workflow": {
+    "version": "human_review_submission_v1",
+    "module_path": "cocoon/human_review.py",
+    "test_path": "tests/test_human_review_workflow.py",
+    "report_path": "experiment/review/cross_topic_20261108/REPORT_step29_20261108.md",
+    "template_path": "experiment/review/cross_topic_20261108/human_review_checklist.json",
+    "public_apis": [
+      "merge_and_verify_human_reviews",
+      "verify_human_review_submission"
+    ],
+    "status": "implementation_ready_pending_real_submissions",
+    "validation_report_path": "experiment/review/validation_20261108T143449_f6add9.json",
+    "validation_tests_run": 683,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "workflow_unit_tests": 39,
+    "partial_reviews_supported": true,
+    "global_reviewer_roles_disjoint": true,
+    "adjudicator_disjoint_from_all_reviewers": true,
+    "identity_verified": false,
+    "full_108_card_review": false,
+    "human_reviews_completed": 0,
+    "completed_human_slots": 0,
+    "formal_eligible": false,
+    "new_model_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "measurement_contract": {
+    "version": "measurement_contract_v1",
+    "module_path": "cocoon/measurement.py",
+    "test_path": "tests/test_measurement.py",
+    "report_path": "experiment/review/measurement_20261108/REPORT_step30_20261108.md",
+    "status": "offline_contract_implemented_no_subject_observations",
+    "validation_report_path": "experiment/review/validation_20261108T150756_1871ae.json",
+    "validation_tests_run": 723,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "measurement_unit_tests": 40,
+    "anchor_items": 8,
+    "optional_transfer_items": 4,
+    "anchor_and_transfer_scored_separately": true,
+    "private_dimensions": 6,
+    "measurement_writes_to_memory": false,
+    "public_questionnaire_has_gold": false,
+    "blind_packet_has_objective_answers": false,
+    "t1_bridge_origin": "subject_measurement_extracted",
+    "bridge_is_natural_routine_speech": false,
+    "bridge_requires_protocol_review": true,
+    "actual_observation_verified": false,
+    "formal_gold_created": false,
+    "human_reviews_completed": 0,
+    "formal_eligible": false,
+    "new_model_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "routine_speech_and_blind_registry": {
+    "module_path": "cocoon/measurement.py",
+    "test_path": "tests/test_measurement.py",
+    "report_path": "experiment/review/measurement_20261108/REPORT_step31_20261108.md",
+    "public_apis": [
+      "extract_t1_routine_speech_view",
+      "create_blind_sample_registry",
+      "reconcile_blind_evaluations"
+    ],
+    "routine_contract": "t1_routine_speech_view_v1",
+    "routine_content_origin": "subject_routine_speech",
+    "natural_routine_speech": true,
+    "requires_protocol_review": false,
+    "registry_contract": "validated_blind_registry_v1",
+    "panel_contract": "reconciled_blind_panel_v1",
+    "controller_private_registry": true,
+    "evaluator_sendable_field": "public_blind_packets",
+    "state_writes_to_memory": false,
+    "status": "offline_contract_ready_no_real_observations",
+    "validation_report_path": "experiment/review/validation_20261108T155515_46ef93.json",
+    "validation_tests_run": 749,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "measurement_unit_tests": 66,
+    "new_unit_tests": 26,
+    "trusted_registry_digest_option": true,
+    "actual_observation_verified": false,
+    "human_reviews_completed": 0,
+    "formal_eligible": false,
+    "new_model_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "network_analysis": {
+    "module_path": "cocoon/analysis.py",
+    "test_path": "tests/test_analysis.py",
+    "report_path": "experiment/review/measurement_20261108/REPORT_step32_20261108.md",
+    "contract": "analysis_contract_v1",
+    "network_aggregation_contract": "network_aggregation_v1",
+    "public_apis": [
+      "aggregate_panel_to_networks",
+      "analyze_exposure_2x2",
+      "analyze_intervention_effects"
+    ],
+    "independent_unit": "network_world_timepoint",
+    "status": "offline_contract_implemented_no_real_observations",
+    "validation_report_path": "experiment/review/validation_20261109T025602_582dd0.json",
+    "validation_tests_run": 771,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "analysis_unit_tests": 22,
+    "expected_agents_per_world_default": 16,
+    "population_size_rule": "scheduling._check_population_size_integer_ge8_mod4eq0",
+    "incomplete_network_policy": "exact_means_are_none_bounds_use_fixed_expected_denominator",
+    "missingness_bounds_fixed_denominator": true,
+    "anchor_and_transfer_separate": true,
+    "exposure_contrasts_operator": "metrics.exposure_contrasts",
+    "paired_estimator_operator": "metrics.paired_summary",
+    "randomization_requires_actual_allocations": true,
+    "randomization_operator": "scheduling.allocate",
+    "p_value_formula": "(1+count(abs(stat_perm)>=abs(stat_obs)))/(1+permutation_reps)",
+    "holm_operator": "metrics.holm",
+    "p_raw_without_allocations": null,
+    "p_adjusted_without_allocations": null,
+    "secondary_comparison_family": "secondary_exploratory",
+    "human_reviews_completed": 0,
+    "formal_eligible": false,
+    "actual_observation_verified": false,
+    "new_model_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "topic01_pilot_materials": {
+    "module_path": "cocoon/pilot_materials.py",
+    "test_path": "tests/test_pilot_materials.py",
+    "report_path": "experiment/review/pilot_materials_20261109/REPORT_step34_20261109.md",
+    "step33_report_path": "experiment/review/pilot_materials_20261109/REPORT_step33_20261109.md",
+    "contract": "topic01_pilot_materials_v1",
+    "all_topics_contract": "all_topics_pilot_materials_v1",
+    "pilot_manifest_contract": "pilot_manifest_v1",
+    "pilot_manifest_build_id": "build_20261108T074108_f38ec5",
+    "scope": "three_topics_standardized_v2",
+    "topic_count": 3,
+    "topics": {
+      "TOPIC_01": {
+        "folder": "climate",
+        "source_count": 4,
+        "evidence_count": 6,
+        "source_ids": [
+          "CL_S01",
+          "CL_S02",
+          "CL_S03",
+          "CL_S04"
+        ],
+        "evidence_ids": [
+          "CL_E01",
+          "CL_E02",
+          "CL_E03",
+          "CL_E04",
+          "CL_E05",
+          "CL_E06"
+        ],
+        "source_language": "en",
+        "card_prefixes": [
+          "T01EXP",
+          "T01RET"
+        ],
+        "intake_material_sha256": "30d3d8a581b2d3a4f851817d126b32a238d35f0f5ce3010b99f40589a741405d",
+        "rights_warning_count": 4,
+        "source_family_exclusions": 2,
+        "disagreement_evidence_id": "CL_E05"
+      },
+      "TOPIC_02": {
+        "folder": "energy",
+        "source_count": 5,
+        "evidence_count": 6,
+        "source_ids": [
+          "EN_S02",
+          "EN_S05",
+          "EN_S06",
+          "EN_S07",
+          "EN_S08"
+        ],
+        "evidence_ids": [
+          "EN_E01",
+          "EN_E02",
+          "EN_E03",
+          "EN_E04",
+          "EN_E05",
+          "EN_E06"
+        ],
+        "source_language": "en",
+        "card_prefixes": [
+          "T02EXP",
+          "T02RET"
+        ],
+        "intake_material_sha256": "36c579f52bf9c604965a9e53b7257f89af3340807b1e5ed384c19226bee7abe2",
+        "rights_warning_count": 5,
+        "source_family_exclusions": 9,
+        "disagreement_evidence_id": "EN_E05"
+      },
+      "TOPIC_03": {
+        "folder": "weather",
+        "source_count": 4,
+        "evidence_count": 6,
+        "source_ids": [
+          "WE_S01",
+          "WE_S02",
+          "WE_S04",
+          "WE_S06"
+        ],
+        "evidence_ids": [
+          "WE_E01",
+          "WE_E02",
+          "WE_E03",
+          "WE_E04",
+          "WE_E05",
+          "WE_E06"
+        ],
+        "source_language": "zh",
+        "card_prefixes": [
+          "T03EXP",
+          "T03RET"
+        ],
+        "intake_material_sha256": "0419dee706387f67da114d10bc07f1f95a10c073356a9c91c477165ab554a53c",
+        "rights_warning_count": 4,
+        "source_family_exclusions": 2,
+        "disagreement_evidence_id": "WE_E05"
+      }
+    },
+    "public_apis": [
+      "build_topic01_pilot_materials",
+      "verify_topic01_pilot_materials",
+      "simulate_section52_dual_review",
+      "build_topic_pilot_materials",
+      "build_all_topics_pilot_materials",
+      "verify_topic_pilot_materials",
+      "simulate_all_topics_dual_review"
+    ],
+    "parallel_build": true,
+    "parallel_execution_mode": "parallel_threads_deterministic_ordered_output",
+    "evidence_build_directory": "experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5",
+    "evidence_source_root": "experiment/evidence_candidates/v1_20261108",
+    "source_ids": [
+      "CL_S01",
+      "CL_S02",
+      "CL_S03",
+      "CL_S04"
+    ],
+    "evidence_ids": [
+      "CL_E01",
+      "CL_E02",
+      "CL_E03",
+      "CL_E04",
+      "CL_E05",
+      "CL_E06"
+    ],
+    "protocol_sha256": "3d3ba6f0e21237cb288fe4a9558ab015a09b56f1a9538af81e5c9075637f6253",
+    "protocol_sections": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "6.4",
+      "7.1",
+      "7.2"
+    ],
+    "three_zone_isolation": [
+      "zone_1_subject_public",
+      "zone_2_assistant_evidence",
+      "zone_3_evaluator_private_gold"
+    ],
+    "exposure_cards": 72,
+    "retention_cards": 36,
+    "card_length_chars": [
+      180,
+      220
+    ],
+    "card_strata": "stance(+1/-1/0) x is_accurate(True/False)",
+    "schedule_calls_verified": 96,
+    "schedule_calls_total_three_topics": 288,
+    "schedule_max_repeats": 2,
+    "discussion_slots": 12,
+    "intervention_arms": [
+      "I0",
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5"
+    ],
+    "intervention_rounds": 2,
+    "intervention_packets": 12,
+    "total_intervention_packets_three_topics": 36,
+    "total_exposure_cards_three_topics": 216,
+    "total_retention_cards_three_topics": 108,
+    "dose_chars": [
+      600,
+      800
+    ],
+    "anchor_items": 8,
+    "anchor_truth_balance": [
+      4,
+      4
+    ],
+    "transfer_items": 4,
+    "private_dimensions": 6,
+    "questionnaire_and_gold_validators_passed": true,
+    "topics_passing_questionnaire_and_gold_validators": 3,
+    "anchor_dimension_bindings_per_topic": 8,
+    "statement_dimension_map_items_per_topic": 12,
+    "extractive_control_binding": true,
+    "arms_with_extractive_binding": 6,
+    "extractive_binding_packets_total_three_topics": 36,
+    "rights_warnings_per_real_source": true,
+    "rights_gate_all_topics_pending": true,
+    "uniform_thresholds": {
+      "exposure_cards": 72,
+      "retention_cards": 36,
+      "card_length_chars": [
+        180,
+        220
+      ],
+      "schedule_calls": 96,
+      "discussion_slots": 12,
+      "intervention_packets": 12,
+      "dose_chars": [
+        600,
+        800
+      ],
+      "anchor_items": 8,
+      "anchor_truth_balance": [
+        4,
+        4
+      ],
+      "transfer_items": 4,
+      "private_dimensions": 6,
+      "arms_with_extractive_binding": 6
+    },
+    "known_deviation": "TOPIC_01_R2 editorial organized draft 232 chars exceeds extractive feasible range 141-214; recorded, not repaired",
+    "review_mode": "simulated_rehearsal_not_human",
+    "is_simulation_rehearsal": true,
+    "section52_steps": 8,
+    "section52_topics_simulated": 3,
+    "disagreement_items_total": 3,
+    "adjudicated_items_total": 3,
+    "blocked_before_adjudication_total": 3,
+    "all_topics_honest_gate_enforced": true,
+    "simulated_reviewer_ids": [
+      "SIM_REVIEWER_A",
+      "SIM_REVIEWER_B",
+      "SIM_ADJUDICATOR_C"
+    ],
+    "human_review_checklist_unchanged": true,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "subject_delivered": false,
+    "status": "offline_three_topics_pilot_candidate_simulated_rehearsal_not_human_approved",
+    "validation_report_path": "experiment/review/validation_20261109T130342_7a6f52.json",
+    "validation_tests_run": 808,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "pilot_unit_tests": 37,
+    "new_model_calls": 0,
+    "new_api_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "system_rehearsal": {
+    "module_path": "cocoon/system_rehearsal.py",
+    "test_path": "tests/test_system_rehearsal.py",
+    "report_path": "experiment/review/pilot_materials_20261109/REPORT_step35_20261109.md",
+    "contract": "pilot_system_rehearsal_v1",
+    "verification_contract": "pilot_system_rehearsal_verification_v1",
+    "rehearsal_mode": "offline_system_stress_rehearsal",
+    "public_apis": [
+      "run_pilot_system_rehearsal",
+      "verify_pilot_system_rehearsal"
+    ],
+    "protocol_sections": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "13.4",
+      "15.1"
+    ],
+    "scope": "three_topics_end_to_end_offline_engineering_stress_rehearsal",
+    "default_parameters": {
+      "topics": [
+        "TOPIC_01",
+        "TOPIC_02",
+        "TOPIC_03"
+      ],
+      "blocks_per_topic": 2,
+      "agents_per_world": 8,
+      "seed": 20261109,
+      "bootstrap_reps": 200,
+      "permutation_reps": 200,
+      "environments": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "arms": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "timepoints": [
+        "T0",
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "exposure_rounds": 8,
+      "intervention_rounds": 2,
+      "retention_rounds": 4
+    },
+    "material_totals": {
+      "exposure_cards": 216,
+      "retention_cards": 108,
+      "discussion_slots": 36,
+      "intervention_packets": 36,
+      "questionnaires": 3,
+      "private_gold_bundles": 3
+    },
+    "runtime_totals": {
+      "exposure_worlds": 24,
+      "six_arm_branches": 36,
+      "mirror_contract_checks": 192,
+      "intervention_deliveries": 576,
+      "retention_deliveries": 1152,
+      "panel_samples_reconciled": 1248,
+      "network_records": 156,
+      "full_state_exclusion_audits": 12,
+      "measurement_zero_writeback_checks": 1152
+    },
+    "analysis_chain": {
+      "registry": "validated_blind_registry_v1",
+      "panel": "reconciled_blind_panel_v1",
+      "aggregation": "network_aggregation_v1",
+      "exposure": "exposure_2x2_v1",
+      "intervention_endpoints": [
+        "T2",
+        "T3"
+      ],
+      "randomization_operator": "scheduling.allocate",
+      "p_value_formula": "(1+count(abs(stat_perm)>=abs(stat_obs)))/(1+permutation_reps)",
+      "holm_operator": "metrics.holm",
+      "statistical_outputs_are_synthetic": true
+    },
+    "engineering_dry_run_unchanged": true,
+    "six_arms_all_have_600_to_800_visible_text": true,
+    "old_i0_to_i3_none_placeholder_retained_in_engineering_only": true,
+    "is_demo": true,
+    "synthetic_rehearsal_response": true,
+    "actual_model_calls": 0,
+    "actual_api_calls": 0,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "formal_launch_enabled": false,
+    "subject_delivered": false,
+    "new_cost_cny": "0",
+    "rehearsal_is_not_real_experiment": true,
+    "unit_tests": 36,
+    "validation_report_path": "experiment/review/validation_20261110T090840_f63bab.json",
+    "validation_tests_run": 844,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "integrity_sha256": "7a0aab1f9b8ebd97059fedbf96724d161915e964cc9d7e0a1b60fcb955d31115"
+  },
+  "ai_assisted_review": {
+    "module_path": "cocoon/ai_assisted_review.py",
+    "test_path": "tests/test_ai_assisted_review.py",
+    "snapshot_script": "scripts/export_scheme_a_snapshot.py",
+    "report_path": "experiment/review/ai_assisted_review_20261110/REPORT_step36_20261110.md",
+    "snapshot_path": "experiment/review/ai_assisted_review_20261110/scheme_a_merged_verified.json",
+    "contract": "scheme_a_merged_verified_v1",
+    "gate_contract": "ai_assisted_release_gate_v1",
+    "scheme_a_version": "ai_assisted_dual_perspective_scheme_a_v1",
+    "review_origin": "ai_assisted_dual_perspective_scheme_a",
+    "authorized_by_user": true,
+    "public_apis": [
+      "build_scheme_a_review_copies",
+      "run_scheme_a_merge_and_verify",
+      "evaluate_ai_assisted_release_gate"
+    ],
+    "role_ids": {
+      "reviewer_1": "MEMBER_B_SOURCE_VERIFIER",
+      "reviewer_2": "MEMBER_C_CONTEXT_AUDITOR",
+      "adjudicator": "MEMBER_E_CHIEF_ADJUDICATOR"
+    },
+    "template_path": "experiment/review/cross_topic_20261108/human_review_checklist.json",
+    "template_sha256": "fd2d9adde69f478544a41061f83137f78fc925618046b0791478715398040706",
+    "blank_template_unchanged": true,
+    "human_review_module_unchanged": true,
+    "item_total": 55,
+    "human_slots_completed": 110,
+    "completed_items": 55,
+    "disagreement_count": 4,
+    "disagreement_item_ids": [
+      "EV_CL_E05",
+      "EV_EN_E05",
+      "EV_WE_E01",
+      "EV_WE_E05"
+    ],
+    "unresolved_disagreements": 0,
+    "human_reviews_completed": 2,
+    "content_review_passed": true,
+    "release_gates_passed": true,
+    "all_55_items_resolved": true,
+    "all_55_items_passed": true,
+    "identity_verified": false,
+    "real_human_ca_signature_verified": false,
+    "formal_eligible": false,
+    "approved_for_experiment": false,
+    "pilot_release_unlocked_default": false,
+    "pilot_release_unlocked_when_authorized": true,
+    "full_108_card_pilot_pack_verified": true,
+    "all_55_checklist_items_passed": true,
+    "release_scope": "pilot_materials_only_ai_assisted_scheme_a_authorized_by_user",
+    "unit_tests": 30,
+    "merged_sha256": "0449815008bdf415c744e175fad7a26c2e9321dfe734381088c424fa2c480855",
+    "snapshot_sha256": "a633b9797c8a8fd331bcea486109e96883db5863fdbaff8cbb04dfde7edbc08b",
+    "validation_report_path": "experiment/review/validation_20261111T061740_93ade4.json",
+    "validation_tests_run": 874,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "new_model_calls": 0,
+    "new_api_calls": 0,
+    "new_cost_cny": "0"
+  },
+  "dashboard": {
+    "module_path": "cocoon/dashboard.py",
+    "test_path": "tests/test_dashboard.py",
+    "archive_script": "scripts/export_closeout_archive.py",
+    "report_path": "experiment/dashboard_20261110/REPORT_step38_20261110.md",
+    "html_path": "experiment/dashboard_20261110/dashboard.html",
+    "data_path": "experiment/dashboard_20261110/dashboard_data.json",
+    "verification_path": "experiment/dashboard_20261110/verification.json",
+    "archive_path": "experiment/exports/cocoon_closeout_dashboard_20261110.zip",
+    "contract": "experiment_dashboard_v1",
+    "verification_contract": "experiment_dashboard_verification_v1",
+    "public_apis": [
+      "build_dashboard_dataset",
+      "render_experiment_dashboard",
+      "verify_dashboard_bundle"
+    ],
+    "protocol_sections": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "16"
+    ],
+    "view_count": 11,
+    "views": [
+      "实验总览",
+      "同步时间轴与阶段步进",
+      "网络回放视图",
+      "信息流对照",
+      "个体四时点轨迹",
+      "六臂干预并排对照",
+      "证据追踪可点击链",
+      "群体结果与效应图",
+      "置信度校准视图",
+      "六维覆盖与异见理解",
+      "系统质量与方案A治理审计"
+    ],
+    "global_filters": [
+      "topic",
+      "block",
+      "environment",
+      "arm",
+      "timepoint",
+      "agent"
+    ],
+    "banner_text": "三议题全链路离线系统预演与方案A核验看板（示例/演练数据，非真实模型认知实验结果；is_demo=True, actual_model_calls=0, formal_eligible=False）",
+    "dataset_totals": {
+      "worlds": 24,
+      "branches": 36,
+      "panel_samples": 1248,
+      "network_records": 156,
+      "series": 480,
+      "trace_paths": 25,
+      "sources": 13,
+      "evidence_items": 18,
+      "cards": 324,
+      "interventions": 36,
+      "case_types": [
+        "improved",
+        "unchanged",
+        "reversed"
+      ]
+    },
+    "reconstruction_checks": {
+      "sid_permutation_matches": true,
+      "output_hash_matches": 1248,
+      "u_parts_matches": 1248
+    },
+    "verification": {
+      "passed": true,
+      "trace_paths_verified": 25,
+      "trace_nodes_verified": 130,
+      "network_records_recomputed": 156,
+      "exposure_blocks_recomputed": 6,
+      "holm_endpoints_recomputed": 2,
+      "scheme_a_reverified": true,
+      "views_present": 11,
+      "no_external_resources": true,
+      "no_credentials": true,
+      "embedded_data_matches": true,
+      "ui_chip_display": "inline-flex",
+      "ui_timeline_rows": 7,
+      "ui_network_cards": 6,
+      "ui_table_wrap_scroll": true,
+      "ui_single_sticky_topbar": true,
+      "ui_inline_block_conflicts": 0
+    },
+    "artifact_sha256": {
+      "dashboard_html": "8ff28a29a1ae5eedc8b24f798d011d11022648c67e6a9000cf33bb722eedc3cd",
+      "dashboard_data_json": "d5d5d5e7a262c4555fb1f0c805b3401340330493ac69f7639157f93d6c4c7065",
+      "verification_json": "47a4651665d2ca7af769933f5820b7f72e2da3a528630a1d4d14a2279e75efa5"
+    },
+    "dataset_sha256": "a3fbb1d3001aadc927674b699a7e3386d9fa70641fb977f8406e1228cc55c461",
+    "is_demo": true,
+    "actual_model_calls": 0,
+    "actual_api_calls": 0,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "no_external_cdn": true,
+    "contains_credentials": false,
+    "case_selection_rule": "fixed_seed_deterministic_extremum_with_honest_absence_note",
+    "individual_trajectory_timepoints_only": [
+      "T0",
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "unit_tests": 28,
+    "validation_report_path": "experiment/review/validation_20261113T170455_6c3e4d.json",
+    "validation_tests_run": 992,
+    "validation_failures": 0,
+    "validation_errors": 0,
+    "new_cost_cny": "0",
+    "ui_layout": {
+      "defect": "inline-span containing display:block small caused inline-box splitting; renderTimeline lacked .chips container",
+      "chip_display": "inline-flex",
+      "chip_flex_direction": "column",
+      "timeline_container": ".timeline > .timeline-row > .timeline-head + .chips",
+      "static_timeline_count": 6,
+      "dynamic_timeline_count": 6,
+      "chips_per_block": 23,
+      "table_wrap_overflow_x": "auto",
+      "net_grid_columns": "repeat(auto-fit,minmax(240px,1fr)); 3 cols >=1100px",
+      "net_cards": 6,
+      "single_sticky_topbar": true,
+      "removed_offsets": [
+        "filters position:sticky",
+        "top:56px"
+      ],
+      "audit_assertions": 9,
+      "breakpoints_measured_px": [
+        1440,
+        900,
+        430
+      ],
+      "max_chip_overflow_px": 0,
+      "page_level_horizontal_overflow": false
+    },
+    "live_delivery": {
+      "available": true,
+      "case_count": 6,
+      "new_live_calls": 11,
+      "charged_cny": "0.01765808",
+      "manifest_sha256": "58f97ac380e8bcc3b82927aab70c6e57125f64678867edf653d43e8fdb9d73d3"
+    },
+    "dose_arm_collisions": 3,
+    "live_micro_pilot": {
+      "available": true,
+      "manifest_sha256": "408f88f03c44f1d1583c06558d7cb0593c611e4fb6b5695f1a515350f1ac8687",
+      "views": [
+        "view-01",
+        "view-05",
+        "view-07",
+        "view-10"
+      ]
+    },
+    "live_micro_matrix": {
+      "available": true,
+      "matrix_sha256": "6a1353221a5370631e1a39972518f2a8a80a154d472340b391cd93b7ed9ccba1",
+      "views": [
+        "view-01",
+        "view-05",
+        "view-07",
+        "view-10"
+      ],
+      "svg_trajectories": 3
+    }
+  },
+  "formal_launch_enabled": false,
+  "stage": "three_topic_live_micro_pilot_matrix_completed_ceiling_effect_pending_real_human_review",
+  "live_cross_topic_delivery": {
+    "module_path": "cocoon/live_cross_topic_delivery.py",
+    "test_path": "tests/test_live_cross_topic_delivery.py",
+    "manifest_path": "experiment/review/live_cross_topic_20261111/six_round_live_extractive_pairs.json",
+    "report_path": "experiment/review/live_cross_topic_20261111/REPORT_step39_20261111.md",
+    "runs_root": "experiment/live_deliveries",
+    "model": "mimo-v2.6-flash",
+    "policy_version": "report_to_delivery_v3",
+    "policy_sha256": "b2cecda52c4fa2725400063094dcee9466a16037e02bfa05f64fcf883d744684",
+    "public_apis": [
+      "run_remaining_live_organized_deliveries",
+      "build_six_round_live_extractive_manifest",
+      "verify_six_round_live_extractive_manifest",
+      "summarize_live_delivery",
+      "live_pairs_for_materials"
+    ],
+    "case_count": 6,
+    "complete_6_of_6": true,
+    "rounds": [
+      {
+        "case_id": "TOPIC_01_R1",
+        "run_id": "delivery_20261108T105552Z_7fe7dae9d342459885c811b169a74ff1",
+        "attempts": 2,
+        "organized_chars": 175,
+        "plain_chars": 180,
+        "visible_chars": {
+          "I4": 632,
+          "I5": 637
+        },
+        "charged_cny": "0.00439524",
+        "reused": true,
+        "prompt_variant": "with_parent_internal_report"
+      },
+      {
+        "case_id": "TOPIC_01_R2",
+        "run_id": "live_delivery_TOPIC_01_R2_20261111T122235Z_23765ff8",
+        "attempts": 3,
+        "organized_chars": 166,
+        "plain_chars": 160,
+        "visible_chars": {
+          "I4": 625,
+          "I5": 619
+        },
+        "charged_cny": "0.00182484",
+        "reused": false,
+        "prompt_variant": "packet_only_no_parent_report"
+      },
+      {
+        "case_id": "TOPIC_02_R1",
+        "run_id": "live_delivery_TOPIC_02_R1_20261111T122302Z_0b093178",
+        "attempts": 3,
+        "organized_chars": 223,
+        "plain_chars": 234,
+        "visible_chars": {
+          "I4": 715,
+          "I5": 726
+        },
+        "charged_cny": "0.00291892",
+        "reused": false,
+        "prompt_variant": "packet_only_no_parent_report"
+      },
+      {
+        "case_id": "TOPIC_02_R2",
+        "run_id": "live_delivery_TOPIC_02_R2_20261111T122038Z_f8d67709",
+        "attempts": 3,
+        "organized_chars": 188,
+        "plain_chars": 196,
+        "visible_chars": {
+          "I4": 663,
+          "I5": 671
+        },
+        "charged_cny": "0.00533504",
+        "reused": false,
+        "prompt_variant": "packet_only_no_parent_report"
+      },
+      {
+        "case_id": "TOPIC_03_R1",
+        "run_id": "live_delivery_TOPIC_03_R1_20261111T122106Z_737f0be6",
+        "attempts": 1,
+        "organized_chars": 176,
+        "plain_chars": 160,
+        "visible_chars": {
+          "I4": 689,
+          "I5": 673
+        },
+        "charged_cny": "0.00149780",
+        "reused": false,
+        "prompt_variant": "packet_only_no_parent_report"
+      },
+      {
+        "case_id": "TOPIC_03_R2",
+        "run_id": "live_delivery_TOPIC_03_R2_20261111T122110Z_6cf589d5",
+        "attempts": 1,
+        "organized_chars": 207,
+        "plain_chars": 207,
+        "visible_chars": {
+          "I4": 764,
+          "I5": 764
+        },
+        "charged_cny": "0.00168624",
+        "reused": false,
+        "prompt_variant": "packet_only_no_parent_report"
+      }
+    ],
+    "manifest_sha256": "58f97ac380e8bcc3b82927aab70c6e57125f64678867edf653d43e8fdb9d73d3",
+    "manifest_file_sha256": "58f97ac380e8bcc3b82927aab70c6e57125f64678867edf653d43e8fdb9d73d3",
+    "model_calls_total": 13,
+    "new_live_calls": 11,
+    "step_charged_cny": "0.02157376",
+    "ledger_total_cny": "0.05587700",
+    "ledger_remaining_cny": "4.94412300",
+    "preflight_smoke_cny": "0.00005700",
+    "superseded_cny": "0.00385868",
+    "reconciled": true,
+    "dose_arm_collisions": [
+      {
+        "topic": "TOPIC_01",
+        "round": 1,
+        "arm": "I0"
+      },
+      {
+        "topic": "TOPIC_02",
+        "round": 2,
+        "arm": "I2"
+      },
+      {
+        "topic": "TOPIC_03",
+        "round": 1,
+        "arm": "I2"
+      }
+    ],
+    "internal_report_supplied_for_new_rounds": false,
+    "subject_delivered": false,
+    "full_I4_eligible": false,
+    "human_reviews_completed": 0,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "is_demo": false,
+    "actual_model_calls": 13,
+    "actual_api_calls": 13,
+    "validation_tests_run": 938,
+    "validation_report_path": "experiment/review/validation_20261111T132036_0447bf.json"
+  },
+  "live_micro_pilot": {
+    "module_path": "cocoon/live_micro_pilot.py",
+    "test_path": "tests/test_live_micro_pilot.py",
+    "manifest_path": "experiment/review/live_micro_pilot_20261111/topic01_live_micro_pilot.json",
+    "manifest_sha256": "408f88f03c44f1d1583c06558d7cb0593c611e4fb6b5695f1a515350f1ac8687",
+    "manifest_file_sha256": "166aea62aa48ccdef72250f18a2490b20c0308fc1f73f83e9754900303529dc0",
+    "report_path": "experiment/review/live_micro_pilot_20261111/REPORT_step40_20261111.md",
+    "runs_root": "experiment/live_micro_pilot",
+    "final_run_id": "live_micro_pilot_TOPIC_01_20261113T071307Z_fce65143",
+    "model": "mimo-v2.6-flash",
+    "prompt_revision": "micro_pilot_prompts_v3_target_chars_actionable_feedback_measure_format_note",
+    "design": {
+      "topic_id": "TOPIC_01",
+      "block_id": "B02",
+      "environment": "D",
+      "subjects": [
+        "S01",
+        "S05"
+      ],
+      "arms": [
+        "I0",
+        "I5",
+        "I4"
+      ],
+      "exposure_card_deliveries_per_subject": 48,
+      "measurements": 16,
+      "blind_evaluations": 16
+    },
+    "final_run_model_calls": 52,
+    "final_run_rejected_attempts": 0,
+    "final_run_charged_cny": "0.18835572",
+    "superseded_runs": [
+      {
+        "run_id": "live_micro_pilot_TOPIC_01_20261113T064017Z_5ce9a4f4",
+        "status": "failed_node_speech_S01_T1",
+        "charged_cny": "0.01269312"
+      },
+      {
+        "run_id": "live_micro_pilot_TOPIC_01_20261113T064439Z_91886789",
+        "status": "aborted_harness_timeout",
+        "charged_cny": "0.15045424"
+      },
+      {
+        "run_id": "live_micro_pilot_TOPIC_01_20261113T070337Z_696c40f0",
+        "status": "failed_node_measure_S05_P_T1",
+        "charged_cny": "0.07723428"
+      }
+    ],
+    "step_charged_cny": "0.42873736",
+    "held_interrupted_request_ids": [
+      "live_micro_pilot_TOPIC_01_20261113T064439Z_91886789:respond_S01_I4_R1:1"
+    ],
+    "held_reserved_cny": "1.050624",
+    "finding": "ceiling_effect_no_discriminable_arm_effect",
+    "statistical_inference": "none_mechanism_demo_only",
+    "subject_is_language_model": true,
+    "human_reviews_completed": 0,
+    "full_I4_eligible": false,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "is_demo": false,
+    "validation_tests_run": 971,
+    "validation_report_path": "experiment/review/validation_20261113T090943_aee325.json",
+    "failed_validation_reports_retained": [
+      "experiment/review/validation_20261113T080902_ad1650.json",
+      "experiment/review/validation_20261113T084011_971675.json"
+    ]
+  },
+  "live_three_topic_matrix": {
+    "matrix_path": "experiment/review/live_micro_pilot_20261111/three_topic_live_micro_pilot_matrix.json",
+    "matrix_sha256": "6a1353221a5370631e1a39972518f2a8a80a154d472340b391cd93b7ed9ccba1",
+    "matrix_file_sha256": "8469f7dd5dc206ae4583725ddd3c7269ed96b36a8260667ce00ebc7710866d2c",
+    "report_path": "experiment/review/live_micro_pilot_20261111/REPORT_step41_20261113.md",
+    "subject_rule": "S01_plus_first_opposite_stance_agent_scanning_from_S05_in_B02",
+    "topics": [
+      {
+        "topic_id": "TOPIC_01",
+        "topic_label": "气候与碳排放",
+        "subjects": [
+          "S01",
+          "S05"
+        ],
+        "subject_stances": {
+          "S01": 1,
+          "S05": -1
+        },
+        "run_id": "live_micro_pilot_TOPIC_01_20261113T071307Z_fce65143",
+        "manifest_path": "experiment/review/live_micro_pilot_20261111/topic01_live_micro_pilot.json",
+        "manifest_sha256": "408f88f03c44f1d1583c06558d7cb0593c611e4fb6b5695f1a515350f1ac8687",
+        "manifest_file_sha256": "166aea62aa48ccdef72250f18a2490b20c0308fc1f73f83e9754900303529dc0",
+        "final_run_model_calls": 52,
+        "accepted_calls": 52,
+        "charged_cny": "0.18835572",
+        "superseded_charged_cny": "0.24038164"
+      },
+      {
+        "topic_id": "TOPIC_02",
+        "topic_label": "能源转型",
+        "subjects": [
+          "S01",
+          "S07"
+        ],
+        "subject_stances": {
+          "S01": -1,
+          "S07": 1
+        },
+        "run_id": "live_micro_pilot_TOPIC_02_20261113T154342Z_c8b02e48",
+        "manifest_path": "experiment/review/live_micro_pilot_20261111/topic02_live_micro_pilot.json",
+        "manifest_sha256": "0fa3e0e07a30d7c84aca98f4c2e9f5c52f6609c0bbdeba76d7ab2aafd8c67d72",
+        "manifest_file_sha256": "45e5da1f23ace5afefad54186e8026ac354143c200f6b96182763e0ceee736ec",
+        "final_run_model_calls": 53,
+        "accepted_calls": 52,
+        "charged_cny": "0.26189364",
+        "superseded_charged_cny": "0.07247108"
+      },
+      {
+        "topic_id": "TOPIC_03",
+        "topic_label": "天气信息核查",
+        "subjects": [
+          "S01",
+          "S07"
+        ],
+        "subject_stances": {
+          "S01": 1,
+          "S07": -1
+        },
+        "run_id": "live_micro_pilot_TOPIC_03_20261113T160101Z_12c93e3f",
+        "manifest_path": "experiment/review/live_micro_pilot_20261111/topic03_live_micro_pilot.json",
+        "manifest_sha256": "6325d8cdd5e90b6f60391837b106797f5da2a229202d4fda77fca2004434cf28",
+        "manifest_file_sha256": "654aaad5e70b6323d6e9d883a034bb2ee9a354423047d119946e66ec9ede2157",
+        "final_run_model_calls": 57,
+        "accepted_calls": 52,
+        "charged_cny": "0.31921652",
+        "superseded_charged_cny": "0.00000000"
+      }
+    ],
+    "totals": {
+      "accepted_calls": 156,
+      "all_live_micro_pilot_charged_cny": "1.08231860",
+      "blind_evaluations": 48,
+      "branches": 18,
+      "comparison_rows": 72,
+      "extra_calls_rejected_or_redone": 6,
+      "final_run_model_calls": 162,
+      "final_runs_charged_cny": "0.76946588",
+      "four_stage_failed_tasks": 1,
+      "intervention_responses": 36,
+      "mirrors": 6,
+      "panel_records": 48,
+      "rejected_attempts": 2,
+      "routine_speeches": 6,
+      "subject_measurements": 48,
+      "subjects": 6,
+      "superseded_charged_cny": "0.31285272",
+      "topics": 3,
+      "usage": {
+        "completion_tokens": 92185,
+        "prompt_tokens": 995661,
+        "total_tokens": 1087846
+      }
+    },
+    "step41_charged_cny": "0.65358124",
+    "feedback_revision": "micro_pilot_feedback_v4_mirror_quote_diagnostics",
+    "finding": "ceiling_effect_all_three_topics_no_discriminable_arm_effect",
+    "statistical_inference": "none_descriptive_only_n2_per_topic",
+    "subject_is_language_model": true,
+    "human_reviews_completed": 0,
+    "full_I4_eligible": false,
+    "approved_for_experiment": false,
+    "formal_eligible": false,
+    "is_demo": false,
+    "validation_tests_run": 992,
+    "validation_report_path": "experiment/review/validation_20261113T170455_6c3e4d.json"
+  }
+}

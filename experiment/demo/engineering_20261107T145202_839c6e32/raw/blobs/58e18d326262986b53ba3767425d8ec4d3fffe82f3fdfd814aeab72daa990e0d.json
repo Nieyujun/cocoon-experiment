@@ -1,0 +1,1 @@
+{"notice":"合成夹具工程验证，非实验结果；未调用模型，未测量认知变化。","planned_calls_if_real_pilot":{"actual_calls":0,"base_calls":1408,"blocks":2,"breakdown":{"T0_T1_measurements":128,"T2_T3_measurements":192,"exposure_decisions":512,"intervention_retention_decisions":576},"estimated_cost":null,"excluded":["助手内部模块","镜像","检索","额外探针","盲评","重试"],"exposure_worlds":8,"intervention_worlds":12}}

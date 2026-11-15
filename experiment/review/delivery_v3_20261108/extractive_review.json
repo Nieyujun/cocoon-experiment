@@ -1,0 +1,108 @@
+{
+  "review_type": "independent_ai_not_human",
+  "alternative_file_sha256": "de5251f6b4cf852f06c4d28109ba2b9fb3fc766982fdc697e3ce41e02d8dfb00",
+  "policy_sha256": "b96e2a12d9b85189e6765c0aa23b04a6f2ad2bec6d57a8d73194d34c2fe5413a",
+  "status": "pass_with_limitations",
+  "human_reviews_completed": 0,
+  "formal_eligible": false,
+  "checks": [
+    {
+      "name": "实际文件字节哈希与冻结输入绑定",
+      "pass": true,
+      "reason": "alternative_file_sha256 和 policy_sha256 均由实际文件原始字节计算，不是重序列化 JSON 的哈希。备选记录的 policy_sha256 与实测值一致。按 source_run_id 定位原 v3 summary.json，其实际字节 SHA-256 为 df16d0fe52a77b4d2c0140c9fc8772dd887eb684b2433d952fbf3ae82ad05bb2，与备选记录一致；再由该 summary.inputs.packet.ref 读取冻结 packet，其实际字节 SHA-256 为 88584f1e109b4364bfec0ed2bd18549b645b7ed1df9a91ae8d15424b7f90fc94，与 summary 引用和备选记录均一致。三条证据正文的 content_sha256 亦逐条匹配。"
+    },
+    {
+      "name": "保留原 v3 失败与事后探索性身份",
+      "pass": true,
+      "reason": "原 summary.status 仍为 delivery_failed，plain_restatement.status 仍为 failed，pair 仍为 null；原错误为附加段 155 字符低于 160 字符下限。备选的 source_original_run_status、source_plain_attempt_status 与之对应，scope 为 new_offline_exploratory_variant_not_repaired_v3，policy.design_status 为 exploratory_alternative_after_v3_failure。当前仅审阅新的 post-hoc exploratory 备选，不把原失败改名为成功，也不把 structurally_matched_candidate 当作正式实验通过。"
+    },
+    {
+      "name": "CL_E01 原句偏移及引用",
+      "pass": true,
+      "reason": "偏移按冻结证据正文的 Unicode 字符计，0 起、左闭右开。CL_E01[0:41] 与 selected.text 逐字相同，是该证据第一个完整句，完整包含于原正文：二氧化碳参与地球原有的温室效应，人的额外排放会增强这一自然过程并推动全球气温上升。（CL_E01）所选正文没有改字，句后引用 ID 对应 CL_E01。"
+    },
+    {
+      "name": "CL_E02 原句偏移及引用",
+      "pass": true,
+      "reason": "CL_E02[0:42] 与 selected.text 逐字相同，是该证据第一个完整句，完整包含于冻结正文：自工业化开始以来，人们为获取能源持续燃烧化石燃料，是大气二氧化碳浓度上升的主要原因。（CL_E02）偏移为 0 起、左闭右开；正文未改，句后引用 ID 对应 CL_E02。"
+    },
+    {
+      "name": "CL_E03 原句偏移及引用",
+      "pass": true,
+      "reason": "CL_E03[34:107] 与 selected.text 逐字相同，是该证据第二个完整句；分号未被当成句界，73 字符正文完整保留：NASA的碳循环说明指出，植物生长会受到可用水分或氮的限制；当这些资源不足时，不能仅依据二氧化碳更多，就推断植物会持续、等比例地增产或增加碳吸收。（CL_E03）偏移为 0 起、左闭右开；句后引用 ID 对应 CL_E03。"
+    },
+    {
+      "name": "每条证据恰好一整句并原序组成单段",
+      "pass": true,
+      "reason": "按政策的。！？句界对每条冻结证据各枚举出两句，逐句拼回能完整还原其正文。选中索引 [0,0,1] 按 CL_E01、CL_E02、CL_E03 顺序排列，每条恰好一次；三句正文分别为 41、42、73 字符，加三个既有格式的引用标记共 24 字符，精确重建 I5.additional_text 的单段 180 字符。没有删改原句、拼接句片段、新增连接语或额外引用。"
+    },
+    {
+      "name": "字典序首个合格组合而非态度或效果择优",
+      "pass": true,
+      "reason": "独立按证据原序及句子起止偏移枚举 2×2×2=8 个字典序笛卡尔积候选，未超过 10000 上限。重算所有索引、偏移、附加长度、总长度、差异比及 valid，与 candidate_log 全部一致。候选 0 即 [0,0,0] 为附加 141、总长 598，未达约束；候选 1 即 [0,0,1] 为第一个合格组合，后续合格候选为 2、5、6。选择不使用态度、语义评分或效果数据，也未改选附加长度更接近的候选 6。此核对证明给定当前冻结输入和政策时的确定性选择，不证明事后政策本身已经预注册。"
+    },
+    {
+      "name": "600至800字符及两项10%匹配约束",
+      "pass": true,
+      "reason": "沿用原记录对完整展示字符串的 Unicode 字符计数，包含标点、引用标记、空格和换行，不另行剔除字符。组织侧附加 175 字符、共 4 句，普通阅读侧附加 180 字符、共 3 句；共同 evidence_block 为 418 字符，固定展示部分为 457 字符，最终分别为 632、637，均落在每轮 600–800。差异比按 abs(a-b)/min(a,b)：总长 5/632=0.007911392405063292，附加长 5/175=0.02857142857142857，均小于等于 0.1；与备选记录完全一致。"
+    },
+    {
+      "name": "组织侧原有四句未修改",
+      "pass": true,
+      "reason": "I4.additional_text 与原 v3 summary.additions.organized_reflection.rendered.additional_text 逐字相同，仍为原来的四句 175 字符，其中末句为既有反思问题。来源阶段 status 为 validated，organized_source_event_ids 与原 summary 的组织侧 source_event_id 及 source_event_ids 均对应 62f0380e6d5b4747bd10af12767a2094。本次没有改写组织侧正文；原阶段的结构验证也不被升级为人工语义保证或完整 I4 成功。"
+    },
+    {
+      "name": "组织侧与普通阅读侧内容来源分别记录",
+      "pass": true,
+      "reason": "content_origins.organized 与 pair.I4.content_origin 均为 recorded_assistant_output，并由原 summary 的既有组织侧正文及事件 ID 支持；content_origins.plain 与 pair.I5.content_origin 均为 deterministic_exact_source_sentences，并由冻结 packet 原句的独立精确重建支持，plain_generated_by_model=false。两者符合政策的 recorded_and_validated_only 与 deterministic_exact_source_sentences，不把 I5 冒称为 v3 的四句模型生成，也不把组织侧冒称为确定性摘录。"
+    },
+    {
+      "name": "完整共同证据块及来源标签一致",
+      "pass": true,
+      "reason": "使用冻结 packet 的三条完整证据正文和备选 source_map 的既有展示标签重建 evidence_block，逐字等于备选记录；再以同一块及相同标题重建两侧 visible_text，均逐字一致。两侧完整保留每条证据的两句正文，而不是仅展示所选摘句。source_family_id 与 source_url 逐条对应冻结 packet；source_map 的两个来源族恰好覆盖三条证据。source_index_sha256 与原 summary.inputs.source_index.sha256 的引用值相符，但本次未扩读来源索引或联网验证出版日期、署名等外部元数据。"
+    },
+    {
+      "name": "没有新增URL或额外证据",
+      "pass": true,
+      "reason": "备选内 URL 集合与冻结 packet 内两个来源 URL 的集合完全相同，两侧 visible_text 均未添加 URL。所选证据仅为 CL_E01、CL_E02、CL_E03，引用 ID 均来自相应正文；组织侧保持旧文，普通阅读侧为原句精确摘录，没有新增事实性材料或外部证据。这里的原句指冻结 packet 中已有的中文正文，不等于本次已核验外部网页原文或翻译质量。"
+    },
+    {
+      "name": "普通阅读段为陈述性原文且不新增指令或镜像",
+      "pass": true,
+      "reason": "独立语义审阅三句普通阅读附加段，均在陈述材料事实及适用条件，没有新增反问、要求受试者改变观点的指令、对个人态度的映射或镜像评价。两侧末尾均逐字保留相同的公共回应提示：请用一段简短文字回应上述材料；如不确定可直接说明。公共提示保持相同回应机会，不应被误判为普通阅读附加段新增指令。"
+    },
+    {
+      "name": "不能仅依据的语义边界不是个体评价",
+      "pass": true,
+      "reason": "第三句的当这些资源不足时，不能仅依据二氧化碳更多，就推断植物会持续、等比例地增产或增加碳吸收，是 CL_E03 原有的条件化推断边界，限定二氧化碳增加与植物增产或碳吸收之间的推断。它不评价任何个人的能力、立场或作答，不是对受试者的新增纠正命令；不能因出现不能仅字样就判为指令污染。"
+    },
+    {
+      "name": "NASA归属保留不构成新权威评级",
+      "pass": true,
+      "reason": "NASA的碳循环说明指出是冻结 CL_E03 第二句本来就有的来源归属，摘录时原样保留；没有添加权威等级、可信度评分、优越性比较或要求服从来源的措辞。它不构成新的权威评级，也不表示本次独立联网核验了 NASA 材料。该归属在附加段的重复显著性可能影响阅读体验，仍属于正式设计需要人工评估的差异，不能据此声称两条件心理效应已被控制。"
+    },
+    {
+      "name": "人审为零且不具有正式完整I4或T1资格",
+      "pass": true,
+      "reason": "备选和政策均为 human_reviews_completed=0、formal_eligible=false、full_I4_eligible=false，subject_delivered=false；原 summary 和政策的 natural_view_used 均为 false，原 summary.mirror_executed=false。本次仅为独立 AI 审阅，不能增加人工审阅数、证明正式受试者交付、代表完整 I4 流程或宣称已执行 T1 自然观点条件。"
+    },
+    {
+      "name": "只读离线审阅与零新增实验模型调用",
+      "pass": true,
+      "reason": "本次仅以只读方式解析备选、指定政策、原 v3 summary 及由其 inputs.packet.ref 定位的冻结 packet，并离线计算哈希和穷举候选；仅新建本审阅 JSON，不改备选的 semantic_review 字段或任何输入文件。没有联网、付费请求或新增实验模型/API调用，new_model_calls=0。原 summary.actual_model_calls=2 是原 v3 的历史记录，不改写为零，也不算本次新增调用。"
+    },
+    {
+      "name": "P1与P2问题判定及通过范围",
+      "pass": true,
+      "reason": "在上述限定输入和检查范围内，未发现需修订的真实 P1/P2 问题。原句边界、偏移、引用、字典序日志、来源分类、正文保全、最终长度及失败身份均核对通过，因此结论为 pass_with_limitations。该结论只表示此冻结 packet 上的可重复工程备选成立，不声称三句摘录比四句生成正式优越，不保证干预等效、无混淆或研究效果，也未独立重验 source_audit 中全部历史文件与快照。"
+    }
+  ],
+  "limits": [
+    "posthoc_notformal：这是 v3 失败后形成的 post-hoc exploratory 方案，不是正式预注册成功或原 v3 修复。I5 已由四句模型生成改为三句确定性摘录，句数、生成方式与措辞重复程度均改变；仅作为可重复工程备选，不能声称三句本身正式优于四句，也不能假定只剩组织结构一个差异。formal_eligible=false，full_I4_eligible=false。",
+    "nonreproductionallmodels：仅复算此冻结 packet 和既有组织侧输出，不重跑原模型、不覆盖其他模型、主题、轮次或所有材料，也未重验全部历史审计文件；不能推断普遍可行、模型复现成功或完整 I4 复现。",
+    "needuserprotocolfreeze：正式使用前需用户确认并冻结新的 I5 定义、组织侧记录来源、原句边界及偏移口径、字典序选择规则、展示字符计数、600–800范围、两项10%匹配、共同材料和回应提示，并完成必要的人工审批与登记；后续更换输入或规则必须重新审阅，不能事后追认原失败为成功。",
+    "sourcehumanrights：human_reviews_completed=0。来源真实归属、出版日期、中文转述忠实性、材料适用性、版权及引用许可、参与者知情同意与相关权益仍需人工核验；冻结 packet 中来源字段一致和没有新增 URL 不等于外部来源或使用权已经获批。",
+    "noT1：没有执行或验证 T1 自然观点条件、自然观点镜像或正式受试者交付；本审阅不提供 T1 对照结论、不计算干预效果，也不补足完整 I4 或正式实验资格。"
+  ],
+  "new_model_calls": 0
+}

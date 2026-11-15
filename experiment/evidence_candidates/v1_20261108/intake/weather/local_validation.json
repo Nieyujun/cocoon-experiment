@@ -1,0 +1,206 @@
+{
+  "material_file": "topic_material.json",
+  "material_sha256": "63c861e8a08d2f49e029a737af19ac9aef6e2fadf43c9dc0dc1392ef318c1ed0",
+  "verified_at_utc": "2026-11-08T07:23:58.823990Z",
+  "validation_status": "passed_local_structural_and_quote_checks",
+  "validation_scope": "本地结构、逐条连续引文、句界、字数、哈希及页面日期验证；不代替语义蕴含、来源独立性或双人审核。偏移基于保存text字段的Unicode字符，起点从0计数、终点不包含。",
+  "source_count": 4,
+  "evidence_count": 6,
+  "dimension_count": 6,
+  "historical_false_card_count": 0,
+  "sources": [
+    {
+      "source_id": "WE_S01",
+      "raw_sha256_matches": true,
+      "text_sha256_matches": true,
+      "publication_date_matches_visible_page_and_html": true,
+      "html_pubdate": "2022-07-06 09:51:55",
+      "html_content_source": "中国气象局",
+      "publisher": "中国气象局",
+      "quote_totals": {
+        "quote_han_count": 157,
+        "quote_char_count": 175,
+        "evidence_count": 2
+      }
+    },
+    {
+      "source_id": "WE_S02",
+      "raw_sha256_matches": true,
+      "text_sha256_matches": true,
+      "publication_date_matches_visible_page_and_html": true,
+      "html_pubdate": "2023-06-17 11:40:00",
+      "html_content_source": "气象灾害预警信号发布与传播办法",
+      "publisher": "中国气象局",
+      "quote_totals": {
+        "quote_han_count": 27,
+        "quote_char_count": 35,
+        "evidence_count": 1
+      }
+    },
+    {
+      "source_id": "WE_S04",
+      "raw_sha256_matches": true,
+      "text_sha256_matches": true,
+      "publication_date_matches_visible_page_and_html": true,
+      "html_pubdate": "2023-01-06 09:41:50",
+      "html_content_source": "中国气象报社",
+      "publisher": "中国气象报社",
+      "quote_totals": {
+        "quote_han_count": 44,
+        "quote_char_count": 48,
+        "evidence_count": 1
+      }
+    },
+    {
+      "source_id": "WE_S06",
+      "raw_sha256_matches": true,
+      "text_sha256_matches": true,
+      "publication_date_matches_visible_page_and_html": true,
+      "html_pubdate": "2020-05-12 08:34:00",
+      "html_content_source": "中国气象局",
+      "publisher": "中国气象局",
+      "quote_totals": {
+        "quote_han_count": 63,
+        "quote_char_count": 68,
+        "evidence_count": 2
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "WE_E01",
+      "source_id": "WE_S01",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 534,
+      "end_offset_exclusive": 633,
+      "original_quote_sha256": "946f22e9aa74f4224e1bea94e84d4d9e1868b0d9b2fa95682ccbdfa942de54fc",
+      "original_quote_han_count": 91,
+      "original_quote_char_count": 99,
+      "text_han_count": 116,
+      "text_char_count": 124,
+      "review_dimension": "概率定义"
+    },
+    {
+      "evidence_id": "WE_E02",
+      "source_id": "WE_S01",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 633,
+      "end_offset_exclusive": 709,
+      "original_quote_sha256": "bd3fcc4a3fb1b28526ec4b8fe9e9f0c6bce2f1fc1f87d54dc3c9dddf989391e0",
+      "original_quote_han_count": 66,
+      "original_quote_char_count": 76,
+      "text_han_count": 112,
+      "text_char_count": 120,
+      "review_dimension": "预报时段与地域"
+    },
+    {
+      "evidence_id": "WE_E03",
+      "source_id": "WE_S02",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 518,
+      "end_offset_exclusive": 553,
+      "original_quote_sha256": "5b34e6eba2e580e71cc547f9fc966c603fe0ce2f5e87f604900f04dcf31ecea1",
+      "original_quote_han_count": 27,
+      "original_quote_char_count": 35,
+      "text_han_count": 108,
+      "text_char_count": 115,
+      "review_dimension": "预警与实况"
+    },
+    {
+      "evidence_id": "WE_E04",
+      "source_id": "WE_S06",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 549,
+      "end_offset_exclusive": 579,
+      "original_quote_sha256": "bd318116bc3ce37329e1ffe1f9ae533304283e9f0b9ac8c36e35d02fb2963c4b",
+      "original_quote_han_count": 27,
+      "original_quote_char_count": 30,
+      "text_han_count": 115,
+      "text_char_count": 125,
+      "review_dimension": "预警时效更新"
+    },
+    {
+      "evidence_id": "WE_E05",
+      "source_id": "WE_S06",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 511,
+      "end_offset_exclusive": 549,
+      "original_quote_sha256": "e1a4243c0355cf7245cf41abf99315d12fe15825d816e586e091952e61a7288d",
+      "original_quote_han_count": 36,
+      "original_quote_char_count": 38,
+      "text_han_count": 116,
+      "text_char_count": 125,
+      "review_dimension": "官方发布源"
+    },
+    {
+      "evidence_id": "WE_E06",
+      "source_id": "WE_S04",
+      "exact_normalized_contiguous_match": true,
+      "whole_sentence_boundaries_checked": true,
+      "occurrences_in_saved_text": 1,
+      "start_offset_0_based": 1432,
+      "end_offset_exclusive": 1480,
+      "original_quote_sha256": "ee88e6ee4ab0bf7f443aa1bcc8819c29cb2f0af38a5d76f73254119da0bab2de",
+      "original_quote_han_count": 44,
+      "original_quote_char_count": 48,
+      "text_han_count": 122,
+      "text_char_count": 129,
+      "review_dimension": "单次落空、造假判断与校准的解释边界"
+    }
+  ],
+  "acquisitions": [
+    {
+      "source_id": "WE_S01",
+      "outcome": "downloaded_text_extracted",
+      "http_status": 200,
+      "included_in_material": true
+    },
+    {
+      "source_id": "WE_S02",
+      "outcome": "downloaded_text_extracted",
+      "http_status": 200,
+      "included_in_material": true
+    },
+    {
+      "source_id": "WE_S03",
+      "outcome": "downloaded_text_extracted",
+      "http_status": 200,
+      "included_in_material": false
+    },
+    {
+      "source_id": "WE_S04",
+      "outcome": "downloaded_text_extracted",
+      "http_status": 200,
+      "included_in_material": true
+    },
+    {
+      "source_id": "WE_S05",
+      "outcome": "failed",
+      "http_status": 301,
+      "included_in_material": false
+    },
+    {
+      "source_id": "WE_S06",
+      "outcome": "downloaded_text_extracted",
+      "http_status": 200,
+      "included_in_material": true
+    }
+  ],
+  "unresolved": [
+    "预警更新频率、升级规则和具体解除条件未获本地原文支持，仅保留时效核查与边界说明。",
+    "单次落空的真实性判据、长期概率校准数据与方法待补证，不能将初值误差科普当作具体事件结论。",
+    "未完成双人独立人工审核、再分发权利核查及原始发表时点的网页档案验证。",
+    "无经取证的历史错误卡；不用于U或立场极化的正式确认。"
+  ],
+  "human_reviews_completed": 0
+}

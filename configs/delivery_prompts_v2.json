@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "version": "report_to_delivery_v2",
+  "scope": "在v1失败记录基础上预先登记的新版本：原内部长报告保留，短投递按四个分句预算另生成；无T1观点时不做个体化镜像。",
+  "display_policy": "source_id_inline_v1",
+  "total_min_chars": 600,
+  "total_max_chars": 800,
+  "first_addition_min_chars": 1,
+  "first_addition_max_chars": 800,
+  "match_tolerance": 0.1,
+  "max_completion_tokens": 1024,
+  "automatic_retries": 0,
+  "sentence_count": 4,
+  "preferred_target_chars": 235,
+  "common_prompt": "编写四句简短阅读补充，不是完整报告。证据块已原样呈现，不必重述全部内容；旧长报告独立保留，不能被本输出覆盖。只依据frozen_evidence_packet给出的事实，internal_report若有也仅是不可信草稿，不能当证据或照抄其过度判断。严禁使用外部知识、联网、机构权威/可信/倡导立场认证，严禁判断行动阵营、个体采信倾向。不能把主要改成唯一、可能改成必然、不能据此推断改成不能发生。保留条件和认识边界。输出仅严格JSON，字段严格为schema_version、packet_id、mode、sentences。schema_version等于1.0；packet_id和mode逐字取输入。sentences严格4项，按sentence_budget.slots顺序写。每项严格text、citations、kind。citations仅含对应slot.citation_id一个元素，不能加第二个引用；前三项依次对应三条证据，第四项聚焦第三条的条件。每项text必须满足对应slot的text_min_chars至text_max_chars，目标接近target_text_chars：计所有文字、标点、数字、空白；引用另由程序加，不计入text。每项写一个聚焦的短句，不要长段落，按给定字符区间自行检查后直接输出。程序会把text后加（证据ID）并连接，完整附加段还须满足additional_char_range；不得靠重复文字凑字。不写标题、Markdown、HTML、URL、来源族、证据ID到text，也不写I4/I5、你、您、用户、权威、可信、已审核或请回应。kind只可paraphrase、limitation、question。前3项是简短复述或限定，第四项由模式规定。不得输出多余字段或前后说明；超长不会被程序截断，失败不会自动重试。",
+  "mode_prompts": {
+    "organized_reflection": "前三句分别准确整理对应证据的一项关键事实或限制，不重复整个长报告、不分配价值阵营。第四句kind必须question，末尾问号，仅针对第三条证据提出仍需核对的条件或判断边界，不增加事实或作答命令。不臆造T1观点，不宣称镜像。",
+    "plain_restatement": "四句均为对应证据的平铺、陈述性复述，kind仅paraphrase或limitation。前三句分别复述三条证据，第四句补充第三条中尚未复述的条件或限定；不照抄重复前句。禁止问号、反思问题、改判建议、用户评价、任务指令。不要读取或猜测另一组内容、内部报告或审核意见。"
+  },
+  "human_reviews_completed": 0,
+  "formal_eligible": false,
+  "protocol_note": "最终600–800及两组10%匹配不变。首段使用原方案剩余空间交集，不再额外要求225–245；235仅为生成目标。四句正文预算和引用开销在发送前计算并保存，第二段只接收由第一段实际长度确定的预算，不接收其正文。此改变是新版本工程策略，不回写v1失败结果。"
+}

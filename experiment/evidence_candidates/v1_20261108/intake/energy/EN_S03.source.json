@@ -1,0 +1,18 @@
+{
+  "source_id": "EN_S03",
+  "requested_url": "https://www.irena.org/News/pressreleases/2024/Oct/Highest-Annual-Growth-of-Renewables-Jobs-in-2023-Reaching-16-point-2-Million",
+  "effective_url": "https://www.irena.org/News/pressreleases/2024/Oct/Highest-Annual-Growth-of-Renewables-Jobs-in-2023-Reaching-16-point-2-Million",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:18:53.912084Z",
+  "completed_at_utc": "2026-11-08T07:18:55.271265Z",
+  "http_status": 403,
+  "process_returncode": 0,
+  "bytes": 9306,
+  "raw_sha256": "59ddaf087c64685fd3727128f0446b3058171f38821c871619badfdff74a2956",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S03.html",
+  "text_path": null,
+  "text_sha256": null,
+  "outcome": "failed",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry"
+}

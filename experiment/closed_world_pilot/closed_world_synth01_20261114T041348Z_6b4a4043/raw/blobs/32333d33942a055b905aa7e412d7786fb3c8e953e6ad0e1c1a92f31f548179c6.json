@@ -1,0 +1,1 @@
+{"attempt":2,"feedback":{"diagnostics":{"length":115,"max":280,"min":120},"instruction":"上一次整段共115字，低于下限120字。请扩写为约200字（必须在120到280字之间），补充你的依据或拿不准之处，仍为一段连续中文纯文本。","rejected_error_code":"live_micro_pilot:text_length_out_of_range"},"node_id":"speech_S02_T1"}

@@ -1,0 +1,1 @@
+{"attempt":3,"feedback":{"attempt_error":"sentence_length_out_of_range","instruction":"某一句话长越界：请按 sentence_budget 的 text_min_chars/text_max_chars 逐句调整长度，四条都要达标。","observations":{}},"request_id":"live_delivery_TOPIC_02_R1_20261111T122013Z_623be8c3:organized:3"}

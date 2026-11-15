@@ -1,0 +1,1 @@
+{"max_completion_tokens":128,"messages":[{"content":"仅执行接口连通性测试，不进行检索或研究；返回要求的JSON。","role":"system"},{"content":"请只返回一个JSON对象：{\"connection\":\"ok\"}。","role":"user"}],"model":"mimo-v2.6-flash","stream":false,"temperature":0,"thinking":{"type":"disabled"}}

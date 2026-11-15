@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "version": "extractive_control_v1",
+  "design_status": "exploratory_alternative_after_v3_failure",
+  "source_organized_output": "recorded_and_validated_only",
+  "control_content_origin": "deterministic_exact_source_sentences",
+  "source_scope": "same_frozen_packet_only",
+  "display_version": "source_id_inline_v1",
+  "sentence_rule": "按。！？划分完整句，保留正文全部字符及顺序；每条证据恰好选一整句，不改字、不新增连接语。",
+  "selection_rule": "先枚举每条证据的完整句，按证据顺序及句子偏移做字典序笛卡尔积；只按最终600–800、总长和附加长10%约束，选第一个合格组合。保存所有候选的偏移及字数，不按结论方向或语义评分挑选。",
+  "candidate_combination_limit": 10000,
+  "total_min_chars": 600,
+  "total_max_chars": 800,
+  "match_tolerance": 0.1,
+  "text_rewriting": false,
+  "model_calls": 0,
+  "old_runs_unchanged": true,
+  "natural_view_used": false,
+  "full_I4_eligible": false,
+  "human_reviews_completed": 0,
+  "formal_eligible": false,
+  "protocol_note": "这是独立的探索性I5实现备选。普通阅读段采用原证据句而不是四句模型生成，因此不沿用v3分句数量/每句长度契约；原方案最终阅读量、共同证据、来源和回应机会要求保持。绑定组织侧原输出不修改；不把v3失败重标成功。该对照版本仍须人工确认与正式登记。"
+}

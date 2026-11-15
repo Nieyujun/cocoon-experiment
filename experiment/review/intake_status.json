@@ -1,0 +1,51 @@
+{
+  "producer": "intake_averitec.py",
+  "schema_version": 1,
+  "run_id": "20261107T142301414211Z_b0c96ef3d8b9",
+  "outcome": "acquisition_failed",
+  "url": "https://raw.githubusercontent.com/MichSchli/AVeriTeC/7c62d1ec8df3fb560d6efe2b85fa191135636f81/data/dev.json",
+  "commit": "7c62d1ec8df3fb560d6efe2b85fa191135636f81",
+  "version_freeze_pending": false,
+  "requested_at_utc": "2026-11-07T14:23:01.415518Z",
+  "retrieved_at_utc": null,
+  "completed_at_utc": "2026-11-07T14:23:01.625419Z",
+  "sha256": null,
+  "bytes": 0,
+  "row_count": null,
+  "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "license_declared": "CC BY-NC 4.0",
+  "redistributable": false,
+  "rights_status": "pending_underlying_rights_and_human_review",
+  "raw_path": null,
+  "candidate_path": null,
+  "raw_download_complete": false,
+  "candidate_count": 0,
+  "review_status": "pending_dual_human_review",
+  "approved_for_experiment": false,
+  "human_reviews_completed": 0,
+  "evidence_pages_fetched": 0,
+  "paid_model_calls": 0,
+  "formal_material_count": 0,
+  "access_control": {
+    "storage_class": "private_intake",
+    "subject_access_policy": "deny",
+    "assistant_access_policy": "deny",
+    "export_to_experiment": false,
+    "runtime_access_boundary_verified": false,
+    "note": "私有路径及用途约束不等于 Windows ACL 或运行时沙箱已验证；禁止接入实验直到边界验证通过"
+  },
+  "missing_conditions": [
+    "两名人工独立复核及裁决记录",
+    "底层主张、证据和网页权利与用途核验",
+    "subject/assistant 对 private intake 的运行时访问隔离验证",
+    "实验材料正式审核批准；当前未生成正式材料",
+    "获取或校验未完成；查看错误类型，禁止切换通道或绕过权限拒绝"
+  ],
+  "error": {
+    "type": "URLError",
+    "http_status": null
+  },
+  "acquisition_manifest_path": "D:/信息茧房/experiment/intake/private/averitec/7c62d1ec8df3fb560d6efe2b85fa191135636f81/20261107T142301414211Z_b0c96ef3d8b9/acquisition.json",
+  "experiment_eligible_count": 0,
+  "status_scope": "仅公开材料接入；不是实验启动或预算配置"
+}

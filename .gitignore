@@ -1,0 +1,21 @@
+# Python 字节码缓存
+__pycache__/
+*.py[cod]
+
+# 单元测试运行产生的临时目录（tests/ 下仅保留顶层 .py 测试源码）
+tests/*/
+
+# 本地环境变量与密钥文件（严禁入库）
+.env
+.env.*
+
+# 操作系统与编辑器本地配置
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# 本地 AI 助手协作规则与历史交接记录（不上传组内仓库）
+AGENTS.md
+CLINE_历史对话交接.md

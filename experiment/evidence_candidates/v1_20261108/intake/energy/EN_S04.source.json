@@ -1,0 +1,18 @@
+{
+  "source_id": "EN_S04",
+  "requested_url": "https://www.irena.org/News/pressreleases/2024/Sep/Record-Growth-Drives-Cost-Advantage-of-Renewable-Power",
+  "effective_url": "https://www.irena.org/News/pressreleases/2024/Sep/Record-Growth-Drives-Cost-Advantage-of-Renewable-Power",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:19:22.873954Z",
+  "completed_at_utc": "2026-11-08T07:19:24.566758Z",
+  "http_status": 403,
+  "process_returncode": 0,
+  "bytes": 9376,
+  "raw_sha256": "faa405024a3f28e4339b1414573454d4a9b6ef29e680d44e4a4fc37390741be7",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S04.html",
+  "text_path": null,
+  "text_sha256": null,
+  "outcome": "failed",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry"
+}

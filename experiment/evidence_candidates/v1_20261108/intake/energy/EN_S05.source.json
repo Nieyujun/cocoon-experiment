@@ -1,0 +1,19 @@
+{
+  "source_id": "EN_S05",
+  "requested_url": "https://www.ilo.org/resource/news/jobs-renewable-energy-record-highest-annual-growth-rate-reaching-162",
+  "effective_url": "https://www.ilo.org/resource/news/jobs-renewable-energy-record-highest-annual-growth-rate-reaching-162",
+  "content_type": "text/html; charset=utf-8",
+  "started_at_utc": "2026-11-08T07:19:25.591196Z",
+  "completed_at_utc": "2026-11-08T07:19:30.590435Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 56870,
+  "raw_sha256": "58fdc6eb5082c0e7268c6d214e82c4f7cc01722fe6b613b0c8d90da9752bbc9c",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S05.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S05.text.json",
+  "text_sha256": "6eb27facb7e0236c80be7c2954ac35418d7932116af514717c37f2a8b0736a26",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 7686
+}

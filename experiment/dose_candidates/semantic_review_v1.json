@@ -1,0 +1,223 @@
+{
+  "review_type": "independent_ai_not_human",
+  "content_origin": "editorial_design_draft",
+  "status": "pass_with_limitations",
+  "input_sha256": "e691ac8ab189893ba83d37040e4cc1a6d40ffa6ef6f6f6a63b707d48ddc73fa4",
+  "checked_pairs": 6,
+  "checks": [
+    {
+      "packet_id": "CAND_TOPIC_01_R1_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    },
+    {
+      "packet_id": "CAND_TOPIC_01_R2_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    },
+    {
+      "packet_id": "CAND_TOPIC_02_R1_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    },
+    {
+      "packet_id": "CAND_TOPIC_02_R2_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    },
+    {
+      "packet_id": "CAND_TOPIC_03_R1_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    },
+    {
+      "packet_id": "CAND_TOPIC_03_R2_V1",
+      "I4_supported": true,
+      "I5_supported": true,
+      "issues": []
+    }
+  ],
+  "global_limits": [
+    {
+      "id": "review_scope",
+      "status": "scope_retained",
+      "detail": "仅审核 configs/dose_additions_v1.json、experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/*round*.json 六包和 cocoon/dosage.py。结论限于十二段附加文字相对各自原三条证据的支持关系，以及本模块显示、计字和披露逻辑；未重审候选轴互斥性，不把非互斥当作缺陷。"
+    },
+    {
+      "id": "support_is_contextual",
+      "status": "scope_retained",
+      "detail": "I4_supported、I5_supported 表示附加文字随同本轮完整三条原证据显示时未发现必须修改的越界主张，不表示脱离证据仍具备完整语境，也不表示外部来源已被证实。具体日期、地域和研究时点可由同屏原证据承载，不要求每段重复所有元数据；不得把该结论扩展为跨时点、跨平台或个体化效果证明。"
+    },
+    {
+      "id": "citation_integrity_not_semantic_proof",
+      "status": "limitation_retained",
+      "detail": "已核对18个证据ID、36处附加正文引用及18条正文的 content_sha256；它们与本地原包一致。引用完整性、文本摘要一致及真实引用完整性均不是语义证明，也不证明网页真实性、原文支持程度、翻译准确性或使用权利；本次语义判断来自逐段对照，不由哈希或ID匹配替代。"
+    },
+    {
+      "id": "external_source_and_human_review",
+      "status": "remaining",
+      "detail": "未联网、未打开来源URL；原始来源内容、日期归属、来源族及使用权利仍待独立核验。原证据与附加段的人工复核仍待完成；人工审查完成数为0，本次AI审核不计入人工名额。"
+    },
+    {
+      "id": "no_t1_no_actual_mirror",
+      "status": "limitation_retained",
+      "detail": "未提供T1自然观点，natural_view_used=false。I4只获组织与条件反思编辑草稿层面的支持，不是实际个体镜像、观点诊断或已记录的原助手干预输出。not_model_output不可解释为未经AI辅助创作。"
+    },
+    {
+      "id": "actual_source_index_and_review_links",
+      "status": "remaining",
+      "detail": "本次范围不含实际 source_index、装配结果或审阅链接页面；未核验具体短机构名、来源ID、显示日期及review链接是否正确落地。dosage.py体现URL元数据与messages分离，但不生成审阅链接页面。其文本校验也不是任意输入的通用URL过滤器，因此不能仅凭策略声明证明所有未来输入均不含URL；当前18条证据正文及12段附加正文未检出 http(s):// 或 www. 链接。"
+    },
+    {
+      "id": "assembled_dose_and_runtime",
+      "status": "remaining",
+      "detail": "已实际重算12段附加文字的Python len，未导入执行 dosage.py，未运行 make_dose_pair、public_payload 或其依赖，也未读取范围外依赖。完整可见文本的实际字数、600至800区间、实际调用阈值、最终消息不含URL及完整导出重算仍须以真实来源索引和装配产物核验；不以附加段长度匹配替代总剂量达标。"
+    },
+    {
+      "id": "first_four_stages",
+      "status": "remaining",
+      "detail": "前四stage的执行与验证不在本次范围，未执行或未提供执行证据只作为remaining保留，不列为本轮附加段语义bug，不声称完整实验链路已通过。"
+    },
+    {
+      "id": "experimental_approval",
+      "status": "limitation_retained",
+      "detail": "pass_with_limitations仅表示本次限定范围内未发现必须修改的问题，不构成实验批准。未验证干预有效性、实际响应行为或总阅读负担等价；任何新增受试可见披露、标签或提示均需进入最终visible_text并重新计字。"
+    }
+  ],
+  "human_reviews_completed": 0,
+  "approved_for_experiment": false,
+  "criteria": [
+    {
+      "id": "input_and_issue_policy",
+      "status": "pass",
+      "detail": "input_sha256直接针对config文件原始字节计算，不针对重新序列化JSON。已审核6对共12段；必须修改的问题共0项，因此issues均为空，不为凑数产生问题或替换建议。若存在问题，应提供可定位的exacttext及具体建议，本次无此类条目。"
+    },
+    {
+      "id": "pairwise_semantics_and_scope",
+      "status": "pass",
+      "scope": "retained",
+      "evidence": [
+        {
+          "packet_id": "CAND_TOPIC_01_R1_V1",
+          "evidence_ids": ["CL_E01", "CL_E02", "CL_E03"],
+          "detail": "I4的自然作用/额外增量区分、工业化以来的主要来源及水分或氮限制均有对应证据；地点年份和持续等比例碳吸收问题沿用原证据外推边界。I5保留主要、可能、长期与资源条件，不把自然碳循环排除，不新增增产或吸碳事实。",
+          "exacttext": [
+            "工业化以来的浓度上升主要来自化石燃料使用，但“主要”不表示自然碳循环停止（CL_E02）。",
+            "植物可能受到二氧化碳施肥效应的促进，但可用水分或氮会限制生长（CL_E03）。"
+          ]
+        },
+        {
+          "packet_id": "CAND_TOPIC_01_R2_V1",
+          "evidence_ids": ["CL_E04", "CL_E05", "CL_E06"],
+          "detail": "I4只询问海洋吸收外推、状态与方向和模型归因条件，未断言完全抵消排放；I5中吸收的定性联系、平均碱性与酸化并存、2016年研究的数据检出/模型归因区分均来自原包，不否定模型价值或新增测量结果。",
+          "exacttext": [
+            "大气二氧化碳增加与更多二氧化碳溶入海洋相联系，但材料没有给出吸收比例、速度或上限（CL_E04）。",
+            "二〇一六年的植被变绿研究介绍把数据检出的变化与模型进行的驱动因素归因分开（CL_E06）。"
+          ]
+        },
+        {
+          "packet_id": "CAND_TOPIC_02_R1_V1",
+          "evidence_ids": ["EN_E01", "EN_E02", "EN_E03"],
+          "detail": "保留2023年、公用事业规模、全球加权平均平准化度电成本、技术间降幅差异和并网早期的多数挑战。降幅并不一致不等于每两种技术均不同；无需因此重写。I4询问系统适用条件，I5只复述成本口径与并网条件，均未外推为所有阶段或所有系统的保证。",
+          "exacttext": [
+            "并网材料则限定在风光整合早期，多数挑战可通过设备或运行调整应对（EN_E03）。",
+            "另一条材料讨论风光并网早期阶段，新增发电对系统的影响相对较低，多数相关挑战可通过既有设备改动或运行方式改善来应对（EN_E03）。"
+          ]
+        },
+        {
+          "packet_id": "CAND_TOPIC_02_R2_V1",
+          "evidence_ids": ["EN_E04", "EN_E05", "EN_E06"],
+          "detail": "灵活性手段、行业就业存量/同比变化和美国研究中的技能相近/空间匹配均来自本轮原三证据。I4不把资源列举等同有效配置，不把就业增长说成已经转岗；I5保留2023年就业及美国研究归属。附加段未重复研究发表年份，但完整同屏EN_E06仍明确2023年，未形成新的当前普遍性断言。",
+          "exacttext": [
+            "若由就业存量增长推断工人已经转岗，现有材料是否足够？",
+            "就业回顾记录二〇二三年全球可再生能源就业规模高于前一年；当年存量与一年新增岗位不是同一口径（EN_E05）。"
+          ]
+        },
+        {
+          "packet_id": "CAND_TOPIC_03_R1_V1",
+          "evidence_ids": ["WE_E01", "WE_E02", "WE_E03"],
+          "detail": "降水机会限于该答复解释的字段及相应地区时段，不冒充跨软件保证。I4询问缺失时空条件与字段一致性，均已有原包依据；I5保留所述预警标准的12小时、50毫米以上，以及将达或已达且降雨可能持续两类条件，不把预警写成当前各地点实况。",
+          "exacttext": [
+            "雨雪图标旁的百分比在该答复中表示降水机会，不是确定承诺（WE_E01）；地区与时段限定了这项信息的适用范围（WE_E02）。",
+            "所述暴雨蓝色预警标准包括十二小时内雨量将达到五十毫米以上，或已达到该雨量且降雨可能持续（WE_E03）。"
+          ]
+        },
+        {
+          "packet_id": "CAND_TOPIC_03_R2_V1",
+          "evidence_ids": ["WE_E04", "WE_E05", "WE_E06"],
+          "detail": "I4明确2020年历史答复与当时渠道，I5保留历史、当时和非所有平台的限定；原证据继续承载具体日期。发布者/日期/正文对应及截图不证明真伪已在WE_E05中出现，并非附加段新造的来源核验事实。初始状态误差只作为数值预报不确定性来源，不冒充某次预报或长期准确率核验。",
+          "exacttext": [
+            "二〇二〇年的历史答复描述当时网站不保留过期信息的做法（WE_E04）；主要发布渠道的列举也属于该答复时点（WE_E05）；集合预报科普解释初始状态误差，并未核验某次预报（WE_E06）。",
+            "历史答复说明预警信息具有时效性，所述网站当时不保留过期信息，以免混淆；这一处理方式不代表所有平台始终采用相同做法（WE_E04）。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "citation_targets_and_local_integrity",
+      "status": "pass",
+      "detail": "六对packet_id及topic_id均与对应原包一致；每臂正文中的三个证据ID与各自I4_citations/I5_citations及本轮原包ID列表完全一致，无缺失、跨包或多余引用。18条原证据正文UTF-8 SHA-256均匹配其content_sha256。该结果仅证明本地引用与正文完整性，不自动证明引用语义或外部来源真实性。"
+    },
+    {
+      "id": "editorial_provenance_not_personal_mirroring",
+      "status": "pass",
+      "references": [
+        "configs/dose_additions_v1.json:4",
+        "configs/dose_additions_v1.json:70",
+        "cocoon/dosage.py:148",
+        "cocoon/dosage.py:252"
+      ],
+      "detail": "config标记editorial_design_draft、natural_view_used=false、human_reviews_completed=0，并明确AI辅助编辑与非完整I4。十二段不声称读取用户T1、复原用户观点或诊断个体；I4问题以材料及条件为对象。dosage.py对editorial_design_draft禁止声明使用自然观点或非空来源事件，但这一结构校验本身不证明真实事件来源。",
+      "exacttext": [
+        "不是完整I4个性化镜像",
+        "缺少T1自然观点；natural_view_used为false，未进行个体观点诊断。",
+        "not_model_output仅标记并非实际原助手干预输出；本文件为AI辅助编写的编辑设计草稿。"
+      ]
+    },
+    {
+      "id": "i5_neutrality_and_response_opportunities",
+      "status": "pass",
+      "references": ["cocoon/dosage.py:13", "cocoon/dosage.py:182", "cocoon/dosage.py:248"],
+      "detail": "六段I5均为陈述性中性复述，未新增反思问题、作答命令或独有回应入口；语义判断与六段问号数均为0相互印证，未把无问号本身当充分证明。I4材料内条件反思问题属于已声明处理差异，不计作额外输入轮次。模块两臂共用阅读材料/阅读说明标签、同一公共回应提示，记录response_opportunities=1；实际界面的回应次数仍未验证。",
+      "exacttext": "请用一段简短文字回应上述材料；如不确定可直接说明。"
+    },
+    {
+      "id": "source_id_only_v1_display_and_disclosure",
+      "status": "pass_with_limitations",
+      "references": ["cocoon/dosage.py:18", "cocoon/dosage.py:77", "cocoon/dosage.py:112", "cocoon/dosage.py:261", "cocoon/dosage.py:322"],
+      "detail": "用户所称SOURCE_ID_ONLY v1在代码中的实际版本名是source_id_inline_v1。静态模板显示证据ID、来源ID、短机构名及日期后接完整证据正文；短机构名上限18字符，日期为YYYY-MM-DD或日期未明。URL和来源族元数据留在非消息source_map及审计packet中，public_payload.messages仅导出visible_text，不附这些元数据或review链接。策略清楚声明审阅者链接不提供给受试者、无额外浏览动作，并声明这是新显示版本而非追认旧版URL输入已缩短。实际来源标签、链接页及最终交付仍待核验。",
+      "exacttext": [
+        "完整URL和来源族仅保留在审计映射及审阅链接，不属于受试文本。",
+        "仅审阅者；受试者不获得链接或额外浏览动作。",
+        "这是新的受试实际输入版本，不声称旧版含完整URL的输入也已缩短。"
+      ]
+    },
+    {
+      "id": "actual_length_basis_and_additional_counts",
+      "status": "pass_with_limitations",
+      "references": ["cocoon/dosage.py:14", "cocoon/dosage.py:182", "cocoon/dosage.py:205", "cocoon/dosage.py:230", "cocoon/dosage.py:311"],
+      "detail": "实际重算附加段采用Python len；模块对最终visible_text直接len，包含原证据、所有可见ID/机构/日期标签、附加段、阅读标签、公共回应提示、标点及空白，而非拿正文或删URL后的估计数替代。公共标签/分隔与回应提示合计39个码点，因此每臂总长应为len(evidence_block)+len(additional_text)+39；缺少实际来源索引时不报告虚构总长。六对附加长度差均低于模块默认10%容差；这不证明实际调用使用默认阈值或总长已在600至800。Python len计Unicode码点，不是token数、视觉字形数或认知负担。public_payload静态逻辑会重装配并核对完整快照，本次未执行该路径。",
+      "difference_formula": "abs(I4_chars-I5_chars)/min(I4_chars,I5_chars)",
+      "additional_counts": [
+        {"packet_id": "CAND_TOPIC_01_R1_V1", "I4_chars": 233, "I5_chars": 234, "difference_ratio": 0.004291845493562232},
+        {"packet_id": "CAND_TOPIC_01_R2_V1", "I4_chars": 232, "I5_chars": 234, "difference_ratio": 0.008620689655172414},
+        {"packet_id": "CAND_TOPIC_02_R1_V1", "I4_chars": 235, "I5_chars": 230, "difference_ratio": 0.021739130434782608},
+        {"packet_id": "CAND_TOPIC_02_R2_V1", "I4_chars": 240, "I5_chars": 236, "difference_ratio": 0.01694915254237288},
+        {"packet_id": "CAND_TOPIC_03_R1_V1", "I4_chars": 232, "I5_chars": 226, "difference_ratio": 0.02654867256637168},
+        {"packet_id": "CAND_TOPIC_03_R2_V1", "I4_chars": 230, "I5_chars": 239, "difference_ratio": 0.0391304347826087}
+      ],
+      "exacttext": "所有新增受试可见内容都必须加入visible_text后重新计字。"
+    },
+    {
+      "id": "no_automatic_approval",
+      "status": "pass",
+      "references": ["configs/dose_additions_v1.json:75", "cocoon/dosage.py:251", "cocoon/dosage.py:325"],
+      "detail": "config保留待AI与人工复核；模块保留pending_independent_review、formal_eligible=false和experimental_ready=false。本审核不会修改这些输入状态，也不将结构验证、长度匹配或本次AI支持判断升级为正式实验许可。"
+    }
+  ]
+}

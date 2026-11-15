@@ -1,0 +1,228 @@
+{
+  "review_type": "independent_ai_review_not_human",
+  "reviewer_id": "evidence-auditor",
+  "human_review": false,
+  "status": "needs_revision",
+  "checked_evidence_count": 18,
+  "checks": [
+    {
+      "evidence_id": "CL_E01",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。连续原句及其前文共同支持自然温室效应与额外二氧化碳增强效应的区别；中文没有加入温升幅度、时间或地区预测。页面2025-05-21发布日期可由本地HTML核实，档案提示与材料一致。",
+      "recommendation": "保留机制限定，不把自然作用解释为额外排放无影响，也不把2026-11-08取证日期当作统计年份。"
+    },
+    {
+      "evidence_id": "CL_E02",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。mostly被保留为主要而非唯一，时间为工业化以来；同页上下文也讨论自然过程与年际变化，没有支持每个地点、季节或年份均只由化石燃料决定的说法，中文没有作此断言。",
+      "recommendation": "保留主要、长期与非单次事件归因的边界；与CL_E01同页，不能增加独立来源计数。"
+    },
+    {
+      "evidence_id": "CL_E03",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。it appears及until引出的水分或氮限制被保留；同一Land语境直接讨论资源约束与区域差异。中文关于不能持续、等比例外推的内容属于证据边界，不是额外的定量研究结论。",
+      "recommendation": "继续区分植物生长、作物产量与长期净储碳；2011年背景文的2026年修改日期不构成新实验日期。"
+    },
+    {
+      "evidence_id": "CL_E04",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。原句直接支持人为增加大气二氧化碳与更多二氧化碳溶入海洋的联系；中文没有将其改成任一海域净通量、特定比例或无限抵消能力。",
+      "recommendation": "保留定性机制及不得外推为持续完全抵消排放的限制，不引入同页缺少年份的平均值或比例。"
+    },
+    {
+      "evidence_id": "CL_E05",
+      "supported": "partial",
+      "quote_match": true,
+      "issue": "真实缺口是引文覆盖，不是同页缺乏依据或中文事实错误。当前original_quote仅直接解释氢离子、酸度与pH方向，未包含中文核心表述海水仍呈碱性且可继续酸化。CL_S03.text.json的Carbon dioxide and seawater段明确支持该表述；原引文精确位于[8548,8672)，可直接支持碱性与继续酸化的连续从句位于[9119,9247)。",
+      "recommendation": "按suggested_quote_updates精确替换original_quote；不要标成无来源支持，也不要跨段拼接。建议片段不包含未注明观测年份的平均pH数字，且保留but及as条件。替换后应同步把本条boundary_note及scope_note中本条适用的完整原句说法改为同一原句内的连续从句，明确which的指代来自该段海洋平均pH语境；氢离子定义仍由同页The pH scale段支持。本审核没有执行任何上游修改。"
+    },
+    {
+      "evidence_id": "CL_E06",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。引文完整保留研究共同作者的归属，明确区分数据检出与模型归因；同页正文将greening解释为叶面积或叶覆盖增加。2016年为研究介绍的发布日期，而非2026年观测或数据覆盖年。",
+      "recommendation": "来源层级保持为NASA对研究的介绍和作者转引，不提升为已直接阅读的论文全文或独立复现；不得由变绿直接推出长期净储碳或总体生态净收益。"
+    },
+    {
+      "evidence_id": "EN_E01",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。正文已明确二手转引。原句中的2023年0.044美元/kWh是公用事业规模太阳能全球加权平均LCOE的绝对水平，12%是该技术2023年同比降幅，3%是该技术2021至2022年的同比降幅；2010年0.460美元/kWh及约90%的长期变化没有被中文错置。中文只使用方向，没有把这些数字当作不同技术的绝对成本排名。",
+      "recommendation": "保留二手、技术、全球加权平均及数据年份限定。不要把本条太阳能跨年同比的3%与EN_E02陆上风电2023年的3%混为同一结果；不要从LCOE推出终端电价或全系统成本。"
+    },
+    {
+      "evidence_id": "EN_E02",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。原引文是同一成本新闻条目中的连续片段，2023年由紧邻前文限定；3%、7%、4%、7%分别对应陆上风电、海上风电、聚光太阳能热发电、水电的该年度成本降幅。中文既承认部分技术降幅相同，也没有将同比变化排序误写成绝对成本排序。条目尾部的信息来源和链接指向IRENA发布，不是同页其他新闻的来源。",
+      "recommendation": "继续标为北京大学能源研究院对IRENA成本发布的二手摘编，并与EN_E01共用报告家族。独立展示text时应随附2023年、同比变化而非绝对成本、二手转引三项限定。不要扩大引文去采纳同页未核验的其他比较；原引文中的技术名称笔误仅在中文释义中校正，不改写原quote。"
+    },
+    {
+      "evidence_id": "EN_E03",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。引文位于报告摘要的早期整合系统段落，lower-phase、early integration phases、most及can等范围或能力限定被中文保留，未写成任何高比例风光系统都无需改造。",
+      "recommendation": "保留早期阶段、实施设备或运行调整及多数挑战的条件，不把相对影响较低写成影响为零或可靠性已获验证。"
+    },
+    {
+      "evidence_id": "EN_E04",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。连续段落支持天气相关供给波动、全系统灵活性与列举的四类技术手段。中文将安全且可承受供电视为有效整合的条件，没有断言任一措施单独充分或所有地点均已具备。未采纳邻段的未来情景数值。",
+      "recommendation": "继续与EN_E03计为同一报告来源；没有量化配置或具体系统评估，不得增加储能时长、供电保证或未来损失比例。"
+    },
+    {
+      "evidence_id": "EN_E05",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。2024年发布文本中的2023年1620万与2022年1370万就业规模被正确对应；中文没有把1620万当作一年新创岗位，也未将领域内同比或存量差解释为全经济净就业。引文来自联合报告发布方的新闻稿，而非已经核验的报告方法章节。",
+      "recommendation": "准确称为联合报告发布方的第一方新闻发布；第一方发布不等于已直接核验原始数据及统计方法。保留岗位口径、全职当量、间接岗位及个体转岗均未核实的限制，IRENA与ILO不重复计为独立调查。"
+    },
+    {
+      "evidence_id": "EN_E06",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。连续引文来自原始研究论文摘要，支持美国化石燃料开采职业的技能相似与地域错配两个不同结果；中文以2023年发表限定today/current的研究语境，没有采用邻句中的未来就业预测。boundary_note明确不是全球普查或每名工人的确定结果。",
+      "recommendation": "将职业或群体层面的空间错配与个体是否能转岗分开；保留美国、开采职业、历史资料及技能相似不等于无需培训的范围，不当前化为2026年就业状态。"
+    },
+    {
+      "evidence_id": "WE_E01",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。原文支持雨雪图标旁百分比及概率大小的含义；中文没有承诺必然发生，也没有把该2022年答复升格为所有软件任意百分比的统一定义。",
+      "recommendation": "将确认具体字段作为使用建议保留，不补造计算算法、降水量或持续时间定义。"
+    },
+    {
+      "evidence_id": "WE_E02",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。某一地区、一定时段及不能保证百分之百均直接来自原句。转发核查步骤是明确的应用提示，不是伪造的历史错误案例或来源原话。",
+      "recommendation": "保留地区、适用时段与概率语气；不从本句推出网格精度、时段起止或具体产品的生效换算规则。"
+    },
+    {
+      "evidence_id": "WE_E03",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。句子确处于暴雨蓝色预警信号的标准字段，十二小时与五十毫米正确，逻辑保留将达，或者已达且可能持续，而非把或者改成并且或将可能持续改成必然持续。本地可见日期及PubDate均为2023-06-17，不是URL中的2022年。",
+      "recommendation": "只用于解释该页当时的信号条件，保留本地标准核查；不可当作当前所在地实况、所有地区通用阈值或其他警种规则。"
+    },
+    {
+      "evidence_id": "WE_E04",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现当前化错误。中文已经明确历史答复、所述网站与答复当时的网站做法；来源可见日期及PubDate为2020-05-12。原文支持时效性和当时的过期信息处理，不支持今天无法查询历史预警或天气已经结束。",
+      "recommendation": "保留历史时点和非跨平台通用的限定。单独呈现本条时随附2020-05-12，不能省去当时二字后改写为当前网站规则。"
+    },
+    {
+      "evidence_id": "WE_E05",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现当前化或穷尽渠道的明确断言。原引文的目前属于2020-05-12答复，且含主要；中文用这则答复列出的渠道进行转述，boundary_note已排除当前渠道不变及所有地方渠道穷尽。寻找原发布页属于核查建议，不等于机构来源自动保证内容为真。",
+      "recommendation": "为防止未来只摘text造成时点或主要限定脱落，可将首句显式标为2020-05-12这则答复列举的主要发布渠道。这是单条展示的防误读建议，不把当前材料已有限定误判成2026年渠道核验。"
+    },
+    {
+      "evidence_id": "WE_E06",
+      "supported": "yes",
+      "quote_match": true,
+      "issue": "未发现实质性失配。引文及前文支持模式初值对真实大气状态的近似和不可避免误差，来源归为中国气象报社科普稿而非独立校准实验。中文没有把某次落空直接判为正常误差或宣布任何服务已校准。",
+      "recommendation": "继续将不确定性机制与具体消息真实性、长期准确率和概率校准分开；现有维度名不能被当成这些判据与检验已完成的证据。"
+    }
+  ],
+  "global_limits": [
+    {
+      "id": "AUDIT_SCOPE_AND_STATUS",
+      "finding": "这是本会话AI的独立复核，不是人审，也未启动额外模型调用。needs_revision仅针对CL_E05当前引文与中文核心命题的直接覆盖缺口；其同页语义支持已经找到。其余17条未发现需要判为无支持的实质性失配。",
+      "scope": "读取三份topic_material.json及三目录下全部18份source.json、14份实际存在的text.json；辅助只读复算其17份实际存在的HTML、天气local_validation.json及项目取证脚本。未读取其他个人目录，未联网、未重取来源、未运行抓取入口、未推荐插件、未创建任务或Markdown。唯一审核产物为review/independent_ai_audit.json。",
+      "reviewed_source_ids": ["CL_S01", "CL_S02", "CL_S03", "CL_S04", "EN_S01", "EN_S02", "EN_S03", "EN_S04", "EN_S05", "EN_S06", "EN_S07", "EN_S08", "WE_S01", "WE_S02", "WE_S03", "WE_S04", "WE_S05", "WE_S06"],
+      "source_record_count": 18,
+      "successful_text_source_count": 14,
+      "selected_source_count": 13,
+      "human_review_completed_by_this_audit": false,
+      "upstream_human_reviews_completed": {"climate": 0, "energy": 0, "weather": 0}
+    },
+    {
+      "id": "INTEGRITY_AND_EXACTNESS",
+      "finding": "18份来源的bytes及raw_sha256按脚本语义复算均一致，其中17份实际HTML摘要匹配；WE_S05没有HTML、bytes为0、raw_sha256为null，与失败记录一致，不能称为验证了不存在文件的哈希。14份成功来源的text_sha256、text_char_count及source_id均一致。",
+      "hash_semantics": "raw_sha256针对原始HTML字节；text_sha256针对JSON解码后的text字段的UTF-8字节，不是整个text.json文件字节。",
+      "parser_check": "只从脚本AST选择TextParser与normalize，使用已保存HTML及记录的encoding离线重放；未导入或执行capture、命令行入口，也不生成pyc。14份重建文本与保存的text字段逐字符相同。",
+      "quote_check": "18/18个original_quote不作任何再次改写即可在各自保存text字段中直接找到，并且各出现一次。quote_match表示该规范化文本中的精确连续子串；不是声称含HTML标签、实体及原始空白的文件字节与引文直接相同。语义支持由本次AI独立审阅判定，未以字符匹配代替。",
+      "capture_script": "D:/信息茧房/scripts/capture_evidence_source.py",
+      "capture_script_sha256": "92a988ea01a8b1c310b67ebfdefd7c68c3919ba59e3df5b35c59c992bd572da9",
+      "capture_script_limit": "记录的是本次读取的脚本摘要；source.json未保存抓取时脚本摘要，故不能仅凭当前重放一致证明抓取当时执行的脚本版本或真实联网执行历史。该限制不判为本候选包实现错误。",
+      "material_sha256": {
+        "climate": "c224855f3b3b8c8e1a9150a92b2e051d8ff39e1ac5a08704b63761bc336be003",
+        "energy": "d5dc324bd06172379e06ca87aa285eb5b39fec0a99ba2d8acbc85a2b5df9d37a",
+        "weather": "63c861e8a08d2f49e029a737af19ac9aef6e2fadf43c9dc0dc1392ef318c1ed0"
+      },
+      "weather_local_validation_material_hash_matches": true
+    },
+    {
+      "id": "QUOTE_BUDGET",
+      "finding": "所有已采用来源均满足每source累计英文不超过180词、中文不超过300字。英文同时报告空白分词及更保守的拉丁字母/数字词元计数；中文同时核对汉字与包含数字、标点的全部字符。预算对象为直接original_quote，不把已标记释义冒充直接引文。",
+      "english_counts": [
+        {"source_id": "CL_S01", "whitespace_words": 45, "latin_numeric_tokens": 45},
+        {"source_id": "CL_S02", "whitespace_words": 25, "latin_numeric_tokens": 25},
+        {"source_id": "CL_S03", "whitespace_words": 41, "latin_numeric_tokens": 42},
+        {"source_id": "CL_S04", "whitespace_words": 39, "latin_numeric_tokens": 40},
+        {"source_id": "EN_S02", "whitespace_words": 120, "latin_numeric_tokens": 121},
+        {"source_id": "EN_S05", "whitespace_words": 66, "latin_numeric_tokens": 69},
+        {"source_id": "EN_S06", "whitespace_words": 93, "latin_numeric_tokens": 95},
+        {"source_id": "EN_S07", "whitespace_words": 73, "latin_numeric_tokens": 80}
+      ],
+      "chinese_counts": [
+        {"source_id": "EN_S08", "han_chars": 37, "all_chars": 48},
+        {"source_id": "WE_S01", "han_chars": 157, "all_chars": 175},
+        {"source_id": "WE_S02", "han_chars": 27, "all_chars": 35},
+        {"source_id": "WE_S04", "han_chars": 44, "all_chars": 48},
+        {"source_id": "WE_S06", "han_chars": 63, "all_chars": 68}
+      ],
+      "unselected_sources_quote_count": 0,
+      "suggested_CL_E05_words": 23,
+      "CL_S03_words_after_suggested_replacement": 42,
+      "rights_limit": "通过字词预算不等于获得版权、翻译或再分发许可；此审核不作法律授权结论。"
+    },
+    {
+      "id": "SOURCE_HIERARCHY_AND_FAILURES",
+      "finding": "已核对当前全部来源，包括未采用及失败来源，不只检查sources列表内的13页。EN_S01、EN_S03、EN_S04为HTTP 403且无text；WE_S05为HTTPS转向HTTP后失败、无HTML和text。它们均未被用作证据，不把失败记录或缺少成功文本误判为遗漏实现。WE_S03成功保存但正文不足以支持所需更新、解除细则，被排除合理。",
+      "hierarchy": "CL_S01/02/03是科学解释页，CL_S04是研究介绍中的共同作者转引。EN_S02是报告发布方摘要；EN_S05是联合报告发布方的新闻稿，不等于原始研究方法章；EN_S06是原始研究论文；EN_S07/08是同一成本研究的二手报道或摘编。天气为答复、标准解释页和科普稿，并非四次独立实证验证。段落归属核查没有将EN_S08其他新闻的作者或来源套给成本条目。",
+      "independence_limit": "采用页按既有source_family_id合计11个家族，但页面数、家族数及发布机构数均不证明统计独立。CL_S01与CL_S03保守共家族合理；EN_E01/02共家族，EN_E03/04共报告，ILO与IRENA的合作报告只能计一次。未联网补验二手页面所引的一手失败页或PDF。"
+    },
+    {
+      "id": "DATES_AND_MODALITY",
+      "finding": "本地HTML或可见日期与材料使用的发布时点未发现冲突；2026-11-08只作为取证日期。CL_S02与CL_S04、EN_S07等页面修改日期不能刷新原研究年份。CL_S03初发日期及平均pH观测年未查明，EN_S02摘要独立发布日期留空且正文引用报告年份2024，均属如实保留未知。EN_S05的HTML另标2024-10-03修改，仍不能把2024-10-01发布页视为初发当日存档。",
+      "weather_limit": "WE_S06可见日期及PubDate均为2020-05-12，URL中的2022年不构成发布日期；WE_E04/05仅有历史网站做法和发布渠道语境，不是当前在线服务核验。本次没有查询实时天气或现行平台配置。",
+      "modality_check": "已核对mostly、it appears、can/most、early-phase、could以及将达/已达且可能持续等范围、不确定性和条件；未发现把所采用may/could/conditional语气改成无条件必然的条目。未采用的邻段预测或情景也未被当成已发生事实。"
+    },
+    {
+      "id": "STANCE_AXES_AND_U",
+      "finding": "三个轴的两端均可同时认同，现有文字没有建立互斥决策，也未证明是单一双极潜变量。机制事实、成本指标、技术约束和核查建议不能仅凭被放在不同侧就成为相反观点。此处是测量适用性限制，不把候选素材未完成实验设计当作代码实现错误。",
+      "topics": [
+        {"topic_id": "TOPIC_01", "mutually_exclusive": false, "reason": "重视实施条件与成本和优先降低排放与生态风险可以兼容；科学机制证据本身没有给出行动节奏的两端取舍。", "recommendation": "保留为事实材料或分开测量两种侧重点；若未来用于U，先建立相同条件下真实的决策取舍并验证量表，不以承认机制事实作为站队或正确立场。"},
+        {"topic_id": "TOPIC_02", "mutually_exclusive": false, "reason": "补齐系统条件可以与加快具备条件的部署同时进行；条件限定使两端尤其容易共同成立，不能把LCOE下降与系统约束硬分为正反。", "recommendation": "未操作化资源或时序取舍前，不据该轴确认立场极化或U；不要为平衡来源数制造技术事实的反方。"},
+        {"topic_id": "TOPIC_03", "mutually_exclusive": false, "reason": "核实适用条件和及时依据有效预报准备本来可兼容；事实真假与核查能力不是合理异见的两极。现有scope_note已明确不作正式U/立场极化确认，这一限制合理。", "recommendation": "保留现有不用于正式U确认的限制；可作为纠错、理解或校准研究候选，但本包没有校准检验数据，不为凑观点设置质疑来源的一派。"}
+      ]
+    },
+    {
+      "id": "PUBLICPACKET_AND_REVIEW_SEPARATION",
+      "finding": "三份候选材料的结构未发现gold/ground_truth/answer等金标准字段；文本中提到金标准是在否认已成为金标准，不能因关键词出现就报泄漏。三份均为pending_dual_human_review、human_reviews_completed=0，本审核不改变它们。",
+      "limit": "本次范围内没有提供实际publicpacket，故不能宣称已完成公共包导出链路或字段白名单验证。候选材料、原HTML、text.json、source.json和本AI审计均是本地底稿，不是可直接发布的受试材料包。",
+      "requirement": "publicpacket禁止包含金标准答案、真伪/正确立场标签、支持度审计结果、评分键或隐含人工批准信息；本文件checks.supported和审计结论不得直接并入publicpacket。本AI复核不能填入任何human_review完成数或冒充双人独立人工批准。"
+    },
+    {
+      "id": "CANDIDATE_COMPLETENESS_AND_EXTERNAL_VALIDITY",
+      "finding": "当前实际是三议题各六条、合计18条候选证据，不是full108、不含完整曝光材料与冻结的I4/I5包，也没有经取证的历史错误卡。其未完成状态已明确披露，只作为范围限制，不报为实现缺陷。",
+      "limit": "未核验在线现状、初发当天网页存档、链接后论文或PDF方法、未来送达链路、实验效果与权利许可。连续匹配、哈希一致及本次语义支持均不能替代上述事项，也不能自动批准正式使用。"
+    }
+  ],
+  "suggested_quote_updates": [
+    {
+      "evidence_id": "CL_E05",
+      "original_quote": "which is basic (or alkaline), but as the ocean continues to absorb more CO2, the pH decreases and the ocean becomes more acidic.",
+      "reason": "从当前CL_S03.text.json的Carbon dioxide and seawater段直接提取的单一连续从句，字符偏移[9119,9247)，0起点且终点不包含；仅出现一次，23个空白分词。它直接承载碱性状态与继续酸化可并存的核心关系，避免跨段拼接，也不引入未标观测年份的平均pH数值及紧邻的offsite link界面文字。which依赖同一原句前部的海洋平均pH指代，必须在boundary_note交代；这是精确从句而非完整独立句，需同步调整相关scope/boundary表述。氢离子与pH关系仍以同页前一小节为上下文。替换后CL_S03两条原引文合计42词，仍低于180词。这里只提出修改，未更改候选文件。"
+    }
+  ]
+}

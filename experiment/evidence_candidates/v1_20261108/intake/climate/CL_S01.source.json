@@ -1,0 +1,19 @@
+{
+  "source_id": "CL_S01",
+  "requested_url": "https://climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide",
+  "effective_url": "https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide",
+  "content_type": "text/html; charset=UTF-8",
+  "started_at_utc": "2026-11-08T07:18:58.596469Z",
+  "completed_at_utc": "2026-11-08T07:19:03.324627Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 90849,
+  "raw_sha256": "98a6338a4407326c0f5fab64a2b65498cb6c6532e2e289f461f16ffd79e77cef",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S01.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S01.text.json",
+  "text_sha256": "38e7bd23275c2adf1cb7fb16bc09754ef334ea5a9d7488afe9daff28821d0051",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 14709
+}

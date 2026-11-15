@@ -1,0 +1,19 @@
+{
+  "source_id": "CL_S02",
+  "requested_url": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/",
+  "effective_url": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/",
+  "content_type": "text/html; charset=UTF-8",
+  "started_at_utc": "2026-11-08T07:19:04.377113Z",
+  "completed_at_utc": "2026-11-08T07:19:07.515201Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 375924,
+  "raw_sha256": "6b10e711fef488fc4ab819834578aa31843c9a58015e3f67d2e8897dd20d47c3",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S02.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S02.text.json",
+  "text_sha256": "77b40447eecbb936eec4f3e6e4825baf8f49779b306aaf72e07d111c37fda7bb",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 47270
+}

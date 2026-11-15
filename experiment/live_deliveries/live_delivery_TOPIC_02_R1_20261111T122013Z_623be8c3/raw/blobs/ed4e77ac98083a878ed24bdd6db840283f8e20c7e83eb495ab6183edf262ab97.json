@@ -1,0 +1,1 @@
+{"attempt":2,"feedback":{"attempt_error":"length_out_of_range","instruction":"四句渲染后总长必须落在 additional_char_range 内：请把每句写足或收紧，但不要增删证据引用，也不要加入新事实。","observations":{}},"request_id":"live_delivery_TOPIC_02_R1_20261111T122013Z_623be8c3:organized:2"}

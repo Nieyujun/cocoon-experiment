@@ -1,0 +1,19 @@
+{
+  "source_id": "EN_S07",
+  "requested_url": "https://www.pv-magazine.com/2024/09/27/global-average-solar-lcoe-stood-at-0-044-kwh-in-2023-says-irena/",
+  "effective_url": "https://www.pv-magazine.com/2024/09/27/global-average-solar-lcoe-stood-at-0-044-kwh-in-2023-says-irena/",
+  "content_type": "text/html; charset=UTF-8",
+  "started_at_utc": "2026-11-08T07:21:46.231336Z",
+  "completed_at_utc": "2026-11-08T07:21:50.275856Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 234362,
+  "raw_sha256": "8f9c63ff3602d393e2e5239518598a6e6409948266bf863f8be505ffcb9a6428",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S07.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\energy\\EN_S07.text.json",
+  "text_sha256": "df9c69e34053589f7ce96ce369a14b6cdaec77c6e968b246d16e84b5326019f3",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 9950
+}

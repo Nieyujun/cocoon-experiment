@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-11-07T15:05:31.841745+00:00",
+  "recorded_at_meaning": "附件解压与SHA256核验完成时间，不是论坛发布时间",
+  "project": "破茧认知助手 / CocoonBreaker",
+  "forum_post": {
+    "url": "https://forum.trae.cn/t/topic/113322",
+    "title": "【社会服务赛道】破茧认知助手 —— 多Agent驱动的信息茧房破壁工具",
+    "author": "u3951005207114857",
+    "displayed_date": "7月11日",
+    "screenshot_match": "标题、作者、日期、简介与用户截图一致"
+  },
+  "acquisition": {
+    "requested_url": "https://forum.trae.cn/uploads/short-url/5LZRuOcFLaFO1r6h4P6wKk3gDC0.zip",
+    "effective_url": "https://trae-forum-cdn.trae.com.cn/prod/original/3X/2/8/2877d7ff8f122cb1b130b4ba37af4199c8f1fb80.zip",
+    "http_status": 200,
+    "content_type": "application/zip",
+    "bytes": 73871,
+    "zip_crc_test": "passed",
+    "zip_sha256": "cdd042dba34f8f1e9e01e9e0c7a43540825e7f0de477029952c4aa798f0ce6f8",
+    "zip_path": "D:/信息茧房/vendor/cocoon-breaker-original/cocoon-breaker-demo.zip",
+    "original_preserved": true,
+    "extraction_path": "D:/信息茧房/vendor/cocoon-breaker-original/source_cdd042dba34f",
+    "extraction_safety_checks": ["无绝对路径或父目录穿越", "无符号链接", "大小与文件数上限", "全新目标目录"]
+  },
+  "files": [
+    {"name": "index.html", "bytes": 209465, "sha256": "d6c168938f79326bccad5ee21f72b9527cd6fb5f1e3dd7d424d4c32088d6f701"},
+    {"name": "PROMPT_TEMPLATES_v2.md", "bytes": 19377, "sha256": "7e79e4614817de3f42ffa36db3cd78e0c4742fb728f0c961a9eacf4d554e5e32"},
+    {"name": "初赛作品帖-修正版.txt", "bytes": 9103, "sha256": "69a84f44c64bbfb62f0280e8627d42affb6df0bccb405fc3d8bc0adefd929484"}
+  ],
+  "static_audit": {
+    "scope": "静态核对，未运行下载代码或请求模型",
+    "protocol_code_locations_match": true,
+    "byte_identity_to_previously_audited_zip": "未提供前次ZIP哈希，因此只确认结构及代码定位吻合，不声称字节级同一",
+    "pipeline": "index.html:2254 runApiPipeline 四阶段主链",
+    "fallback": "index.html:2264-2275及2335-2348 跨域、API或解析异常可回退模拟数据",
+    "mirror": "index.html:2369 runMirrorAgent；2405-2411 错误时生成模拟镜像",
+    "context": "index.html:2419 buildMirrorContext",
+    "model_request": "index.html:2590-2621 callLLM，仅聊天请求，temperature=0.7，max_tokens=2000",
+    "prompt_version_note": "独立PROMPT_TEMPLATES_v2.md标题为4个Agent，前端含第5个自我认知镜；正式使用前须明确并冻结实际提示词来源",
+    "search_evidence_integration_verified": false,
+    "adapter_verified": false,
+    "actual_model_calls": 0,
+    "downloaded_code_executed": false
+  },
+  "license": {
+    "status": "未发现独立LICENSE文件，公开可下载不等于有开放许可",
+    "redistribution_approved": false,
+    "use": "当前仅为用户定位原附件、保留来源与后续本地接入审计"
+  },
+  "next_step": "保留原ZIP和原始解压内容不变，在独立适配模块中移除实验回退、接冻结证据、保存原始响应；模型与预算仍待用户确定。"
+}

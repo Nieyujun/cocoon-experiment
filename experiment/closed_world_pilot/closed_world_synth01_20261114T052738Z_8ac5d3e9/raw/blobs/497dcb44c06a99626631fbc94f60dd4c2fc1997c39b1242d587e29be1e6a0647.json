@@ -1,0 +1,1 @@
+{"attempt":2,"feedback":{"diagnostics":{"non_json_or_extra_text":true,"starts_with_brace":true},"instruction":"上一次输出不是单个严格 JSON 对象（前后混入了契约复述或其他文字）。本次只输出一个以“{”开头、以“}”结尾的 JSON 对象，不要复述契约、不要任何说明文字。","rejected_error_code":"contracts:raw_text 必须是无重复键和非有限数值的严格 JSON"},"node_id":"mirror_S02_T1"}

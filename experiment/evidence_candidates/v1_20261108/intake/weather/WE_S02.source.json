@@ -1,0 +1,19 @@
+{
+  "source_id": "WE_S02",
+  "requested_url": "https://www.cma.gov.cn/2011xzt/2022zt/20220509/2014072105/202205/t20220509_4813322.html",
+  "effective_url": "https://www.cma.gov.cn/2011xzt/2022zt/20220509/2014072105/202205/t20220509_4813322.html",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:19:11.990275Z",
+  "completed_at_utc": "2026-11-08T07:19:13.066535Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 24571,
+  "raw_sha256": "07b473ff11792373976ca6458873ac7d335471f79ce53973c2ab2cc37931d9ad",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\weather\\WE_S02.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\weather\\WE_S02.text.json",
+  "text_sha256": "58c1b20c75d1af4dabf98c256f57f8d76d52a28e13b4ad8678edd7947e94f95c",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 1450
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "WE_S05",
+  "requested_url": "https://nx.cma.gov.cn/xwzx_145/qxzt/2022sjqxr/2022sjqxrxwzx/202203/t20220317_4597712.html",
+  "effective_url": "http://nx.cma.gov.cn/xwzx_145/qxzt/2022sjqxr/2022sjqxrxwzx/202203/t20220317_4597712.html",
+  "content_type": "text/html",
+  "started_at_utc": "2026-11-08T07:20:12.127975Z",
+  "completed_at_utc": "2026-11-08T07:20:12.572417Z",
+  "http_status": 301,
+  "process_returncode": 1,
+  "bytes": 0,
+  "raw_sha256": null,
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\weather\\WE_S05.html",
+  "text_path": null,
+  "text_sha256": null,
+  "outcome": "failed",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "CL_S03",
+  "requested_url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification",
+  "effective_url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification",
+  "content_type": "text/html; charset=UTF-8",
+  "started_at_utc": "2026-11-08T07:19:38.180071Z",
+  "completed_at_utc": "2026-11-08T07:19:40.495214Z",
+  "http_status": 200,
+  "process_returncode": 0,
+  "bytes": 143145,
+  "raw_sha256": "95b707bee8a6e22d779a043d58db07e02013d848e27333c86c76b39ca6ca7d36",
+  "raw_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S03.html",
+  "text_path": "D:\\信息茧房\\experiment\\evidence_candidates\\v1_20261108\\intake\\climate\\CL_S03.text.json",
+  "text_sha256": "9fe3b5e1bc619752d79d3e36372ac2c4da6ef01cacdb6b739d784b268e941def",
+  "outcome": "downloaded_text_extracted",
+  "rights": "local_review_only_not_cleared_for_redistribution",
+  "capture_method": "single_curl_public_https_no_credentials_no_retry",
+  "text_char_count": 17323
+}

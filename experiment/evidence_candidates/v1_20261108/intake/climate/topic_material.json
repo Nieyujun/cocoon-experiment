@@ -1,0 +1,133 @@
+{
+  "topic_id": "TOPIC_01",
+  "candidate_title": "碳与气候：自然作用、生态影响和证据边界",
+  "stance_axis": {
+    "name": "应对气候风险的行动节奏",
+    "negative_label": "重视实施条件与成本",
+    "positive_label": "优先降低排放与生态风险"
+  },
+  "scope_note": "仅用于原方案第4.3节碳与气候方向的候选助手证据素材，覆盖自然科学机制、生态过程及推断边界；不是曝光卡、原始社交帖子、金标准或已冻结的I4/I5证据包。立场轴只是价值侧重点，不把任一端设为正确，也不从机制事实直接推出行动节奏。六条中文text均为基于原页面语境的释义与适用边界说明，标记translated_adapted，不声称逐字翻译；original_quote保留连续原文，仅规范空白；CL_E05按独立AI审核意见改为直接包含碱性与继续酸化关系的连续从句，其which指代同句前部的海洋平均pH语境，定义段仍作为上下文，不跨段拼句。四个公开HTML页面不是四项独立研究：两篇NOAA碳循环科普页面保守共用F_CL_NOAA_CARBON_CYCLE_EXPLAINERS；NASA碳循环背景文和植被变绿研究介绍分别归家族，后者的同一研究及其后续摘编必须沿用同一家族，不把多名作者或多个仪器算作独立复现。来源家族划分也不证明不同家族统计独立。本包不采纳政治、金融投资、健康错误消息或页面中的相关导航与推荐内容。原HTML及提取全文只供本地取证，不直接作为受试材料；正式使用须双人独立复核、处理权利问题，再按第5、7节另行冻结并保证I4/I5等证据送达。",
+  "time_scope": "2026-11-08完成公开页面单次取证；这是获取日期，不是统计年份。采用机制说明和有年份的研究语境，不提供2026年最新浓度、排放量、海洋吸收比例或平均pH统计。CL_S01正文发布于2025-05-21，站点标记自2025-06-25起为不再更新的档案；仅使用机制段。CL_S02初次发布于2011-06-16，HTML标记修改于2026-02-23，不能据修改日期把原文研究与估计改称2026年结论。CL_S03首次发布日期未查明，故publication_date为null；页面标记最后更新于2026-10-07，但未注明正文平均pH数值的观测年份，因此该数值不进入引文或中文证据，仅使用酸化方向及碱性语境。CL_S04发布于2016-04-26，最后更新于2024-07-29；CL_E06中的2016年指研究介绍的发布年，不是2026年观测，也不等同于研究数据的覆盖年份。其他证据不引用数量估计、历史百分比或预测数值，CO2中的数字只是化学式。",
+  "sources": [
+    {
+      "source_id": "CL_S01",
+      "title": "Climate change: atmospheric carbon dioxide",
+      "publisher": "NOAA Climate.gov",
+      "url": "https://climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide",
+      "publication_date": "2025-05-21",
+      "language": "en",
+      "source_family_id": "F_CL_NOAA_CARBON_CYCLE_EXPLAINERS",
+      "meta_file": "CL_S01.source.json",
+      "license_note": "公开可访问不等于全部内容可自由再分发；本轮未完成逐项权利核验。原HTML和提取全文仅作本地取证与人工复核，不公开打包。正式对外使用前应核查正文、图片及第三方材料的权利；本包仅保留最小连续英文引文和明确标记的中文释义，不主张已获整体再分发许可。"
+    },
+    {
+      "source_id": "CL_S02",
+      "title": "The Carbon Cycle",
+      "publisher": "NASA Earth Observatory / NASA Science",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/",
+      "publication_date": "2011-06-16",
+      "language": "en",
+      "source_family_id": "F_CL_NASA_EO_CARBON_CYCLE_2011",
+      "meta_file": "CL_S02.source.json",
+      "license_note": "公开可访问不等于整个页面均可自由再分发，页面含第三方图像及参考材料；本轮未完成逐项权利核验。原HTML和提取全文仅作本地取证与人工复核，不公开打包。仅保留最小连续正文引文及中文释义，不因NASA署名而假定所有页面组件均无权利限制。"
+    },
+    {
+      "source_id": "CL_S03",
+      "title": "Ocean acidification",
+      "publisher": "NOAA Education",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification",
+      "publication_date": null,
+      "language": "en",
+      "source_family_id": "F_CL_NOAA_CARBON_CYCLE_EXPLAINERS",
+      "meta_file": "CL_S03.source.json",
+      "license_note": "公开教育页面的访问权不等于整页及外链材料均可再分发；本轮未完成逐项权利核验。原HTML和提取全文仅作本地取证与人工复核，不公开打包。仅选用酸碱与碳吸收机制的最小连续正文引文及中文释义，不取得或转分发外链图片、实验资料或视频。"
+    },
+    {
+      "source_id": "CL_S04",
+      "title": "Carbon Dioxide Fertilization Greening Earth, Study Finds",
+      "publisher": "NASA Goddard",
+      "url": "https://www.nasa.gov/centers-and-facilities/goddard/carbon-dioxide-fertilization-greening-earth-study-finds/?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text",
+      "publication_date": "2016-04-26",
+      "language": "en",
+      "source_family_id": "F_CL_NASA_GREENING_NCLIMATE3004",
+      "meta_file": "CL_S04.source.json",
+      "license_note": "本来源是NASA发布的研究介绍，不是另一个独立实验；不把被链接论文、第三方图片或视频的权利视为已取得。原HTML和提取全文仅作本地取证与人工复核，不公开打包。采用最小连续引文及中文释义，整体再分发许可尚未核验；源URL保留实际请求的查询参数，规范链接可在原HTML中核对。"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "CL_E01",
+      "source_id": "CL_S01",
+      "original_quote": "By adding more carbon dioxide to the atmosphere, people are amplifying the natural greenhouse effect, causing global temperature to rise.",
+      "text": "二氧化碳参与地球原有的温室效应，人的额外排放会增强这一自然过程并推动全球气温上升。因此，承认温室效应具有自然作用，并不等于认为增加二氧化碳不会带来变化；应区分原有作用与浓度额外增加的影响。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "引文说明自然温室效应会被额外二氧化碳增强，不给出温升幅度、响应时间或特定地区预测。自然作用与额外增量属于可区分的事实命题，不据此为价值立场定对错。采用2025年档案页面中的机制说明，不使用其年度统计。",
+      "review_dimension": "温室效应的自然作用与额外增量"
+    },
+    {
+      "evidence_id": "CL_E02",
+      "source_id": "CL_S01",
+      "original_quote": "Carbon dioxide concentrations are rising mostly because of the fossil fuels that people have been burning for energy since the start of the Industrial Revolution.",
+      "text": "自工业化开始以来，人们为获取能源持续燃烧化石燃料，是大气二氧化碳浓度上升的主要原因。这里的“主要”描述的是浓度长期上升的来源，并非声称自然碳循环停止运作，也不表示每一个地点、季节或年份的变化都只由化石燃料决定。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "保留mostly的主要而非唯一含义。对象是工业化以来大气浓度上升的长期来源，不能把该科普陈述当作单一观测站、单年异常或某次生态事件的独立归因证明。与CL_E01同页同家族，不算第二个独立来源。",
+      "review_dimension": "大气二氧化碳增加的人为来源"
+    },
+    {
+      "evidence_id": "CL_E03",
+      "source_id": "CL_S02",
+      "original_quote": "So far, it appears that carbon dioxide fertilization increases plant growth until the plant reaches a limit in the amount of water or nitrogen available.",
+      "text": "二氧化碳增加可能通过施肥效应促进植物生长，但这种促进不是没有条件的。NASA的碳循环说明指出，植物生长会受到可用水分或氮的限制；当这些资源不足时，不能仅依据二氧化碳更多，就推断植物会持续、等比例地增产或增加碳吸收。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "原句位于Land小节的光合作用与碳施肥语境，保留it appears对应的不确定性。植物生长不等同于作物最终产量或生态系统长期净储碳，也不能把同一限制条件套用于所有物种和地区。引用2011年背景文的机制，不将页面2026年修改标记视为新的施肥实验。",
+      "review_dimension": "光合作用与二氧化碳施肥的益处及水养分限制"
+    },
+    {
+      "evidence_id": "CL_E04",
+      "source_id": "CL_S03",
+      "original_quote": "Because of human-driven increased levels of carbon dioxide in the atmosphere, there is more CO2 dissolving into the ocean.",
+      "text": "随着人类活动使大气中的二氧化碳增加，溶入海洋的二氧化碳也会增加。这条证据说明大气变化与海洋吸收之间的联系，未提供某一年吸收的比例、速度或上限，因此不能把它直接外推成海洋可以持续、完全抵消排放的结论。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "这是定性的海洋吸收机制，不提供任一海域任一时刻的净通量，也不意味着无限吸收能力。中文后半段是证据不能支持何种外推的说明，而不是另报吸收上限。没有采用同页缺少明确观测年份的吸收百分比。",
+      "review_dimension": "海洋吸收大气二氧化碳的过程"
+    },
+    {
+      "evidence_id": "CL_E05",
+      "source_id": "CL_S03",
+      "original_quote": "which is basic (or alkaline), but as the ocean continues to absorb more CO2, the pH decreases and the ocean becomes more acidic.",
+      "text": "海洋酸化关注的是氢离子浓度上升和pH下降的方向，而不等同于海水已经成为酸性溶液。同页说明海水平均状态仍呈碱性，同时可继续酸化；两者并不矛盾。判断这一过程应比较变化方向，不能仅凭“仍是碱性”就认定没有发生酸化。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "original_quote已按独立AI审核意见改为Carbon dioxide and seawater段同一原句中的连续从句，直接保留碱性与继续酸化的关系；which指代该句前部的海洋平均pH语境，不是完整独立句。氢离子与pH关系仍由同页The pH scale小节支持，双人复核需一并检查，不将两处拼接成直接引文。页面平均pH数值未标观测年份，因此不纳入引文或中文证据；只论状态与变化方向，不外推每一海域、深度或物种的反应相同。与CL_E04同页同家族。",
+      "review_dimension": "海洋酸化的pH方向与仍呈碱性的区别"
+    },
+    {
+      "evidence_id": "CL_E06",
+      "source_id": "CL_S04",
+      "original_quote": "“While the detection of greening is based on data, the attribution to various drivers is based on models,” said co-author Josep Canadell of the Oceans and Atmosphere Division in the Commonwealth Scientific and Industrial Research Organisation in Canberra, Australia.",
+      "text": "NASA在2016年的植被变绿研究介绍中区分了观测与归因：变绿现象的检出依赖数据，而不同驱动因素各自起多大作用，要借助模型判断。因此，观测到叶面积增加，不等于已经直接测得某种因素的独立贡献，也不能把模型归因写成无需假设的直接观测。",
+      "transformation_type": "translated_adapted",
+      "boundary_note": "完整保留含作者归属的单一连续原句；中文关于叶面积的说法参照同页对greening指标的解释。2016年是这篇研究介绍的发布年份，不把其历史研究、模型贡献比例或页面更新时间冒充2026年观测。此边界是区分观测与模型归因，不是否定模型价值；也不能从叶面积增加直接推出长期净储碳增加或总体生态净收益。",
+      "review_dimension": "观测、模型归因与生态结论的外推边界"
+    }
+  ],
+  "dimensions": [
+    "温室效应的自然作用与额外增量",
+    "大气二氧化碳增加的人为来源",
+    "光合作用与二氧化碳施肥的益处及水养分限制",
+    "海洋吸收大气二氧化碳的过程",
+    "海洋酸化的pH方向与仍呈碱性的区别",
+    "观测、模型归因与生态结论的外推边界"
+  ],
+  "exclusions": [
+    {
+      "url": "https://research.noaa.gov/no-sign-of-greenhouse-gases-increases-slowing-in-2023/",
+      "reason": "用户提供的备用线索，本轮未抓取，也未据此编写任何证据。已由四个成功保存的HTML页面覆盖六个机制维度，不额外引入2023年度统计，以免与2026年获取日期混用；这不是网页访问失败记录。"
+    },
+    {
+      "url": "https://ntrs.nasa.gov/citations/20190032073",
+      "reason": "搜索命中的技术报告摘要入口，关联PDF下载；未进一步抓取或采用。已优先使用可直接保存和核验的公开HTML科学正文，不为补数转入PDF工具链。"
+    }
+  ],
+  "review_status": "pending_dual_human_review",
+  "human_reviews_completed": 0
+}

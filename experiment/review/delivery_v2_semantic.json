@@ -1,0 +1,162 @@
+{
+  "review_type": "independent_ai_not_human",
+  "run_id": "delivery_20261108T101439Z_99cfd0db64294c3a8c51b1248b03eb98",
+  "summary_sha256": "a6c2f5d26cadbdce901f5e835ad0df6839232b34821a698f917fa50740f6716a",
+  "packet_sha256": "88584f1e109b4364bfec0ed2bd18549b645b7ed1df9a91ae8d15424b7f90fc94",
+  "raw_response_sha256_by_mode": {
+    "organized_reflection": "b4cb67a0fa52b5a8c9c356e61712cb869904fa68943bf4ad9502136769bcbfe7",
+    "plain_restatement": "8690eca6e9098ca27f9f4e26bd5080579ee8d75beeab1f12152f835f12497dc1"
+  },
+  "human_reviews_completed": 0,
+  "accepted_pair": false,
+  "status": "pass_content_with_structure_blocker",
+  "items": [
+    {
+      "mode": "organized_reflection",
+      "index": 0,
+      "original_text": "温室效应是地球原有过程，人的额外排放会增强它并推动气温上升。",
+      "citations": ["CL_E01"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "CL_E01原文为‘二氧化碳参与地球原有的温室效应，人的额外排放会增强这一自然过程并推动全球气温上升’。本句保留自然过程与人的额外排放的区别，‘会增强’并未强于原文模态。在同屏原文明确二氧化碳及全球气温的语境下，简称‘它’和‘气温’不是宣称每个地点、每一时刻都升温；未加入新的因果断言。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 1,
+      "original_text": "化石燃料燃烧是大气二氧化碳浓度长期上升的主要原因，但不代表自然碳循环停止运作。",
+      "citations": ["CL_E02"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "CL_E02明确将‘主要’限定为自工业化开始以来浓度长期上升的来源，并否认自然碳循环停止运作。本句同时保留‘长期上升’、‘主要原因’和自然碳循环限定，未将主要改为唯一。虽未逐字重述工业化起点及地点、季节、年份的例外，但这些限定仍在同屏原文中，句内也没有‘任何时期’或‘所有变化’等扩张范围的断言；不需要靠历史知识补证。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 2,
+      "original_text": "二氧化碳可能通过施肥效应促进植物生长，但受可用水分或氮限制，不能等比例推断增产。",
+      "citations": ["CL_E03"],
+      "kind": "limitation",
+      "verdict": "supported",
+      "reason": "CL_E03原文是‘当这些资源不足时，不能仅依据二氧化碳更多，就推断植物会持续、等比例地增产或增加碳吸收’。‘等比例’本来就在证据中，不是附加的新关系。本句保留‘可能’及可用水分或氮的限制，下一句又明确资源不足，同屏原文还保留‘仅依据二氧化碳更多’的推断前提。因此‘不能等比例推断增产’在当前组合语境下仍是反对仅由二氧化碳增加直接外推等比例增产，不是断言等比例增产绝不可能，也不是所有条件下都不能作出判断。省略‘仅依据’降低了单句自足性，但在规定的同屏阅读条件下没有可指认的实质语义强化，不据此判为overstated。"
+    },
+    {
+      "mode": "organized_reflection",
+      "index": 3,
+      "original_text": "在水分或氮不足的具体情境下，施肥效应的促进作用应如何界定其边界？",
+      "citations": ["CL_E03"],
+      "kind": "question",
+      "verdict": "acceptable_question",
+      "reason": "问题仅追问CL_E03已经给出的水分或氮不足条件下的判断边界。其前提来自原文的条件性促进作用，并未预设在该条件下必然增产、必然失效，或给出新的阈值、数量及因果关系；也没有个体判断或要求作答的命令。问句自身不提出新事实。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 0,
+      "original_text": "二氧化碳本就参与自然温室效应，额外排放会增强它并推高气温。",
+      "citations": ["CL_E01"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "对应CL_E01的二氧化碳参与自然温室效应及人的额外排放增强这一过程、推动全球气温上升。‘会’与原文模态一致。省略‘人的’及‘全球’属于在同屏证据已明确来源和尺度下的简短复述，没有另行归因于所有自然排放或断言每处气温都上升；不是个体诊断。此判定仅针对结构失败原始输出的语义。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 1,
+      "original_text": "工业化以来燃烧化石燃料，是大气二氧化碳浓度上升的主要原因。",
+      "citations": ["CL_E02"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "本句直接保留CL_E02的‘自工业化开始以来’时间范围及化石燃料为‘主要原因’，没有改为唯一原因。同屏原文继续限定浓度长期趋势，并保留自然碳循环及地点、季节、年份边界；本句没有推翻这些限定。未增加精确年代，也未将来源发布日期冒充事实发生日期。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 2,
+      "original_text": "二氧化碳可能经施肥效应促进植物生长，但这种促进并非没有条件。",
+      "citations": ["CL_E03"],
+      "kind": "paraphrase",
+      "verdict": "supported",
+      "reason": "与CL_E03开头‘二氧化碳增加可能通过施肥效应促进植物生长，但这种促进不是没有条件的’一致。保留可能性和条件性，未改成必然有效。具体水分或氮条件由同组下一句及同屏原文保留，无须每句重复全部限定；没有引入额外机制或事实。"
+    },
+    {
+      "mode": "plain_restatement",
+      "index": 3,
+      "original_text": "植物生长受可用水分或氮限制，资源不足时不能仅凭二氧化碳更多就推断持续增产。",
+      "citations": ["CL_E03"],
+      "kind": "limitation",
+      "verdict": "supported",
+      "reason": "CL_E03明确给出可用水分或氮的限制，以及资源不足时不能仅依据二氧化碳更多推断持续、等比例增产或增加碳吸收。本句选择其中持续增产这一项，保留‘资源不足时’和‘不能仅凭’的条件及认识边界，没有改成不能增产、停止生长或必然减产。它补充第三句尚未展开的条件，是普通陈述性复述，不含问题、反思任务、个体采信倾向或诊断。"
+    }
+  ],
+  "counts": {
+    "reviewed_items": 8,
+    "supported": 7,
+    "acceptable_question": 1,
+    "overstated": 0,
+    "unsupported": 0,
+    "needs_review": 0,
+    "content_issue_items": 0,
+    "validated_stages_in_run": 1,
+    "failed_stages_in_run": 1,
+    "accepted_pairs": 0,
+    "schema_type_blockers": 1,
+    "per_slot_length_violations_diagnostic": 3,
+    "additional_length_violations_diagnostic": 1,
+    "by_mode": {
+      "organized_reflection": {
+        "raw_sentence_count": 4,
+        "reviewed_sentence_count": 4,
+        "supported": 3,
+        "acceptable_question": 1,
+        "question_count": 1,
+        "question_mark_count": 1,
+        "raw_text_chars": 141,
+        "citation_chars": 32,
+        "recorded_rendered_chars": 173,
+        "text_plus_citation_chars_diagnostic": 173,
+        "additional_min_chars": 143,
+        "additional_max_chars": 343,
+        "additional_within_range_diagnostic": true,
+        "per_slot_diagnostic": [
+          {"index": 0, "text_chars": 30, "min_chars": 28, "max_chars": 64, "within_range": true},
+          {"index": 1, "text_chars": 39, "min_chars": 28, "max_chars": 64, "within_range": true},
+          {"index": 2, "text_chars": 40, "min_chars": 28, "max_chars": 64, "within_range": true},
+          {"index": 3, "text_chars": 32, "min_chars": 28, "max_chars": 64, "within_range": true}
+        ]
+      },
+      "plain_restatement": {
+        "raw_sentence_count": 4,
+        "reviewed_sentence_count": 4,
+        "supported": 4,
+        "acceptable_question": 0,
+        "question_count": 0,
+        "question_mark_count": 0,
+        "raw_text_chars": 125,
+        "citation_chars": 32,
+        "recorded_rendered_chars": null,
+        "text_plus_citation_chars_diagnostic": 157,
+        "additional_min_chars": 158,
+        "additional_max_chars": 190,
+        "additional_within_range_diagnostic": false,
+        "per_slot_diagnostic": [
+          {"index": 0, "text_chars": 29, "min_chars": 32, "max_chars": 39, "within_range": false},
+          {"index": 1, "text_chars": 29, "min_chars": 32, "max_chars": 39, "within_range": false},
+          {"index": 2, "text_chars": 30, "min_chars": 32, "max_chars": 39, "within_range": false},
+          {"index": 3, "text_chars": 37, "min_chars": 32, "max_chars": 39, "within_range": true}
+        ]
+      }
+    }
+  },
+  "limits": [
+    "独立AI审核，不是人审，也不是另行模型生成或结构校验即语义合格。仅对本run两个原始响应中的8项sentences逐项作出本报告所列判断；items.index及槽位诊断均从0起算。",
+    "取材绑定：summary为experiment/delivery_probes/delivery_20261108T101439Z_99cfd0db64294c3a8c51b1248b03eb98/summary.json，summary_sha256由当前文件实际字节计算。分别沿summary.additions[mode].response.ref读取raw/blobs/b4cb67a0fa52b5a8c9c356e61712cb869904fa68943bf4ad9502136769bcbfe7.json及raw/blobs/8690eca6e9098ca27f9f4e26bd5080579ee8d75beeab1f12152f835f12497dc1.json；raw_response_sha256_by_mode是完整响应blob的实际字节哈希，不是重序列化JSON或raw_text子字段哈希，两者均与summary记录一致。",
+    "packet按summary.packet_input.source_path读取当前原文件D:/信息茧房/experiment/evidence_candidates/v1_20261108/build_20261108T074108_f38ec5/packets/TOPIC_01_round_1.json，而非由旧报告重建。packet_sha256按cocoon/runtime.py:36及cocoon/runtime.py:43的canonical_hash规则计算：JSON键排序、紧凑分隔、不转义非ASCII、禁止NaN、UTF-8后SHA-256。结果与summary.packet_input.canonical_sha256一致；当前packet也与run存储的packet及两份请求内frozen_evidence_packet一致，CL_E01/CL_E02/CL_E03正文哈希均吻合。",
+    "结构阻断单列：plain_restatement原始raw_text首字段为数值schema_version:1.0，JSON可解析，但不是要求的字符串\"1.0\"。cocoon/delivery.py:191-194先检查该值并抛invalid_schema，早于sentences逐项检查；与本run的failed_stage=delivery_plain、error.code=invalid_schema、plain状态failed及rendered=null一致。未把数值转为字符串，未修补原始响应，未将其4句提取为被接纳的structured_output或有效I5。",
+    "原提示类型歧义单列：configs/delivery_prompts_v2.json:15及两份实际请求的common_prompt只写‘schema_version等于1.0’，没有明确要求JSON字符串或加引号；当前配置与run冻结policy内容和文件哈希一致，实际system prompt也与冻结policy一致。该提示存在可归因的类型表达歧义，不能描述成提示已清楚写明字符串而输出故意违反；但这不豁免真实schema约束，也不改变数值1.0已经被拒绝的事实。",
+    "长度仅作额外diagnostic：组织4句正文长度为30、39、40、32，均在28–64内，正文141加引用32等于实际rendered的173，满足143–343。plain失败原文4句为29、29、30、37，前三句分别低于32–39的下限3、3、2字符；正文125加引用开销32的算术诊断为157，比附加段158–190下限少1。plain的157不是已渲染或已投递长度，原run在schema处先失败，没有实际执行到这些后续长度判定；本审核没有换报首错、补字、截断、重试或运行配对组装。",
+    "上下文规则：以同屏CL_E01/CL_E02/CL_E03完整证据及各自附加段一起判断，不要求每句重复所有限定。新断言必须能由这些证据支持，不能由审核者的历史知识、外部资料或内部旧长报告补证。两组均保留主要而非唯一、可能而非必然、不能据此推断而非不能发生的边界；组织第3句的省略不构成当前语境下的实质强化。",
+    "日期与机构检查：8句均未新写具体年月日、‘最新’或把旧资料改称当前新发现；plain第2句保留工业化以来，组织第2句的长期趋势由同屏CL_E02的工业化起点限定。run的source_index blob记录CL_S01日期2025-05-21、CL_S02日期2011-06-16，这些只作为本地来源元数据，不是本次联网核实的发布日期。附加句未捏造机构名称、研究认证、权威或可信背书；原证据中的NASA归属只按原文处理，不由机构名推出结论必真。未验证外部网页真实性、现状或来源日期准确性。",
+    "plain的4句在内容上均为普通陈述性复述或限定，question与问号均为0，不含个体诊断、采信倾向评定、改判建议或作答任务。语义支持不解除其结构失败，不得据此生成或宣称已有有效I5。",
+    "not_full_I4：这只是四句短附加段的独立内容审核，不是完整I4审计，不覆盖内部长报告全部断言，也不证明干预效果；summary.full_I4_eligible与formal_eligible仍为false。",
+    "no_T1：未接收实际受试者T1观点，summary.received_actual_subject、natural_view_used及mirror_executed均为false；本审核不推断个体观点，不声称实施个体化镜像。",
+    "not_delivered：summary.status仍为delivery_failed，pair为null，payloads为空；组织单段结构通过不等于配对通过。accepted_pair保持false，未组装、发布或投递给受试者，未生成有效I5，human_reviews_completed保持0。",
+    "仅新写experiment/review/delivery_v2_semantic.json；未修改summary、响应blob、packet、配置、代码、旧报告、账本或其他文件。未联网，未调用MiMo、插件或/tasks，未重跑实验。本run已有的2次模型调用是历史记录，本次审核additional_model_calls=0。"
+  ],
+  "additional_model_calls": 0
+}

@@ -1,0 +1,1 @@
+{"attempt":2,"feedback":{"diagnostics":{"json_parse_failed":true},"instruction":"上一次输出未通过本地严格校验，请仅修正下列问题后重新完整输出；不要附加解释，不要改变已正确的部分。","rejected_error_code":"measurement:invalid_contract"},"node_id":"measure_S05_P_T0"}
