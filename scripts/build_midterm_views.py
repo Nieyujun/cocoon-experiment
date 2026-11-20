@@ -84,10 +84,10 @@ for old, new in {
     '⚠️ 以下为模拟演示数据，信源链接仅供示意。使用 API 模式可获取真实可点击的信源链接。': '以下为内置示例，来源链接仅作示意。连接模型也不等于已完成事实核查。',
     '第5个Agent': '第五步 · 反思',
     '看完上方分析报告后，输入你对该话题的个人看法、立场和判断依据。第五步 · 反思将对照立场光谱和认知偏差库，帮你发现自己可能忽略的角度。': '看完报告，写下你的看法和依据。助手会结合这段话，提出你可能还没考虑的问题。',
-    '破茧认知助手 · TRAE AI 创造力大赛参赛作品 · 结果仅供参考，请结合独立判断': '课程项目体验原型 · 示例不属于实验数据，分析结果仍需自行核查',
     '回答下面 3 个问题，我们发现你的认知盲区和可能的偏差类型': '回顾你的阅读习惯。这是体验性自查，不是心理测量。',
 }.items():
     before = before.replace(old, new)
+before = sub(before, r'(<div class="disclaimer">)\s*.*?(</div>)', r'\1\n    课程项目体验原型 · 示例不属于实验数据，分析结果仍需自行核查\n  \2')
 assistant = before + '<script>' + scripts
 assistant = assistant.replace('</body>', '<script src="web/assistant-polish.js"></script>\n</body>')
 (ROOT / 'assistant.html').write_text(assistant)

@@ -20,7 +20,7 @@ const {pathToFileURL}=require('node:url');
     if(!['scenes','qa_cards'].includes(key))assert.deepEqual(payload(current)[key],value,key);
   }
   // Restore the assistant's existing navigation, prompts and model behavior unchanged.
-  const inline=s=>s.match(/<script>([\s\S]*?)<\/script>/)[1];
+  const inline=s=>s.replace(/\r\n/g,'\n').match(/<script>([\s\S]*?)<\/script>/)[1];
   assert.equal(inline(read('assistant.html')),inline(read('vendor/cocoon-breaker-original/source_cdd042dba34f/index.html')));
   const browser=await chromium.launch({headless:true,executablePath:process.env.COCOON_BROWSER||(process.platform==='darwin'?'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge':undefined)});
   try{
